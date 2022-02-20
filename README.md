@@ -12,4 +12,6 @@ c2 framework
   - separate inbound and outbound traffic. 
 - Leverage well-known and trusted platforms (twitter, etc.) for c2 issuance
 - e2e pluggable encryption
-  - random aes keys require all clients to use a brute-force decryption method. 
+  - static aes keys 
+  - random aes keys require all clients to use a brute-force decryption method. slow down analysis.  
+  - 
