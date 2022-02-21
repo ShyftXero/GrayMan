@@ -1,5 +1,7 @@
 # Grayman
-c2 framework
+C2 framework trying to be sneaky
+https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
+
 ## Objectives
 - support multiple failover c2 mechanisms by leveraging a pluggable model. 
   - multiple randomly selected http channels
@@ -15,4 +17,3 @@ c2 framework
   - static aes keys 
   - random aes keys require all clients to use a brute-force decryption method. slow down analysis.  
 
-https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
