@@ -6,7 +6,8 @@ https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
 - support multiple failover c2 mechanisms by leveraging a pluggable model. 
   - multiple randomly selected http channels
   - multiple dns channels
-  - easily issue a migration to a new channel or deprecate a channel 
+  - easily issue a migration to a new channel or deprecate/demote a channel 
+- time-based heirarchy of trust. (older agents/channels are more trust-worthy)
 - payload keying and targeting
 - c2 channels selected by degree of interactivity and data directionality
   - Long-haul servers for "aliveness"
