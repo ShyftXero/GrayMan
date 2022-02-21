@@ -1,4 +1,4 @@
-# PhantomJack
+# Grayman
 c2 framework
 ## Objectives
 - support multiple failover c2 mechanisms by leveraging a pluggable model. 
@@ -14,4 +14,5 @@ c2 framework
 - e2e pluggable encryption
   - static aes keys 
   - random aes keys require all clients to use a brute-force decryption method. slow down analysis.  
-  - 
+
+https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
