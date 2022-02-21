@@ -10,7 +10,7 @@ c2 framework
   - Long-haul servers for "aliveness"
   - burnable interactive servers
   - separate inbound and outbound traffic. 
-- Leverage well-known and trusted platforms (twitter, etc.) for c2 issuance
+- Leverage well-known and trusted platforms (twitter, facebook, amazon, discord, etc.) for c2 issuance
 - e2e pluggable encryption
   - static aes keys 
   - random aes keys require all clients to use a brute-force decryption method. slow down analysis.  
