@@ -1,4 +1,4 @@
-# Grayman
+# GrayMan
 C2 framework trying to be sneaky
 https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
 
