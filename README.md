@@ -18,14 +18,58 @@ https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
   - static aes keys 
   - random aes keys require all clients to use a brute-force decryption method. slow down analysis.  
     - 65536 possible aes keys. 
-    - ![image](https://user-images.githubusercontent.com/1275714/155751523-de60d4c5-dee5-4a95-81c5-c1ae84d3bbf1.png)
+    -
 
 
 
-## command distribution and pickup channels (c2 command issuance and collection)
-separate the distribution and collection
-All comms should be encrypted 
+## Separte C2 command distribution and collection channels
+We should separate the distribution and collection to help obfuscate the flow of information. 
+
+## Commands and responses
+plaintext job 
+```json
+{
+   "valid":true,
+   "timestamp":1645804244,
+   "target":"uuid_here",
+   "targettags":[
+      "tag1",
+      "tag2"
+   ],
+   "jobid":"uuid_here",
+   "comment_for_command":"command is hex-encoded",
+   "command":"646174652626686f73746e616d652626696426266375726c206966636f6e6669672e6d65"
+}
+```
+![image](https://user-images.githubusercontent.com/1275714/155760709-de7a6559-2ca2-49fd-9462-c8874db4a86e.png)
+
+
+
+plaintext job issued encrypted with `1337deadbeefRAND` where `RAND` is four base16 chars
+```
+d77208cdbaf40a8e088bf4258f6338ff39d23bcb47eb7c4d8bfc74b895ab9c02a7ad0b91353f6e3f48ff90d0e729deae7f477b83e55f5449d5e114e9e5dc79745eaf1546eb7383d569f0be73539e6e597fa7a7090a166bbb2a2f5ebe23b1b7b356209d4a9f5f796d5b669d2016087d16f97f09d9b42a5efae9f1bf10b7c0e9ec1885f509941723f77bbe06729be08b927e2b4c7f4e76d2729d0194c29801cfb0c16b0ed4d41c62e23ec48ffdaf3019f118cb88fbd86172fe979489
+```
+
+plaintext response from agent
+```json
+{
+   "valid":true,
+   "timestamp":1645804244,
+   "host":"uuid_here",
+   "jobid":"uuid_here",
+   "partid":1,
+   "partcount":1337,
+   "payload":"3e993a3e199713d975c569bc9b79e9dab7e3cb7d6e25131bf70d2655683015f1b4a8909890bc65bea5672e8c081b51bfe4f8539c83ed10b023630ce278f1e2ec6496daa951edcfb0593fc1a7ae4000d3"
+}
+```
+![image](https://user-images.githubusercontent.com/1275714/155760894-548f21a3-55e2-48ea-a1fc-3a7ff570c98c.png)
+
+
+
+All comms should be encrypted. 
 Most of these should support bidirectional communications. 
+
+There is an emphasis on http-based channels for ease of implementation but other mechanisms should be considered as well. 
 - publicly shared/editable google docs/sheets/presentations   
 - torpaste
   - https://torpastezr7464pevuvdjisbvaf4yqi4n7sgz7lkwgqwxznwy5duj4ad.onion (tor)
