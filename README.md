@@ -91,3 +91,7 @@ There is an emphasis on http-based channels for ease of implementation but other
   - http://zerobinftagjpeeebbvyzjcqyjpmjvynj5qlexwyxe7l3vqejxnqv5qd.onion 
   - paste search site - https://pastebin.ga/
 - telegraph - https://telegra.ph/
+
+
+## libraries
+ https://github.com/ShyftXero/aes
