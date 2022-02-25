@@ -25,6 +25,9 @@ https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
 ## Separte C2 command distribution and collection channels
 We should separate the distribution and collection to help obfuscate the flow of information. 
 
+![image](https://user-images.githubusercontent.com/1275714/155774308-b9031a91-93e9-40c5-9b79-6490d8c542ae.png)
+
+
 ## Commands and responses
 plaintext job 
 ```json
