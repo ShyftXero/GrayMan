@@ -11,7 +11,7 @@ https://en.wikipedia.org/wiki/Everyday_carry#Grey_man_theory
 - payload keying and instruction targeting
 - c2 channels selected by degree of interactivity and data directionality
   - Long-haul servers for "aliveness"
-  - burnable interactive servers
+  - burnable interactive servers proxied by caddy? 
   - separate inbound and outbound traffic. 
 - Leverage well-known and trusted platforms (twitter, facebook, amazon, discord, etc.) for c2 issuance
 - e2e pluggable encryption
