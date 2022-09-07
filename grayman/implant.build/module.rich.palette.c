@@ -98,7 +98,7 @@ static void createModuleCodeObjects(void) {
 }
 
 // The module function declarations.
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__9_complex_call_helper_star_list(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__5_complex_call_helper_star_list(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$palette$$$function__1___init__(PyObject *annotations);
@@ -364,7 +364,7 @@ static PyObject *impl_rich$palette$$$function__2___getitem__(struct Nuitka_Funct
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1};
-            tmp_return_value = impl___main__$$$function__9_complex_call_helper_star_list(dir_call_args);
+            tmp_return_value = impl___main__$$$function__5_complex_call_helper_star_list(dir_call_args);
         }
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());
@@ -1242,7 +1242,7 @@ static PyObject *impl_rich$palette$$$function__3___rich__(struct Nuitka_Function
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1};
-            tmp_kw_call_value_0_3 = impl___main__$$$function__9_complex_call_helper_star_list(dir_call_args);
+            tmp_kw_call_value_0_3 = impl___main__$$$function__5_complex_call_helper_star_list(dir_call_args);
         }
         if (tmp_kw_call_value_0_3 == NULL) {
             assert(ERROR_OCCURRED());

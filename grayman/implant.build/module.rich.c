@@ -99,7 +99,7 @@ static void createModuleCodeObjects(void) {
 NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__4_complex_call_helper_star_list_star_dict(PyObject **python_pars);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__11_complex_call_helper_keywords_star_list(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__6_complex_call_helper_keywords_star_list(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$$$function__1_get_console(PyObject *annotations);
@@ -939,7 +939,7 @@ static PyObject *impl_rich$$$function__3_print(struct Nuitka_FunctionObject cons
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1, tmp_dircall_arg3_1};
-            tmp_return_value = impl___main__$$$function__11_complex_call_helper_keywords_star_list(dir_call_args);
+            tmp_return_value = impl___main__$$$function__6_complex_call_helper_keywords_star_list(dir_call_args);
         }
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());

@@ -79,14 +79,14 @@ void checkModuleConstants_pygments$styles(void) {
 
 // The module code objects.
 static PyCodeObject *codeobj_9164199bd769214087d9bca69d0cfd5d;
-static PyCodeObject *codeobj_ce9820e38896643a881a68548d9feca7;
-static PyCodeObject *codeobj_84ec6a54ab21b55c0ac9c3e252ddce82;
+static PyCodeObject *codeobj_63efa5aae350d4cb6696c790ced31f4b;
+static PyCodeObject *codeobj_5f5a5f6277278cc06d06e914f83fc610;
 
 static void createModuleCodeObjects(void) {
     module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[42]); CHECK_OBJECT(module_filename_obj);
     codeobj_9164199bd769214087d9bca69d0cfd5d = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[43], NULL, NULL, 0, 0, 0);
-    codeobj_ce9820e38896643a881a68548d9feca7 = MAKE_CODEOBJECT(module_filename_obj, 92, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[17], mod_consts[44], NULL, 0, 0, 0);
-    codeobj_84ec6a54ab21b55c0ac9c3e252ddce82 = MAKE_CODEOBJECT(module_filename_obj, 68, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[41], mod_consts[45], NULL, 1, 0, 0);
+    codeobj_63efa5aae350d4cb6696c790ced31f4b = MAKE_CODEOBJECT(module_filename_obj, 88, CO_GENERATOR | CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[17], mod_consts[44], NULL, 0, 0, 0);
+    codeobj_5f5a5f6277278cc06d06e914f83fc610 = MAKE_CODEOBJECT(module_filename_obj, 64, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[41], mod_consts[45], NULL, 1, 0, 0);
 }
 
 // The module function declarations.
@@ -121,7 +121,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     PyObject *tmp_tuple_unpack_2__element_1 = NULL;
     PyObject *tmp_tuple_unpack_2__element_2 = NULL;
     PyObject *tmp_tuple_unpack_2__source_iter = NULL;
-    struct Nuitka_FrameObject *frame_84ec6a54ab21b55c0ac9c3e252ddce82;
+    struct Nuitka_FrameObject *frame_5f5a5f6277278cc06d06e914f83fc610;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
@@ -173,7 +173,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     PyObject *exception_keeper_value_9;
     PyTracebackObject *exception_keeper_tb_9;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_9;
-    static struct Nuitka_FrameObject *cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_5f5a5f6277278cc06d06e914f83fc610 = NULL;
     PyObject *exception_keeper_type_10;
     PyObject *exception_keeper_value_10;
     PyTracebackObject *exception_keeper_tb_10;
@@ -181,31 +181,31 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82)) {
-        Py_XDECREF(cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82);
+    if (isFrameUnusable(cache_frame_5f5a5f6277278cc06d06e914f83fc610)) {
+        Py_XDECREF(cache_frame_5f5a5f6277278cc06d06e914f83fc610);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82 == NULL) {
+        if (cache_frame_5f5a5f6277278cc06d06e914f83fc610 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82 = MAKE_FUNCTION_FRAME(codeobj_84ec6a54ab21b55c0ac9c3e252ddce82, module_pygments$styles, sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *));
+        cache_frame_5f5a5f6277278cc06d06e914f83fc610 = MAKE_FUNCTION_FRAME(codeobj_5f5a5f6277278cc06d06e914f83fc610, module_pygments$styles, sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_type_description == NULL);
-    frame_84ec6a54ab21b55c0ac9c3e252ddce82 = cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82;
+    assert(cache_frame_5f5a5f6277278cc06d06e914f83fc610->m_type_description == NULL);
+    frame_5f5a5f6277278cc06d06e914f83fc610 = cache_frame_5f5a5f6277278cc06d06e914f83fc610;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_84ec6a54ab21b55c0ac9c3e252ddce82);
+    pushFrameStack(frame_5f5a5f6277278cc06d06e914f83fc610);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_84ec6a54ab21b55c0ac9c3e252ddce82) == 2); // Frame stack
+    assert(Py_REFCNT(frame_5f5a5f6277278cc06d06e914f83fc610) == 2); // Frame stack
 
     // Framed code:
     {
@@ -226,7 +226,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 69;
+            exception_lineno = 65;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
@@ -237,7 +237,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 69;
+            exception_lineno = 65;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
@@ -269,7 +269,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 70;
+            exception_lineno = 66;
             type_description_1 = "oooooo";
             goto try_except_handler_2;
         }
@@ -282,7 +282,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 70;
+            exception_lineno = 66;
             type_description_1 = "oooooo";
             goto try_except_handler_2;
         }
@@ -294,11 +294,11 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 70;
+            exception_lineno = 66;
             type_description_1 = "oooooo";
             goto try_except_handler_2;
         }
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = 70;
+        frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = 66;
         tmp_iter_arg_1 = CALL_FUNCTION_WITH_POSARGS1(tmp_called_value_1, mod_consts[2]);
 
         Py_DECREF(tmp_called_value_1);
@@ -308,7 +308,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 70;
+            exception_lineno = 66;
             type_description_1 = "oooooo";
             goto try_except_handler_2;
         }
@@ -320,7 +320,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 70;
+            exception_lineno = 66;
             type_description_1 = "oooooo";
             goto try_except_handler_2;
         }
@@ -346,7 +346,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
 
             type_description_1 = "oooooo";
-            exception_lineno = 70;
+            exception_lineno = 66;
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__element_1 == NULL);
@@ -370,7 +370,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
 
             type_description_1 = "oooooo";
-            exception_lineno = 70;
+            exception_lineno = 66;
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__element_2 == NULL);
@@ -395,7 +395,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
                     type_description_1 = "oooooo";
-                    exception_lineno = 70;
+                    exception_lineno = 66;
                     goto try_except_handler_3;
                 }
             }
@@ -409,7 +409,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             exception_tb = NULL;
 
             type_description_1 = "oooooo";
-            exception_lineno = 70;
+            exception_lineno = 66;
             goto try_except_handler_3;
         }
     }
@@ -512,11 +512,11 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 73;
+            exception_lineno = 69;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = 73;
+        frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = 69;
         tmp_iter_arg_2 = CALL_FUNCTION_NO_ARGS(tmp_called_value_2);
         if (tmp_iter_arg_2 == NULL) {
             assert(ERROR_OCCURRED());
@@ -524,7 +524,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 73;
+            exception_lineno = 69;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
@@ -536,7 +536,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 73;
+            exception_lineno = 69;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
@@ -559,7 +559,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
                 type_description_1 = "oooooo";
-                exception_lineno = 73;
+                exception_lineno = 69;
                 goto try_except_handler_4;
             }
         }
@@ -584,7 +584,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 73;
+            exception_lineno = 69;
             type_description_1 = "oooooo";
             goto try_except_handler_5;
         }
@@ -614,7 +614,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
 
             type_description_1 = "oooooo";
-            exception_lineno = 73;
+            exception_lineno = 69;
             goto try_except_handler_6;
         }
         {
@@ -642,7 +642,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
 
             type_description_1 = "oooooo";
-            exception_lineno = 73;
+            exception_lineno = 69;
             goto try_except_handler_6;
         }
         {
@@ -671,7 +671,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
                     type_description_1 = "oooooo";
-                    exception_lineno = 73;
+                    exception_lineno = 69;
                     goto try_except_handler_6;
                 }
             }
@@ -685,7 +685,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             exception_tb = NULL;
 
             type_description_1 = "oooooo";
-            exception_lineno = 73;
+            exception_lineno = 69;
             goto try_except_handler_6;
         }
     }
@@ -786,7 +786,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 74;
+            exception_lineno = 70;
             type_description_1 = "oooooo";
             goto try_except_handler_4;
         }
@@ -808,7 +808,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
         FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-        exception_lineno = 73;
+        exception_lineno = 69;
         type_description_1 = "oooooo";
         goto try_except_handler_4;
     }
@@ -884,11 +884,11 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 79;
+            exception_lineno = 75;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = 79;
+        frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = 75;
         tmp_add_expr_left_1 = CALL_FUNCTION_NO_ARGS(tmp_called_value_3);
         Py_DECREF(tmp_called_value_3);
         if (tmp_add_expr_left_1 == NULL) {
@@ -897,7 +897,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 79;
+            exception_lineno = 75;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
@@ -910,7 +910,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 79;
+            exception_lineno = 75;
             type_description_1 = "oooooo";
             goto frame_exception_exit_1;
         }
@@ -938,7 +938,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 82;
+            exception_lineno = 78;
             type_description_1 = "oooooo";
             goto try_except_handler_7;
         }
@@ -948,7 +948,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
         tmp_list_element_1 = var_cls;
         tmp_fromlist_value_1 = PyList_New(1);
         PyList_SET_ITEM0(tmp_fromlist_value_1, 0, tmp_list_element_1);
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = 82;
+        frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = 78;
         tmp_assign_source_17 = IMPORT_MODULE4(tmp_name_value_1, tmp_globals_arg_value_1, tmp_locals_arg_value_1, tmp_fromlist_value_1);
         Py_DECREF(tmp_name_value_1);
         Py_DECREF(tmp_fromlist_value_1);
@@ -958,7 +958,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 82;
+            exception_lineno = 78;
             type_description_1 = "oooooo";
             goto try_except_handler_7;
         }
@@ -986,9 +986,9 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     GET_CURRENT_EXCEPTION(&exception_preserved_type_1, &exception_preserved_value_1, &exception_preserved_tb_1);
 
     if (exception_keeper_tb_6 == NULL) {
-        exception_keeper_tb_6 = MAKE_TRACEBACK(frame_84ec6a54ab21b55c0ac9c3e252ddce82, exception_keeper_lineno_6);
+        exception_keeper_tb_6 = MAKE_TRACEBACK(frame_5f5a5f6277278cc06d06e914f83fc610, exception_keeper_lineno_6);
     } else if (exception_keeper_lineno_6 != 0) {
-        exception_keeper_tb_6 = ADD_TRACEBACK(exception_keeper_tb_6, frame_84ec6a54ab21b55c0ac9c3e252ddce82, exception_keeper_lineno_6);
+        exception_keeper_tb_6 = ADD_TRACEBACK(exception_keeper_tb_6, frame_5f5a5f6277278cc06d06e914f83fc610, exception_keeper_lineno_6);
     }
 
     NORMALIZE_EXCEPTION(&exception_keeper_type_6, &exception_keeper_value_6, &exception_keeper_tb_6);
@@ -1036,7 +1036,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 84;
+            exception_lineno = 80;
             type_description_1 = "oooooo";
             goto try_except_handler_8;
         }
@@ -1048,7 +1048,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 84;
+            exception_lineno = 80;
             type_description_1 = "oooooo";
             goto try_except_handler_8;
         }
@@ -1061,7 +1061,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 84;
+            exception_lineno = 80;
             type_description_1 = "oooooo";
             goto try_except_handler_8;
         }
@@ -1088,7 +1088,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 85;
+            exception_lineno = 81;
             type_description_1 = "oooooo";
             goto try_except_handler_8;
         }
@@ -1101,11 +1101,11 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 85;
+            exception_lineno = 81;
             type_description_1 = "oooooo";
             goto try_except_handler_8;
         }
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = 84;
+        frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = 80;
         tmp_raise_type_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_4, tmp_args_element_value_1);
         Py_DECREF(tmp_args_element_value_1);
         if (tmp_raise_type_1 == NULL) {
@@ -1114,12 +1114,12 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 84;
+            exception_lineno = 80;
             type_description_1 = "oooooo";
             goto try_except_handler_8;
         }
         exception_type = tmp_raise_type_1;
-        exception_lineno = 84;
+        exception_lineno = 80;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
         type_description_1 = "oooooo";
         goto try_except_handler_8;
@@ -1128,10 +1128,10 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     branch_no_3:;
     tmp_result = RERAISE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
     if (unlikely(tmp_result == false)) {
-        exception_lineno = 81;
+        exception_lineno = 77;
     }
 
-    if (exception_tb && exception_tb->tb_frame == &frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame) frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = exception_tb->tb_lineno;
+    if (exception_tb && exception_tb->tb_frame == &frame_5f5a5f6277278cc06d06e914f83fc610->m_frame) frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = exception_tb->tb_lineno;
     type_description_1 = "oooooo";
     goto try_except_handler_8;
     branch_end_3:;
@@ -1176,7 +1176,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 87;
+            exception_lineno = 83;
             type_description_1 = "oooooo";
             goto try_except_handler_9;
         }
@@ -1199,9 +1199,9 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     GET_CURRENT_EXCEPTION(&exception_preserved_type_2, &exception_preserved_value_2, &exception_preserved_tb_2);
 
     if (exception_keeper_tb_8 == NULL) {
-        exception_keeper_tb_8 = MAKE_TRACEBACK(frame_84ec6a54ab21b55c0ac9c3e252ddce82, exception_keeper_lineno_8);
+        exception_keeper_tb_8 = MAKE_TRACEBACK(frame_5f5a5f6277278cc06d06e914f83fc610, exception_keeper_lineno_8);
     } else if (exception_keeper_lineno_8 != 0) {
-        exception_keeper_tb_8 = ADD_TRACEBACK(exception_keeper_tb_8, frame_84ec6a54ab21b55c0ac9c3e252ddce82, exception_keeper_lineno_8);
+        exception_keeper_tb_8 = ADD_TRACEBACK(exception_keeper_tb_8, frame_5f5a5f6277278cc06d06e914f83fc610, exception_keeper_lineno_8);
     }
 
     NORMALIZE_EXCEPTION(&exception_keeper_type_8, &exception_keeper_value_8, &exception_keeper_tb_8);
@@ -1242,7 +1242,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 85;
             type_description_1 = "oooooo";
             goto try_except_handler_10;
         }
@@ -1256,11 +1256,11 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 85;
             type_description_1 = "oooooo";
             goto try_except_handler_10;
         }
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = 89;
+        frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = 85;
         tmp_raise_type_2 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_5, tmp_args_element_value_2);
         Py_DECREF(tmp_args_element_value_2);
         if (tmp_raise_type_2 == NULL) {
@@ -1269,12 +1269,12 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 85;
             type_description_1 = "oooooo";
             goto try_except_handler_10;
         }
         exception_type = tmp_raise_type_2;
-        exception_lineno = 89;
+        exception_lineno = 85;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
         type_description_1 = "oooooo";
         goto try_except_handler_10;
@@ -1283,10 +1283,10 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     branch_no_4:;
     tmp_result = RERAISE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
     if (unlikely(tmp_result == false)) {
-        exception_lineno = 86;
+        exception_lineno = 82;
     }
 
-    if (exception_tb && exception_tb->tb_frame == &frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame) frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame.f_lineno = exception_tb->tb_lineno;
+    if (exception_tb && exception_tb->tb_frame == &frame_5f5a5f6277278cc06d06e914f83fc610->m_frame) frame_5f5a5f6277278cc06d06e914f83fc610->m_frame.f_lineno = exception_tb->tb_lineno;
     type_description_1 = "oooooo";
     goto try_except_handler_10;
     branch_end_4:;
@@ -1317,7 +1317,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     // End of try:
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_84ec6a54ab21b55c0ac9c3e252ddce82);
+    RESTORE_FRAME_EXCEPTION(frame_5f5a5f6277278cc06d06e914f83fc610);
 #endif
 
     // Put the previous frame back on top.
@@ -1327,7 +1327,7 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
     frame_return_exit_1:;
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_84ec6a54ab21b55c0ac9c3e252ddce82);
+    RESTORE_FRAME_EXCEPTION(frame_5f5a5f6277278cc06d06e914f83fc610);
 #endif
 
     // Put the previous frame back on top.
@@ -1338,18 +1338,18 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_84ec6a54ab21b55c0ac9c3e252ddce82);
+    RESTORE_FRAME_EXCEPTION(frame_5f5a5f6277278cc06d06e914f83fc610);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_84ec6a54ab21b55c0ac9c3e252ddce82, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_84ec6a54ab21b55c0ac9c3e252ddce82->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_84ec6a54ab21b55c0ac9c3e252ddce82, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_5f5a5f6277278cc06d06e914f83fc610, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_5f5a5f6277278cc06d06e914f83fc610->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_5f5a5f6277278cc06d06e914f83fc610, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_84ec6a54ab21b55c0ac9c3e252ddce82,
+        frame_5f5a5f6277278cc06d06e914f83fc610,
         type_description_1,
         par_name,
         var_mod,
@@ -1361,17 +1361,17 @@ static PyObject *impl_pygments$styles$$$function__1_get_style_by_name(struct Nui
 
 
     // Release cached frame if used for exception.
-    if (frame_84ec6a54ab21b55c0ac9c3e252ddce82 == cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82) {
+    if (frame_5f5a5f6277278cc06d06e914f83fc610 == cache_frame_5f5a5f6277278cc06d06e914f83fc610) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82);
-        cache_frame_84ec6a54ab21b55c0ac9c3e252ddce82 = NULL;
+        Py_DECREF(cache_frame_5f5a5f6277278cc06d06e914f83fc610);
+        cache_frame_5f5a5f6277278cc06d06e914f83fc610 = NULL;
     }
 
-    assertFrameObject(frame_84ec6a54ab21b55c0ac9c3e252ddce82);
+    assertFrameObject(frame_5f5a5f6277278cc06d06e914f83fc610);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -1556,7 +1556,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_m_frame = MAKE_FUNCTION_FRAME(codeobj_ce9820e38896643a881a68548d9feca7, module_pygments$styles, sizeof(void *)+sizeof(void *));
+        cache_m_frame = MAKE_FUNCTION_FRAME(codeobj_63efa5aae350d4cb6696c790ced31f4b, module_pygments$styles, sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
@@ -1616,7 +1616,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 95;
+            generator_heap->exception_lineno = 91;
             generator_heap->type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -1632,7 +1632,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 95;
+            generator_heap->exception_lineno = 91;
             generator_heap->type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -1655,11 +1655,11 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             generator_heap->type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        generator->m_frame->m_frame.f_lineno = 96;
+        generator->m_frame->m_frame.f_lineno = 92;
         tmp_iter_arg_1 = CALL_FUNCTION_NO_ARGS(tmp_called_value_1);
         if (tmp_iter_arg_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -1667,7 +1667,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             generator_heap->type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -1679,7 +1679,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             generator_heap->type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -1702,7 +1702,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
 
                 FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
                 generator_heap->type_description_1 = "oo";
-                generator_heap->exception_lineno = 96;
+                generator_heap->exception_lineno = 92;
                 goto try_except_handler_2;
             }
         }
@@ -1727,7 +1727,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             generator_heap->type_description_1 = "oo";
             goto try_except_handler_3;
         }
@@ -1757,7 +1757,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
 
 
             generator_heap->type_description_1 = "oo";
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             goto try_except_handler_4;
         }
         {
@@ -1785,7 +1785,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
 
 
             generator_heap->type_description_1 = "oo";
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             goto try_except_handler_4;
         }
         {
@@ -1814,7 +1814,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
                     FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
                     generator_heap->type_description_1 = "oo";
-                    generator_heap->exception_lineno = 96;
+                    generator_heap->exception_lineno = 92;
                     goto try_except_handler_4;
                 }
             }
@@ -1828,7 +1828,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             generator_heap->exception_tb = NULL;
 
             generator_heap->type_description_1 = "oo";
-            generator_heap->exception_lineno = 96;
+            generator_heap->exception_lineno = 92;
             goto try_except_handler_4;
         }
     }
@@ -1929,7 +1929,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
             FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-            generator_heap->exception_lineno = 97;
+            generator_heap->exception_lineno = 93;
             generator_heap->type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -1941,7 +1941,7 @@ static PyObject *pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_al
         FETCH_ERROR_OCCURRED(&generator_heap->exception_type, &generator_heap->exception_value, &generator_heap->exception_tb);
 
 
-        generator_heap->exception_lineno = 96;
+        generator_heap->exception_lineno = 92;
         generator_heap->type_description_1 = "oo";
         goto try_except_handler_2;
     }
@@ -2084,7 +2084,7 @@ static PyObject *MAKE_GENERATOR_pygments$styles$$$function__2_get_all_styles$$$g
 #if PYTHON_VERSION >= 0x350
         NULL,
 #endif
-        codeobj_ce9820e38896643a881a68548d9feca7,
+        codeobj_63efa5aae350d4cb6696c790ced31f4b,
         NULL,
         0,
         sizeof(struct pygments$styles$$$function__2_get_all_styles$$$genobj__1_get_all_styles_locals)
@@ -2100,7 +2100,7 @@ static PyObject *MAKE_FUNCTION_pygments$styles$$$function__1_get_style_by_name()
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_84ec6a54ab21b55c0ac9c3e252ddce82,
+        codeobj_5f5a5f6277278cc06d06e914f83fc610,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -2125,7 +2125,7 @@ static PyObject *MAKE_FUNCTION_pygments$styles$$$function__2_get_all_styles() {
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_ce9820e38896643a881a68548d9feca7,
+        codeobj_63efa5aae350d4cb6696c790ced31f4b,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,

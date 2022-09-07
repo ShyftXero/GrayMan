@@ -105,7 +105,7 @@ static void createModuleCodeObjects(void) {
 static PyObject *MAKE_GENERATOR_rich$markup$$$function__4__parse$$$genobj__1__parse(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$markup$$$function__1___str__(PyObject *annotations);
@@ -10405,7 +10405,7 @@ PyObject *modulecode_rich$markup(PyObject *module, struct Nuitka_MetaPathBasedLo
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_26 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_26 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_26 == NULL) {
             assert(ERROR_OCCURRED());

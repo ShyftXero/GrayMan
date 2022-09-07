@@ -33,9 +33,9 @@ PyObject *module_pygments$lexers$_mapping;
 PyDictObject *moduledict_pygments$lexers$_mapping;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[11];
+static PyObject *mod_consts[12];
 #ifndef __NUITKA_NO_ASSERT__
-static Py_hash_t mod_consts_hash[11];
+static Py_hash_t mod_consts_hash[12];
 #endif
 
 static PyObject *module_filename_obj = NULL;
@@ -50,7 +50,7 @@ static void createModuleConstants(void) {
         constants_created = true;
 
 #ifndef __NUITKA_NO_ASSERT__
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 12; i++) {
             mod_consts_hash[i] = DEEP_HASH(mod_consts[i]);
         }
 #endif
@@ -70,7 +70,7 @@ void checkModuleConstants_pygments$lexers$_mapping(void) {
     // The module may not have been used at all, then ignore this.
     if (constants_created == false) return;
 
-    for (int i = 0; i < 11; i++) {
+    for (int i = 0; i < 12; i++) {
         assert(mod_consts_hash[i] == DEEP_HASH(mod_consts[i]));
         CHECK_OBJECT_DEEP(mod_consts[i]);
     }
@@ -81,8 +81,8 @@ void checkModuleConstants_pygments$lexers$_mapping(void) {
 static PyCodeObject *codeobj_dfa7120db13f632f513c3ffd450208ff;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[8]); CHECK_OBJECT(module_filename_obj);
-    codeobj_dfa7120db13f632f513c3ffd450208ff = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[9], NULL, NULL, 0, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[9]); CHECK_OBJECT(module_filename_obj);
+    codeobj_dfa7120db13f632f513c3ffd450208ff = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[10], NULL, NULL, 0, 0, 0);
 }
 
 // The module function declarations.
@@ -340,7 +340,7 @@ PyObject *modulecode_pygments$lexers$_mapping(PyObject *module, struct Nuitka_Me
         UPDATE_STRING_DICT0(
             moduledict_pygments$lexers$_mapping,
             (Nuitka_StringObject *)const_str_plain___package__,
-            mod_consts[10]
+            mod_consts[11]
         );
 #elif 0
         PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)const_str_plain___name__);
@@ -447,13 +447,13 @@ PyObject *modulecode_pygments$lexers$_mapping(PyObject *module, struct Nuitka_Me
     // Module code.
     {
         PyObject *tmp_assign_source_1;
-        tmp_assign_source_1 = Py_None;
-        UPDATE_STRING_DICT0(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[0], tmp_assign_source_1);
+        tmp_assign_source_1 = mod_consts[0];
+        UPDATE_STRING_DICT0(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[1], tmp_assign_source_1);
     }
     {
         PyObject *tmp_assign_source_2;
         tmp_assign_source_2 = module_filename_obj;
-        UPDATE_STRING_DICT0(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[1], tmp_assign_source_2);
+        UPDATE_STRING_DICT0(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[2], tmp_assign_source_2);
     }
     // Frame without reuse.
     frame_dfa7120db13f632f513c3ffd450208ff = MAKE_MODULE_FRAME(codeobj_dfa7120db13f632f513c3ffd450208ff, module_pygments$lexers$_mapping);
@@ -468,14 +468,14 @@ PyObject *modulecode_pygments$lexers$_mapping(PyObject *module, struct Nuitka_Me
         PyObject *tmp_assattr_value_1;
         PyObject *tmp_assattr_target_1;
         tmp_assattr_value_1 = module_filename_obj;
-        tmp_assattr_target_1 = GET_STRING_DICT_VALUE(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[2]);
+        tmp_assattr_target_1 = GET_STRING_DICT_VALUE(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[3]);
 
         if (unlikely(tmp_assattr_target_1 == NULL)) {
-            tmp_assattr_target_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[2]);
+            tmp_assattr_target_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[3]);
         }
 
         assert(!(tmp_assattr_target_1 == NULL));
-        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_1, mod_consts[3], tmp_assattr_value_1);
+        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_1, mod_consts[4], tmp_assattr_value_1);
         if (tmp_result == false) {
             assert(ERROR_OCCURRED());
 
@@ -491,14 +491,14 @@ PyObject *modulecode_pygments$lexers$_mapping(PyObject *module, struct Nuitka_Me
         PyObject *tmp_assattr_value_2;
         PyObject *tmp_assattr_target_2;
         tmp_assattr_value_2 = Py_True;
-        tmp_assattr_target_2 = GET_STRING_DICT_VALUE(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[2]);
+        tmp_assattr_target_2 = GET_STRING_DICT_VALUE(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[3]);
 
         if (unlikely(tmp_assattr_target_2 == NULL)) {
-            tmp_assattr_target_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[2]);
+            tmp_assattr_target_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[3]);
         }
 
         assert(!(tmp_assattr_target_2 == NULL));
-        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_2, mod_consts[4], tmp_assattr_value_2);
+        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_2, mod_consts[5], tmp_assattr_value_2);
         if (tmp_result == false) {
             assert(ERROR_OCCURRED());
 
@@ -542,12 +542,12 @@ PyObject *modulecode_pygments$lexers$_mapping(PyObject *module, struct Nuitka_Me
     {
         PyObject *tmp_assign_source_3;
         tmp_assign_source_3 = Py_None;
-        UPDATE_STRING_DICT0(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[5], tmp_assign_source_3);
+        UPDATE_STRING_DICT0(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[6], tmp_assign_source_3);
     }
     {
         PyObject *tmp_assign_source_4;
-        tmp_assign_source_4 = PyDict_Copy(mod_consts[6]);
-        UPDATE_STRING_DICT1(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[7], tmp_assign_source_4);
+        tmp_assign_source_4 = PyDict_Copy(mod_consts[7]);
+        UPDATE_STRING_DICT1(moduledict_pygments$lexers$_mapping, (Nuitka_StringObject *)mod_consts[8], tmp_assign_source_4);
     }
 
     // Report to PGO about leaving the module without error.

@@ -113,10 +113,10 @@ static void createModuleCodeObjects(void) {
 static PyObject *MAKE_GENERATOR_rich$theme$$$function__2_config$$$genexpr__1_genexpr(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__14__unpack_dict(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__9__unpack_dict(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$theme$$$function__1___init__(PyObject *defaults, PyObject *annotations);
@@ -3786,7 +3786,7 @@ static PyObject *impl_rich$theme$$$function__6_push_theme(struct Nuitka_Function
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_1 = impl___main__$$$function__14__unpack_dict(dir_call_args);
+            tmp_assign_source_1 = impl___main__$$$function__9__unpack_dict(dir_call_args);
         }
         if (tmp_assign_source_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -6950,7 +6950,7 @@ PyObject *modulecode_rich$theme(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_21 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_21 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_21 == NULL) {
             assert(ERROR_OCCURRED());

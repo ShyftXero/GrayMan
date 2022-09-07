@@ -1,12 +1,12 @@
 CC="/usr/bin/ccache" "/usr/bin/gcc"
 CCACHE_DIR=/home/shyft/.cache/Nuitka/ccache
-CCACHE_LOGFILE=/home/shyft/Dropbox/code/GrayMan/grayman/implant.onefile-build/ccache-1775757.txt
+CCACHE_LOGFILE=/home/shyft/Dropbox/code/GrayMan/grayman/implant.onefile-build/ccache-1815452.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
 CPPDEFINES=['__NUITKA_NO_ASSERT__', '_NUITKA_PLUGIN_MULTIPROCESSING_ENABLED=1']
 CPPDEFPREFIX=-D
 CPPDEFSUFFIX=
-CPPPATH=['.', '/home/shyft/Dropbox/code/GrayMan/venv/lib/python3.10/site-packages/nuitka/build/include', '/home/shyft/Dropbox/code/GrayMan/venv/lib/python3.10/site-packages/nuitka/build/static_src', '/home/shyft/Dropbox/code/GrayMan/venv/lib/python3.10/site-packages/nuitka/build/inline_copy/zstd']
+CPPPATH=['.', '/home/shyft/stuff/miniconda3/lib/python3.10/site-packages/nuitka/build/include', '/home/shyft/stuff/miniconda3/lib/python3.10/site-packages/nuitka/build/static_src', '/home/shyft/stuff/miniconda3/lib/python3.10/site-packages/nuitka/build/inline_copy/zstd']
 CPPSUFFIXES=['.c', '.C', '.cxx', '.cpp', '.c++', '.cc', '.h', '.H', '.hxx', '.hpp', '.hh', '.F', '.fpp', '.FPP', '.m', '.mm', '.S', '.spp', '.SPP', '.sx']
 CXX="/usr/bin/ccache" "/usr/bin/gcc"
 CXXCOM=$CXX -o $TARGET -c $CXXFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
@@ -60,4 +60,4 @@ clang_mode=False
 msvc_mode=False
 mingw_mode=False
 clangcl_mode=False
-PATH=/home/shyft/stuff/miniconda3/bin:/home/shyft/Dropbox/code/GrayMan/venv/bin:/home/shyft/.nimble/bin:/home/shyft/.local/bin:/home/shyft/bin:/home/shyft/stuff/miniconda3/bin:/home/shyft/go/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH=/home/shyft/stuff/miniconda3/bin:/home/shyft/.nimble/bin:/home/shyft/.local/bin:/home/shyft/bin:/home/shyft/stuff/miniconda3/bin:/home/shyft/go/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin

@@ -79,12 +79,12 @@ void checkModuleConstants_urllib3$packages$backports$makefile(void) {
 
 // The module code objects.
 static PyCodeObject *codeobj_279b1211293eb31335952ff2ebc1e790;
-static PyCodeObject *codeobj_f4bd533434f1e17782e177778b7b5a84;
+static PyCodeObject *codeobj_03cc7809373689b7fc26d0759292b0d2;
 
 static void createModuleCodeObjects(void) {
     module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[31]); CHECK_OBJECT(module_filename_obj);
     codeobj_279b1211293eb31335952ff2ebc1e790 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[32], NULL, NULL, 0, 0, 0);
-    codeobj_f4bd533434f1e17782e177778b7b5a84 = MAKE_CODEOBJECT(module_filename_obj, 13, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[30], mod_consts[33], NULL, 6, 0, 0);
+    codeobj_03cc7809373689b7fc26d0759292b0d2 = MAKE_CODEOBJECT(module_filename_obj, 14, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[30], mod_consts[33], NULL, 6, 0, 0);
 }
 
 // The module function declarations.
@@ -113,7 +113,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
     PyObject *var_buffer = NULL;
     PyObject *var_text = NULL;
     PyObject *tmp_inplace_assign_1__value = NULL;
-    struct Nuitka_FrameObject *frame_f4bd533434f1e17782e177778b7b5a84;
+    struct Nuitka_FrameObject *frame_03cc7809373689b7fc26d0759292b0d2;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
@@ -126,7 +126,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
     PyTracebackObject *exception_keeper_tb_1;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
     PyObject *tmp_return_value = NULL;
-    static struct Nuitka_FrameObject *cache_frame_f4bd533434f1e17782e177778b7b5a84 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_03cc7809373689b7fc26d0759292b0d2 = NULL;
     PyObject *exception_keeper_type_2;
     PyObject *exception_keeper_value_2;
     PyTracebackObject *exception_keeper_tb_2;
@@ -134,31 +134,31 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_f4bd533434f1e17782e177778b7b5a84)) {
-        Py_XDECREF(cache_frame_f4bd533434f1e17782e177778b7b5a84);
+    if (isFrameUnusable(cache_frame_03cc7809373689b7fc26d0759292b0d2)) {
+        Py_XDECREF(cache_frame_03cc7809373689b7fc26d0759292b0d2);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_f4bd533434f1e17782e177778b7b5a84 == NULL) {
+        if (cache_frame_03cc7809373689b7fc26d0759292b0d2 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_f4bd533434f1e17782e177778b7b5a84 = MAKE_FUNCTION_FRAME(codeobj_f4bd533434f1e17782e177778b7b5a84, module_urllib3$packages$backports$makefile, sizeof(nuitka_bool)+sizeof(nuitka_bool)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *));
+        cache_frame_03cc7809373689b7fc26d0759292b0d2 = MAKE_FUNCTION_FRAME(codeobj_03cc7809373689b7fc26d0759292b0d2, module_urllib3$packages$backports$makefile, sizeof(nuitka_bool)+sizeof(nuitka_bool)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_f4bd533434f1e17782e177778b7b5a84->m_type_description == NULL);
-    frame_f4bd533434f1e17782e177778b7b5a84 = cache_frame_f4bd533434f1e17782e177778b7b5a84;
+    assert(cache_frame_03cc7809373689b7fc26d0759292b0d2->m_type_description == NULL);
+    frame_03cc7809373689b7fc26d0759292b0d2 = cache_frame_03cc7809373689b7fc26d0759292b0d2;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_f4bd533434f1e17782e177778b7b5a84);
+    pushFrameStack(frame_03cc7809373689b7fc26d0759292b0d2);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_f4bd533434f1e17782e177778b7b5a84) == 2); // Frame stack
+    assert(Py_REFCNT(frame_03cc7809373689b7fc26d0759292b0d2) == 2); // Frame stack
 
     // Framed code:
     {
@@ -176,7 +176,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 19;
+            exception_lineno = 20;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -190,7 +190,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 19;
+            exception_lineno = 20;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -202,7 +202,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 19;
+            exception_lineno = 20;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -233,16 +233,16 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 20;
+            exception_lineno = 21;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 20;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 21;
         tmp_raise_type_1 = CALL_FUNCTION_WITH_SINGLE_ARG(PyExc_ValueError, tmp_make_exception_arg_1);
         Py_DECREF(tmp_make_exception_arg_1);
         assert(!(tmp_raise_type_1 == NULL));
         exception_type = tmp_raise_type_1;
-        exception_lineno = 20;
+        exception_lineno = 21;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
         type_description_1 = "ooooooboboooo";
         goto frame_exception_exit_1;
@@ -262,7 +262,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 21;
+            exception_lineno = 22;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -287,7 +287,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 22;
+            exception_lineno = 23;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -328,7 +328,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 23;
+            exception_lineno = 24;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -352,7 +352,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 23;
+            exception_lineno = 24;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -369,7 +369,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_raise_type_2 = PyExc_AssertionError;
         exception_type = tmp_raise_type_2;
         Py_INCREF(tmp_raise_type_2);
-        exception_lineno = 23;
+        exception_lineno = 24;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
         type_description_1 = "ooooooboboooo";
         goto frame_exception_exit_1;
@@ -389,7 +389,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 24;
+            exception_lineno = 25;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -414,7 +414,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 26;
+            exception_lineno = 27;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -482,7 +482,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 30;
+            exception_lineno = 31;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -490,7 +490,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_args_element_value_1 = par_self;
         CHECK_OBJECT(var_rawmode);
         tmp_args_element_value_2 = var_rawmode;
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 30;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 31;
         {
             PyObject *call_args[] = {tmp_args_element_value_1, tmp_args_element_value_2};
             tmp_assign_source_7 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_1, call_args);
@@ -502,7 +502,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 30;
+            exception_lineno = 31;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -521,7 +521,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 31;
+            exception_lineno = 32;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -543,7 +543,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 31;
+            exception_lineno = 32;
             type_description_1 = "ooooooboboooo";
             goto try_except_handler_2;
         }
@@ -565,7 +565,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 31;
+            exception_lineno = 32;
             type_description_1 = "ooooooboboooo";
             goto try_except_handler_2;
         }
@@ -639,7 +639,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 34;
+            exception_lineno = 35;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -667,7 +667,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 35;
+            exception_lineno = 36;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -694,7 +694,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 36;
+            exception_lineno = 37;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -724,11 +724,11 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         PyObject *tmp_raise_type_3;
         PyObject *tmp_make_exception_arg_2;
         tmp_make_exception_arg_2 = mod_consts[13];
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 38;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 39;
         tmp_raise_type_3 = CALL_FUNCTION_WITH_SINGLE_ARG(PyExc_ValueError, tmp_make_exception_arg_2);
         assert(!(tmp_raise_type_3 == NULL));
         exception_type = tmp_raise_type_3;
-        exception_lineno = 38;
+        exception_lineno = 39;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
         type_description_1 = "ooooooboboooo";
         goto frame_exception_exit_1;
@@ -753,7 +753,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 40;
+            exception_lineno = 41;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -765,7 +765,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 40;
+            exception_lineno = 41;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -807,7 +807,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 41;
+            exception_lineno = 42;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -817,7 +817,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_args_element_value_4 = var_raw;
         CHECK_OBJECT(par_buffering);
         tmp_args_element_value_5 = par_buffering;
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 41;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 42;
         {
             PyObject *call_args[] = {tmp_args_element_value_3, tmp_args_element_value_4, tmp_args_element_value_5};
             tmp_assign_source_12 = CALL_METHOD_WITH_ARGS3(
@@ -833,7 +833,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 41;
+            exception_lineno = 42;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -853,7 +853,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 42;
+            exception_lineno = 43;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -882,7 +882,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 43;
+            exception_lineno = 44;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -890,7 +890,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_args_element_value_6 = var_raw;
         CHECK_OBJECT(par_buffering);
         tmp_args_element_value_7 = par_buffering;
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 43;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 44;
         {
             PyObject *call_args[] = {tmp_args_element_value_6, tmp_args_element_value_7};
             tmp_assign_source_13 = CALL_METHOD_WITH_ARGS2(
@@ -906,7 +906,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 43;
+            exception_lineno = 44;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -935,7 +935,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_raise_type_4 = PyExc_AssertionError;
         exception_type = tmp_raise_type_4;
         Py_INCREF(tmp_raise_type_4);
-        exception_lineno = 45;
+        exception_lineno = 46;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
         type_description_1 = "ooooooboboooo";
         goto frame_exception_exit_1;
@@ -958,7 +958,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 46;
+            exception_lineno = 47;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -966,7 +966,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_args_element_value_8 = var_raw;
         CHECK_OBJECT(par_buffering);
         tmp_args_element_value_9 = par_buffering;
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 46;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 47;
         {
             PyObject *call_args[] = {tmp_args_element_value_8, tmp_args_element_value_9};
             tmp_assign_source_14 = CALL_METHOD_WITH_ARGS2(
@@ -982,7 +982,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 46;
+            exception_lineno = 47;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -1026,7 +1026,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 49;
+            exception_lineno = 50;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -1038,7 +1038,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
         tmp_args_element_value_12 = par_errors;
         CHECK_OBJECT(par_newline);
         tmp_args_element_value_13 = par_newline;
-        frame_f4bd533434f1e17782e177778b7b5a84->m_frame.f_lineno = 49;
+        frame_03cc7809373689b7fc26d0759292b0d2->m_frame.f_lineno = 50;
         {
             PyObject *call_args[] = {tmp_args_element_value_10, tmp_args_element_value_11, tmp_args_element_value_12, tmp_args_element_value_13};
             tmp_assign_source_15 = CALL_METHOD_WITH_ARGS4(
@@ -1054,7 +1054,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 49;
+            exception_lineno = 50;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
@@ -1075,14 +1075,14 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 50;
+            exception_lineno = 51;
             type_description_1 = "ooooooboboooo";
             goto frame_exception_exit_1;
         }
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_f4bd533434f1e17782e177778b7b5a84);
+    RESTORE_FRAME_EXCEPTION(frame_03cc7809373689b7fc26d0759292b0d2);
 #endif
 
     // Put the previous frame back on top.
@@ -1092,7 +1092,7 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
 
     frame_return_exit_1:;
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_f4bd533434f1e17782e177778b7b5a84);
+    RESTORE_FRAME_EXCEPTION(frame_03cc7809373689b7fc26d0759292b0d2);
 #endif
 
     // Put the previous frame back on top.
@@ -1103,18 +1103,18 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_f4bd533434f1e17782e177778b7b5a84);
+    RESTORE_FRAME_EXCEPTION(frame_03cc7809373689b7fc26d0759292b0d2);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_f4bd533434f1e17782e177778b7b5a84, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_f4bd533434f1e17782e177778b7b5a84->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_f4bd533434f1e17782e177778b7b5a84, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_03cc7809373689b7fc26d0759292b0d2, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_03cc7809373689b7fc26d0759292b0d2->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_03cc7809373689b7fc26d0759292b0d2, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_f4bd533434f1e17782e177778b7b5a84,
+        frame_03cc7809373689b7fc26d0759292b0d2,
         type_description_1,
         par_self,
         par_mode,
@@ -1133,17 +1133,17 @@ static PyObject *impl_urllib3$packages$backports$makefile$$$function__1_backport
 
 
     // Release cached frame if used for exception.
-    if (frame_f4bd533434f1e17782e177778b7b5a84 == cache_frame_f4bd533434f1e17782e177778b7b5a84) {
+    if (frame_03cc7809373689b7fc26d0759292b0d2 == cache_frame_03cc7809373689b7fc26d0759292b0d2) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_f4bd533434f1e17782e177778b7b5a84);
-        cache_frame_f4bd533434f1e17782e177778b7b5a84 = NULL;
+        Py_DECREF(cache_frame_03cc7809373689b7fc26d0759292b0d2);
+        cache_frame_03cc7809373689b7fc26d0759292b0d2 = NULL;
     }
 
-    assertFrameObject(frame_f4bd533434f1e17782e177778b7b5a84);
+    assertFrameObject(frame_03cc7809373689b7fc26d0759292b0d2);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -1260,7 +1260,7 @@ static PyObject *MAKE_FUNCTION_urllib3$packages$backports$makefile$$$function__1
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_f4bd533434f1e17782e177778b7b5a84,
+        codeobj_03cc7809373689b7fc26d0759292b0d2,
         defaults,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -1720,7 +1720,7 @@ PyObject *modulecode_urllib3$packages$backports$makefile(PyObject *module, struc
         tmp_locals_arg_value_1 = Py_None;
         tmp_fromlist_value_1 = mod_consts[28];
         tmp_level_value_1 = mod_consts[10];
-        frame_279b1211293eb31335952ff2ebc1e790->m_frame.f_lineno = 10;
+        frame_279b1211293eb31335952ff2ebc1e790->m_frame.f_lineno = 11;
         tmp_import_name_from_1 = IMPORT_MODULE5(tmp_name_value_1, tmp_globals_arg_value_1, tmp_locals_arg_value_1, tmp_fromlist_value_1, tmp_level_value_1);
         if (tmp_import_name_from_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -1728,7 +1728,7 @@ PyObject *modulecode_urllib3$packages$backports$makefile(PyObject *module, struc
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 10;
+            exception_lineno = 11;
 
             goto frame_exception_exit_1;
         }
@@ -1750,7 +1750,7 @@ PyObject *modulecode_urllib3$packages$backports$makefile(PyObject *module, struc
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 10;
+            exception_lineno = 11;
 
             goto frame_exception_exit_1;
         }

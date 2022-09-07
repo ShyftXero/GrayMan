@@ -205,7 +205,7 @@ static PyObject *MAKE_GENERATOR_rich$segment$$$function__25___rich_console__$$$g
 static PyObject *MAKE_GENERATOR_rich$segment$$$function__27___rich_console__$$$genobj__1___rich_console__(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$segment$$$function__10_split_lines(PyObject *annotations);
@@ -24233,7 +24233,7 @@ PyObject *modulecode_rich$segment(PyObject *module, struct Nuitka_MetaPathBasedL
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_36 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_36 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_36 == NULL) {
             assert(ERROR_OCCURRED());
@@ -25340,7 +25340,7 @@ PyObject *modulecode_rich$segment(PyObject *module, struct Nuitka_MetaPathBasedL
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_2};
-            tmp_assign_source_45 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_45 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_45 == NULL) {
             assert(ERROR_OCCURRED());

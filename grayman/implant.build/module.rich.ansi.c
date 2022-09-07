@@ -106,7 +106,7 @@ static PyObject *MAKE_GENERATOR_rich$ansi$$$function__1__ansi_tokenize$$$genobj_
 static PyObject *MAKE_GENERATOR_rich$ansi$$$function__3_decode$$$genobj__1_decode(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$ansi$$$function__1__ansi_tokenize(PyObject *annotations);
@@ -7600,7 +7600,7 @@ PyObject *modulecode_rich$ansi(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_16 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_16 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_16 == NULL) {
             assert(ERROR_OCCURRED());

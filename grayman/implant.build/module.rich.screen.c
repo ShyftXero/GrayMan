@@ -95,7 +95,7 @@ static void createModuleCodeObjects(void) {
 static PyObject *MAKE_GENERATOR_rich$screen$$$function__2___rich_console__$$$genobj__1___rich_console__(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__9_complex_call_helper_star_list(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__5_complex_call_helper_star_list(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$screen$$$function__1___init__(PyObject *kw_defaults, PyObject *annotations);
@@ -224,7 +224,7 @@ static PyObject *impl_rich$screen$$$function__1___init__(struct Nuitka_FunctionO
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1};
-            tmp_assattr_value_1 = impl___main__$$$function__9_complex_call_helper_star_list(dir_call_args);
+            tmp_assattr_value_1 = impl___main__$$$function__5_complex_call_helper_star_list(dir_call_args);
         }
         if (tmp_assattr_value_1 == NULL) {
             assert(ERROR_OCCURRED());

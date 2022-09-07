@@ -33,9 +33,9 @@ PyObject *module_certifi;
 PyDictObject *moduledict_certifi;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[26];
+static PyObject *mod_consts[24];
 #ifndef __NUITKA_NO_ASSERT__
-static Py_hash_t mod_consts_hash[26];
+static Py_hash_t mod_consts_hash[24];
 #endif
 
 static PyObject *module_filename_obj = NULL;
@@ -50,7 +50,7 @@ static void createModuleConstants(void) {
         constants_created = true;
 
 #ifndef __NUITKA_NO_ASSERT__
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < 24; i++) {
             mod_consts_hash[i] = DEEP_HASH(mod_consts[i]);
         }
 #endif
@@ -70,7 +70,7 @@ void checkModuleConstants_certifi(void) {
     // The module may not have been used at all, then ignore this.
     if (constants_created == false) return;
 
-    for (int i = 0; i < 26; i++) {
+    for (int i = 0; i < 24; i++) {
         assert(mod_consts_hash[i] == DEEP_HASH(mod_consts[i]));
         CHECK_OBJECT_DEEP(mod_consts[i]);
     }
@@ -81,8 +81,8 @@ void checkModuleConstants_certifi(void) {
 static PyCodeObject *codeobj_0e7fde6deb8d3d73c494475089e2efdf;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[23]); CHECK_OBJECT(module_filename_obj);
-    codeobj_0e7fde6deb8d3d73c494475089e2efdf = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[24], NULL, NULL, 0, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[21]); CHECK_OBJECT(module_filename_obj);
+    codeobj_0e7fde6deb8d3d73c494475089e2efdf = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[22], NULL, NULL, 0, 0, 0);
 }
 
 // The module function declarations.
@@ -340,7 +340,7 @@ PyObject *modulecode_certifi(PyObject *module, struct Nuitka_MetaPathBasedLoader
         UPDATE_STRING_DICT0(
             moduledict_certifi,
             (Nuitka_StringObject *)const_str_plain___package__,
-            mod_consts[25]
+            mod_consts[23]
         );
 #elif 1
         PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_certifi, (Nuitka_StringObject *)const_str_plain___name__);
@@ -865,13 +865,8 @@ PyObject *modulecode_certifi(PyObject *module, struct Nuitka_MetaPathBasedLoader
     tmp_import_from_1__module = NULL;
     {
         PyObject *tmp_assign_source_8;
-        tmp_assign_source_8 = LIST_COPY(mod_consts[19]);
-        UPDATE_STRING_DICT1(moduledict_certifi, (Nuitka_StringObject *)mod_consts[20], tmp_assign_source_8);
-    }
-    {
-        PyObject *tmp_assign_source_9;
-        tmp_assign_source_9 = mod_consts[21];
-        UPDATE_STRING_DICT0(moduledict_certifi, (Nuitka_StringObject *)mod_consts[22], tmp_assign_source_9);
+        tmp_assign_source_8 = mod_consts[19];
+        UPDATE_STRING_DICT0(moduledict_certifi, (Nuitka_StringObject *)mod_consts[20], tmp_assign_source_8);
     }
 
     // Report to PGO about leaving the module without error.

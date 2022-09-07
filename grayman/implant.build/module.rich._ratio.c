@@ -114,7 +114,7 @@ static PyObject *MAKE_GENERATOR_rich$_ratio$$$function__1_ratio_resolve$$$genexp
 static PyObject *MAKE_GENERATOR_rich$_ratio$$$function__1_ratio_resolve$$$genexpr__2_genexpr(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$_ratio$$$function__1_ratio_resolve(PyObject *annotations);
@@ -8478,7 +8478,7 @@ PyObject *modulecode_rich$_ratio(PyObject *module, struct Nuitka_MetaPathBasedLo
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_14 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_14 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_14 == NULL) {
             assert(ERROR_OCCURRED());

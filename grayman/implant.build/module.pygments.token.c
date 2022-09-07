@@ -33,9 +33,9 @@ PyObject *module_pygments$token;
 PyDictObject *moduledict_pygments$token;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[208];
+static PyObject *mod_consts[206];
 #ifndef __NUITKA_NO_ASSERT__
-static Py_hash_t mod_consts_hash[208];
+static Py_hash_t mod_consts_hash[206];
 #endif
 
 static PyObject *module_filename_obj = NULL;
@@ -50,7 +50,7 @@ static void createModuleConstants(void) {
         constants_created = true;
 
 #ifndef __NUITKA_NO_ASSERT__
-        for (int i = 0; i < 208; i++) {
+        for (int i = 0; i < 206; i++) {
             mod_consts_hash[i] = DEEP_HASH(mod_consts[i]);
         }
 #endif
@@ -70,7 +70,7 @@ void checkModuleConstants_pygments$token(void) {
     // The module may not have been used at all, then ignore this.
     if (constants_created == false) return;
 
-    for (int i = 0; i < 208; i++) {
+    for (int i = 0; i < 206; i++) {
         assert(mod_consts_hash[i] == DEEP_HASH(mod_consts[i]));
         CHECK_OBJECT_DEEP(mod_consts[i]);
     }
@@ -91,22 +91,22 @@ static PyCodeObject *codeobj_3e730f740b693bcec3fce4331242b350;
 static PyCodeObject *codeobj_fe57f8f554bbcc859be5169cacc96a65;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[197]); CHECK_OBJECT(module_filename_obj);
-    codeobj_af8ee6c52de95cd0632a3ef2f4004008 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[198], NULL, NULL, 0, 0, 0);
-    codeobj_6a579762a24d05a4dc3b3a40c0f75b43 = MAKE_CODEOBJECT(module_filename_obj, 12, CO_NOFREE, mod_consts[9], mod_consts[199], NULL, 0, 0, 0);
-    codeobj_4d891f423faea7d4d64ee1ab4811e735 = MAKE_CODEOBJECT(module_filename_obj, 28, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[38], mod_consts[200], NULL, 2, 0, 0);
-    codeobj_c6e70efd2d989187693dec072c1765a3 = MAKE_CODEOBJECT(module_filename_obj, 46, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[44], mod_consts[201], NULL, 1, 0, 0);
-    codeobj_f556664e26f3e6cf880145adbd7e54c1 = MAKE_CODEOBJECT(module_filename_obj, 50, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[46], mod_consts[202], NULL, 2, 0, 0);
-    codeobj_abb093fc06d1496be6aa3ae112194dfb = MAKE_CODEOBJECT(module_filename_obj, 34, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[40], mod_consts[203], NULL, 2, 0, 0);
-    codeobj_e667a7e9550e6b83638f4ba818aa0d15 = MAKE_CODEOBJECT(module_filename_obj, 24, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARARGS | CO_NOFREE, mod_consts[36], mod_consts[204], NULL, 1, 0, 0);
-    codeobj_8c4fb69e585b96c2c1991f99ba316b7a = MAKE_CODEOBJECT(module_filename_obj, 43, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[42], mod_consts[201], NULL, 1, 0, 0);
-    codeobj_72fe8e7ca8f2467a8962f5cdee0696a8 = MAKE_CODEOBJECT(module_filename_obj, 85, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[63], mod_consts[205], NULL, 2, 0, 0);
-    codeobj_3e730f740b693bcec3fce4331242b350 = MAKE_CODEOBJECT(module_filename_obj, 15, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[15], mod_consts[206], NULL, 1, 0, 0);
-    codeobj_fe57f8f554bbcc859be5169cacc96a65 = MAKE_CODEOBJECT(module_filename_obj, 94, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[64], mod_consts[207], NULL, 1, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[195]); CHECK_OBJECT(module_filename_obj);
+    codeobj_af8ee6c52de95cd0632a3ef2f4004008 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[196], NULL, NULL, 0, 0, 0);
+    codeobj_6a579762a24d05a4dc3b3a40c0f75b43 = MAKE_CODEOBJECT(module_filename_obj, 12, CO_NOFREE, mod_consts[9], mod_consts[197], NULL, 0, 0, 0);
+    codeobj_4d891f423faea7d4d64ee1ab4811e735 = MAKE_CODEOBJECT(module_filename_obj, 28, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[38], mod_consts[198], NULL, 2, 0, 0);
+    codeobj_c6e70efd2d989187693dec072c1765a3 = MAKE_CODEOBJECT(module_filename_obj, 46, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[44], mod_consts[199], NULL, 1, 0, 0);
+    codeobj_f556664e26f3e6cf880145adbd7e54c1 = MAKE_CODEOBJECT(module_filename_obj, 50, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[46], mod_consts[200], NULL, 2, 0, 0);
+    codeobj_abb093fc06d1496be6aa3ae112194dfb = MAKE_CODEOBJECT(module_filename_obj, 34, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[40], mod_consts[201], NULL, 2, 0, 0);
+    codeobj_e667a7e9550e6b83638f4ba818aa0d15 = MAKE_CODEOBJECT(module_filename_obj, 24, CO_OPTIMIZED | CO_NEWLOCALS | CO_VARARGS | CO_NOFREE, mod_consts[36], mod_consts[202], NULL, 1, 0, 0);
+    codeobj_8c4fb69e585b96c2c1991f99ba316b7a = MAKE_CODEOBJECT(module_filename_obj, 43, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[42], mod_consts[199], NULL, 1, 0, 0);
+    codeobj_72fe8e7ca8f2467a8962f5cdee0696a8 = MAKE_CODEOBJECT(module_filename_obj, 85, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[63], mod_consts[203], NULL, 2, 0, 0);
+    codeobj_3e730f740b693bcec3fce4331242b350 = MAKE_CODEOBJECT(module_filename_obj, 15, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[15], mod_consts[204], NULL, 1, 0, 0);
+    codeobj_fe57f8f554bbcc859be5169cacc96a65 = MAKE_CODEOBJECT(module_filename_obj, 94, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[64], mod_consts[205], NULL, 1, 0, 0);
 }
 
 // The module function declarations.
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_pygments$token$$$function__1_split();
@@ -2956,7 +2956,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_4 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_4 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_4 == NULL) {
             assert(ERROR_OCCURRED());
@@ -4339,7 +4339,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
             goto frame_exception_exit_1;
         }
         tmp_dict_value_1 = mod_consts[13];
-        tmp_assign_source_28 = _PyDict_NewPresized( 79 );
+        tmp_assign_source_28 = _PyDict_NewPresized( 78 );
         {
             PyObject *tmp_expression_value_20;
             PyObject *tmp_expression_value_21;
@@ -4411,7 +4411,6 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
             PyObject *tmp_expression_value_87;
             PyObject *tmp_expression_value_88;
             PyObject *tmp_expression_value_89;
-            PyObject *tmp_expression_value_90;
             tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
@@ -6723,46 +6722,6 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_expression_value_74 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[59]);
-
-            if (unlikely(tmp_expression_value_74 == NULL)) {
-                tmp_expression_value_74 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[59]);
-            }
-
-            if (tmp_expression_value_74 == NULL) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 192;
-
-                goto dict_build_exception_1;
-            }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_74, mod_consts[162]);
-            if (tmp_dict_key_1 == NULL) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 192;
-
-                goto dict_build_exception_1;
-            }
-            tmp_dict_value_1 = mod_consts[163];
-            tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
-            Py_DECREF(tmp_dict_key_1);
-            if (tmp_res != 0) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 192;
-
-                goto dict_build_exception_1;
-            }
             tmp_dict_key_1 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[61]);
 
             if (unlikely(tmp_dict_key_1 == NULL)) {
@@ -6775,12 +6734,52 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
+                exception_lineno = 193;
+
+                goto dict_build_exception_1;
+            }
+            tmp_dict_value_1 = mod_consts[162];
+            tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
+            if (tmp_res != 0) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 193;
+
+                goto dict_build_exception_1;
+            }
+            tmp_expression_value_74 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[61]);
+
+            if (unlikely(tmp_expression_value_74 == NULL)) {
+                tmp_expression_value_74 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[61]);
+            }
+
+            if (tmp_expression_value_74 == NULL) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 194;
+
+                goto dict_build_exception_1;
+            }
+            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_74, mod_consts[163]);
+            if (tmp_dict_key_1 == NULL) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
                 exception_lineno = 194;
 
                 goto dict_build_exception_1;
             }
             tmp_dict_value_1 = mod_consts[164];
             tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
+            Py_DECREF(tmp_dict_key_1);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
 
@@ -6927,7 +6926,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_78, mod_consts[171]);
+            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_78, mod_consts[141]);
             if (tmp_dict_key_1 == NULL) {
                 assert(ERROR_OCCURRED());
 
@@ -6938,7 +6937,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_dict_value_1 = mod_consts[172];
+            tmp_dict_value_1 = mod_consts[171];
             tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
             Py_DECREF(tmp_dict_key_1);
             if (tmp_res != 0) {
@@ -6967,7 +6966,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_79, mod_consts[141]);
+            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_79, mod_consts[172]);
             if (tmp_dict_key_1 == NULL) {
                 assert(ERROR_OCCURRED());
 
@@ -6991,46 +6990,6 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_expression_value_80 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[61]);
-
-            if (unlikely(tmp_expression_value_80 == NULL)) {
-                tmp_expression_value_80 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[61]);
-            }
-
-            if (tmp_expression_value_80 == NULL) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 200;
-
-                goto dict_build_exception_1;
-            }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_80, mod_consts[174]);
-            if (tmp_dict_key_1 == NULL) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 200;
-
-                goto dict_build_exception_1;
-            }
-            tmp_dict_value_1 = mod_consts[175];
-            tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
-            Py_DECREF(tmp_dict_key_1);
-            if (tmp_res != 0) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 200;
-
-                goto dict_build_exception_1;
-            }
             tmp_dict_key_1 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[62]);
 
             if (unlikely(tmp_dict_key_1 == NULL)) {
@@ -7043,12 +7002,52 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
+                exception_lineno = 201;
+
+                goto dict_build_exception_1;
+            }
+            tmp_dict_value_1 = mod_consts[174];
+            tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
+            if (tmp_res != 0) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 201;
+
+                goto dict_build_exception_1;
+            }
+            tmp_expression_value_80 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[62]);
+
+            if (unlikely(tmp_expression_value_80 == NULL)) {
+                tmp_expression_value_80 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[62]);
+            }
+
+            if (tmp_expression_value_80 == NULL) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 202;
+
+                goto dict_build_exception_1;
+            }
+            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_80, mod_consts[175]);
+            if (tmp_dict_key_1 == NULL) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
                 exception_lineno = 202;
 
                 goto dict_build_exception_1;
             }
             tmp_dict_value_1 = mod_consts[176];
             tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
+            Py_DECREF(tmp_dict_key_1);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
 
@@ -7115,7 +7114,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_82, mod_consts[179]);
+            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_82, mod_consts[52]);
             if (tmp_dict_key_1 == NULL) {
                 assert(ERROR_OCCURRED());
 
@@ -7126,7 +7125,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_dict_value_1 = mod_consts[180];
+            tmp_dict_value_1 = mod_consts[179];
             tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
             Py_DECREF(tmp_dict_key_1);
             if (tmp_res != 0) {
@@ -7155,7 +7154,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_83, mod_consts[52]);
+            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_83, mod_consts[180]);
             if (tmp_dict_key_1 == NULL) {
                 assert(ERROR_OCCURRED());
 
@@ -7419,46 +7418,6 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
 
                 goto dict_build_exception_1;
             }
-            tmp_expression_value_90 = GET_STRING_DICT_VALUE(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[62]);
-
-            if (unlikely(tmp_expression_value_90 == NULL)) {
-                tmp_expression_value_90 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[62]);
-            }
-
-            if (tmp_expression_value_90 == NULL) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 212;
-
-                goto dict_build_exception_1;
-            }
-            tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_90, mod_consts[194]);
-            if (tmp_dict_key_1 == NULL) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 212;
-
-                goto dict_build_exception_1;
-            }
-            tmp_dict_value_1 = mod_consts[195];
-            tmp_res = PyDict_SetItem(tmp_assign_source_28, tmp_dict_key_1, tmp_dict_value_1);
-            Py_DECREF(tmp_dict_key_1);
-            if (tmp_res != 0) {
-                assert(ERROR_OCCURRED());
-
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-                exception_lineno = 212;
-
-                goto dict_build_exception_1;
-            }
         }
         goto dict_build_noexception_1;
         // Exception handling pass through code for dict_build:
@@ -7467,7 +7426,7 @@ PyObject *modulecode_pygments$token(PyObject *module, struct Nuitka_MetaPathBase
         goto frame_exception_exit_1;
         // Finished with no exception for dict_build:
         dict_build_noexception_1:;
-        UPDATE_STRING_DICT1(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[196], tmp_assign_source_28);
+        UPDATE_STRING_DICT1(moduledict_pygments$token, (Nuitka_StringObject *)mod_consts[194], tmp_assign_source_28);
     }
 
     // Restore frame exception if necessary.

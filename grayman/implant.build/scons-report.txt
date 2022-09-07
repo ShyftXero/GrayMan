@@ -1,12 +1,12 @@
 CC="/usr/bin/ccache" "/usr/bin/gcc"
 CCACHE_DIR=/home/shyft/.cache/Nuitka/ccache
-CCACHE_LOGFILE=/home/shyft/Dropbox/code/GrayMan/grayman/implant.build/ccache-1773012.txt
+CCACHE_LOGFILE=/home/shyft/Dropbox/code/GrayMan/grayman/implant.build/ccache-1803929.txt
 CCCOM=$CC -o $TARGET -c $CFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
 CFILESUFFIX=.c
 CPPDEFINES=['__NUITKA_NO_ASSERT__', '_NUITKA_STANDALONE', '_NUITKA_ONEFILE', '_NUITKA_ONEFILE_TEMP', 'Py_NO_ENABLE_SHARED', '_NUITKA_STATIC_LIBPYTHON', '_NUITKA_USE_UNEXPOSED_API', '_NUITKA_CONSTANTS_FROM_INCBIN', '_NUITKA_FROZEN=151', '_NUITKA_EXE', '_NUITKA_PLUGIN_MULTIPROCESSING_ENABLED=1']
 CPPDEFPREFIX=-D
 CPPDEFSUFFIX=
-CPPPATH=['/home/shyft/stuff/miniconda3/include/python3.10', '.', '/home/shyft/Dropbox/code/GrayMan/venv/lib/python3.10/site-packages/nuitka/build/include', '/home/shyft/Dropbox/code/GrayMan/venv/lib/python3.10/site-packages/nuitka/build/static_src']
+CPPPATH=['/home/shyft/stuff/miniconda3/include/python3.10', '.', '/home/shyft/stuff/miniconda3/lib/python3.10/site-packages/nuitka/build/include', '/home/shyft/stuff/miniconda3/lib/python3.10/site-packages/nuitka/build/static_src']
 CPPSUFFIXES=['.c', '.C', '.cxx', '.cpp', '.c++', '.cc', '.h', '.H', '.hxx', '.hpp', '.hh', '.F', '.fpp', '.FPP', '.m', '.mm', '.S', '.spp', '.SPP', '.sx']
 CXX="/usr/bin/ccache" "/usr/bin/gcc"
 CXXCOM=$CXX -o $TARGET -c $CXXFLAGS $CCFLAGS $_CCCOMCOM $SOURCES
@@ -59,4 +59,4 @@ clang_mode=False
 msvc_mode=False
 mingw_mode=False
 clangcl_mode=False
-PATH=/home/shyft/stuff/miniconda3/bin:/home/shyft/Dropbox/code/GrayMan/venv/bin:/home/shyft/.nimble/bin:/home/shyft/.local/bin:/home/shyft/bin:/home/shyft/stuff/miniconda3/bin:/home/shyft/go/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH=/home/shyft/stuff/miniconda3/bin:/home/shyft/.nimble/bin:/home/shyft/.local/bin:/home/shyft/bin:/home/shyft/stuff/miniconda3/bin:/home/shyft/go/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin

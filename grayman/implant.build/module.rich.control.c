@@ -165,7 +165,7 @@ static PyObject *MAKE_GENERATOR_rich$control$$$function__20_move$$$function__1_g
 static PyObject *MAKE_GENERATOR_rich$control$$$function__28___rich_console__$$$genobj__1___rich_console__(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__9_complex_call_helper_star_list(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__5_complex_call_helper_star_list(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$control$$$function__10_lambda();
@@ -2821,7 +2821,7 @@ static PyObject *rich$control$$$function__17___init__$$$genexpr__1_genexpr_conte
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1};
-            tmp_expression_value_1 = impl___main__$$$function__9_complex_call_helper_star_list(dir_call_args);
+            tmp_expression_value_1 = impl___main__$$$function__5_complex_call_helper_star_list(dir_call_args);
         }
         if (tmp_expression_value_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -3504,7 +3504,7 @@ static PyObject *impl_rich$control$$$function__20_move(struct Nuitka_FunctionObj
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1};
-            tmp_assign_source_2 = impl___main__$$$function__9_complex_call_helper_star_list(dir_call_args);
+            tmp_assign_source_2 = impl___main__$$$function__5_complex_call_helper_star_list(dir_call_args);
         }
         if (tmp_assign_source_2 == NULL) {
             assert(ERROR_OCCURRED());

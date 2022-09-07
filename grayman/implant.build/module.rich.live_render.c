@@ -101,7 +101,7 @@ static void createModuleCodeObjects(void) {
 static PyObject *MAKE_GENERATOR_rich$live_render$$$function__5___rich_console__$$$genobj__1___rich_console__(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__5_complex_call_helper_pos_star_list(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__12_complex_call_helper_pos_star_list(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$live_render$$$function__1___init__(PyObject *defaults, PyObject *annotations);
@@ -979,7 +979,7 @@ static PyObject *impl_rich$live_render$$$function__3_position_cursor(struct Nuit
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1, tmp_dircall_arg3_1};
-            tmp_return_value = impl___main__$$$function__5_complex_call_helper_pos_star_list(dir_call_args);
+            tmp_return_value = impl___main__$$$function__12_complex_call_helper_pos_star_list(dir_call_args);
         }
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());
@@ -1580,7 +1580,7 @@ static PyObject *impl_rich$live_render$$$function__4_restore_cursor(struct Nuitk
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1, tmp_dircall_arg2_1, tmp_dircall_arg3_1};
-            tmp_return_value = impl___main__$$$function__5_complex_call_helper_pos_star_list(dir_call_args);
+            tmp_return_value = impl___main__$$$function__12_complex_call_helper_pos_star_list(dir_call_args);
         }
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());

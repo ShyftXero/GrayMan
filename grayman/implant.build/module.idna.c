@@ -33,9 +33,9 @@ PyObject *module_idna;
 PyDictObject *moduledict_idna;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[46];
+static PyObject *mod_consts[23];
 #ifndef __NUITKA_NO_ASSERT__
-static Py_hash_t mod_consts_hash[46];
+static Py_hash_t mod_consts_hash[23];
 #endif
 
 static PyObject *module_filename_obj = NULL;
@@ -50,7 +50,7 @@ static void createModuleConstants(void) {
         constants_created = true;
 
 #ifndef __NUITKA_NO_ASSERT__
-        for (int i = 0; i < 46; i++) {
+        for (int i = 0; i < 23; i++) {
             mod_consts_hash[i] = DEEP_HASH(mod_consts[i]);
         }
 #endif
@@ -70,7 +70,7 @@ void checkModuleConstants_idna(void) {
     // The module may not have been used at all, then ignore this.
     if (constants_created == false) return;
 
-    for (int i = 0; i < 46; i++) {
+    for (int i = 0; i < 23; i++) {
         assert(mod_consts_hash[i] == DEEP_HASH(mod_consts[i]));
         CHECK_OBJECT_DEEP(mod_consts[i]);
     }
@@ -81,8 +81,8 @@ void checkModuleConstants_idna(void) {
 static PyCodeObject *codeobj_a769f2a4b549753eaaaf133b487bad79;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[43]); CHECK_OBJECT(module_filename_obj);
-    codeobj_a769f2a4b549753eaaaf133b487bad79 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[44], NULL, NULL, 0, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[20]); CHECK_OBJECT(module_filename_obj);
+    codeobj_a769f2a4b549753eaaaf133b487bad79 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[21], NULL, NULL, 0, 0, 0);
 }
 
 // The module function declarations.
@@ -340,7 +340,7 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
         UPDATE_STRING_DICT0(
             moduledict_idna,
             (Nuitka_StringObject *)const_str_plain___package__,
-            mod_consts[45]
+            mod_consts[22]
         );
 #elif 1
         PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_idna, (Nuitka_StringObject *)const_str_plain___name__);
@@ -436,7 +436,6 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
 #endif
 
     // Temp variables if any
-    PyObject *tmp_import_from_1__module = NULL;
     struct Nuitka_FrameObject *frame_a769f2a4b549753eaaaf133b487bad79;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
@@ -448,10 +447,6 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
     PyObject *tmp_dictset_key;
     int tmp_res;
     bool tmp_result;
-    PyObject *exception_keeper_type_1;
-    PyObject *exception_keeper_value_1;
-    PyTracebackObject *exception_keeper_tb_1;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
 
     // Module code.
     {
@@ -773,7 +768,7 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
         UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[17], tmp_assign_source_5);
     }
     {
-        PyObject *tmp_assign_source_6;
+        PyObject *tmp_star_imported_1;
         PyObject *tmp_name_value_2;
         PyObject *tmp_globals_arg_value_2;
         PyObject *tmp_locals_arg_value_2;
@@ -781,12 +776,12 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
         PyObject *tmp_level_value_2;
         tmp_name_value_2 = mod_consts[18];
         tmp_globals_arg_value_2 = (PyObject *)moduledict_idna;
-        tmp_locals_arg_value_2 = Py_None;
+        tmp_locals_arg_value_2 = (PyObject *)moduledict_idna;
         tmp_fromlist_value_2 = mod_consts[19];
         tmp_level_value_2 = mod_consts[16];
         frame_a769f2a4b549753eaaaf133b487bad79->m_frame.f_lineno = 2;
-        tmp_assign_source_6 = IMPORT_MODULE5(tmp_name_value_2, tmp_globals_arg_value_2, tmp_locals_arg_value_2, tmp_fromlist_value_2, tmp_level_value_2);
-        if (tmp_assign_source_6 == NULL) {
+        tmp_star_imported_1 = IMPORT_MODULE5(tmp_name_value_2, tmp_globals_arg_value_2, tmp_locals_arg_value_2, tmp_fromlist_value_2, tmp_level_value_2);
+        if (tmp_star_imported_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
@@ -796,589 +791,18 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
 
             goto frame_exception_exit_1;
         }
-        assert(tmp_import_from_1__module == NULL);
-        tmp_import_from_1__module = tmp_assign_source_6;
-    }
-    // Tried code:
-    {
-        PyObject *tmp_assign_source_7;
-        PyObject *tmp_import_name_from_2;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_2 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_2)) {
-            tmp_assign_source_7 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_2,
-                (PyObject *)moduledict_idna,
-                mod_consts[20],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_7 = IMPORT_NAME(tmp_import_name_from_2, mod_consts[20]);
-        }
-
-        if (tmp_assign_source_7 == NULL) {
+        tmp_result = IMPORT_MODULE_STAR(module_idna, true, tmp_star_imported_1);
+        Py_DECREF(tmp_star_imported_1);
+        if (tmp_result == false) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
             exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[20], tmp_assign_source_7);
-    }
-    {
-        PyObject *tmp_assign_source_8;
-        PyObject *tmp_import_name_from_3;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_3 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_3)) {
-            tmp_assign_source_8 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_3,
-                (PyObject *)moduledict_idna,
-                mod_consts[21],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_8 = IMPORT_NAME(tmp_import_name_from_3, mod_consts[21]);
-        }
-
-        if (tmp_assign_source_8 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[21], tmp_assign_source_8);
-    }
-    {
-        PyObject *tmp_assign_source_9;
-        PyObject *tmp_import_name_from_4;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_4 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_4)) {
-            tmp_assign_source_9 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_4,
-                (PyObject *)moduledict_idna,
-                mod_consts[22],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_9 = IMPORT_NAME(tmp_import_name_from_4, mod_consts[22]);
-        }
-
-        if (tmp_assign_source_9 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[22], tmp_assign_source_9);
-    }
-    {
-        PyObject *tmp_assign_source_10;
-        PyObject *tmp_import_name_from_5;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_5 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_5)) {
-            tmp_assign_source_10 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_5,
-                (PyObject *)moduledict_idna,
-                mod_consts[23],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_10 = IMPORT_NAME(tmp_import_name_from_5, mod_consts[23]);
-        }
-
-        if (tmp_assign_source_10 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[23], tmp_assign_source_10);
-    }
-    {
-        PyObject *tmp_assign_source_11;
-        PyObject *tmp_import_name_from_6;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_6 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_6)) {
-            tmp_assign_source_11 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_6,
-                (PyObject *)moduledict_idna,
-                mod_consts[24],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_11 = IMPORT_NAME(tmp_import_name_from_6, mod_consts[24]);
-        }
-
-        if (tmp_assign_source_11 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[24], tmp_assign_source_11);
-    }
-    {
-        PyObject *tmp_assign_source_12;
-        PyObject *tmp_import_name_from_7;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_7 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_7)) {
-            tmp_assign_source_12 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_7,
-                (PyObject *)moduledict_idna,
-                mod_consts[25],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_12 = IMPORT_NAME(tmp_import_name_from_7, mod_consts[25]);
-        }
-
-        if (tmp_assign_source_12 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[25], tmp_assign_source_12);
-    }
-    {
-        PyObject *tmp_assign_source_13;
-        PyObject *tmp_import_name_from_8;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_8 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_8)) {
-            tmp_assign_source_13 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_8,
-                (PyObject *)moduledict_idna,
-                mod_consts[26],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_13 = IMPORT_NAME(tmp_import_name_from_8, mod_consts[26]);
-        }
-
-        if (tmp_assign_source_13 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[26], tmp_assign_source_13);
-    }
-    {
-        PyObject *tmp_assign_source_14;
-        PyObject *tmp_import_name_from_9;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_9 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_9)) {
-            tmp_assign_source_14 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_9,
-                (PyObject *)moduledict_idna,
-                mod_consts[27],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_14 = IMPORT_NAME(tmp_import_name_from_9, mod_consts[27]);
-        }
-
-        if (tmp_assign_source_14 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[27], tmp_assign_source_14);
-    }
-    {
-        PyObject *tmp_assign_source_15;
-        PyObject *tmp_import_name_from_10;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_10 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_10)) {
-            tmp_assign_source_15 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_10,
-                (PyObject *)moduledict_idna,
-                mod_consts[28],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_15 = IMPORT_NAME(tmp_import_name_from_10, mod_consts[28]);
-        }
-
-        if (tmp_assign_source_15 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[28], tmp_assign_source_15);
-    }
-    {
-        PyObject *tmp_assign_source_16;
-        PyObject *tmp_import_name_from_11;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_11 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_11)) {
-            tmp_assign_source_16 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_11,
-                (PyObject *)moduledict_idna,
-                mod_consts[29],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_16 = IMPORT_NAME(tmp_import_name_from_11, mod_consts[29]);
-        }
-
-        if (tmp_assign_source_16 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[29], tmp_assign_source_16);
-    }
-    {
-        PyObject *tmp_assign_source_17;
-        PyObject *tmp_import_name_from_12;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_12 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_12)) {
-            tmp_assign_source_17 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_12,
-                (PyObject *)moduledict_idna,
-                mod_consts[30],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_17 = IMPORT_NAME(tmp_import_name_from_12, mod_consts[30]);
-        }
-
-        if (tmp_assign_source_17 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[30], tmp_assign_source_17);
-    }
-    {
-        PyObject *tmp_assign_source_18;
-        PyObject *tmp_import_name_from_13;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_13 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_13)) {
-            tmp_assign_source_18 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_13,
-                (PyObject *)moduledict_idna,
-                mod_consts[31],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_18 = IMPORT_NAME(tmp_import_name_from_13, mod_consts[31]);
-        }
-
-        if (tmp_assign_source_18 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[31], tmp_assign_source_18);
-    }
-    {
-        PyObject *tmp_assign_source_19;
-        PyObject *tmp_import_name_from_14;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_14 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_14)) {
-            tmp_assign_source_19 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_14,
-                (PyObject *)moduledict_idna,
-                mod_consts[32],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_19 = IMPORT_NAME(tmp_import_name_from_14, mod_consts[32]);
-        }
-
-        if (tmp_assign_source_19 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[32], tmp_assign_source_19);
-    }
-    {
-        PyObject *tmp_assign_source_20;
-        PyObject *tmp_import_name_from_15;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_15 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_15)) {
-            tmp_assign_source_20 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_15,
-                (PyObject *)moduledict_idna,
-                mod_consts[33],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_20 = IMPORT_NAME(tmp_import_name_from_15, mod_consts[33]);
-        }
-
-        if (tmp_assign_source_20 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[33], tmp_assign_source_20);
-    }
-    {
-        PyObject *tmp_assign_source_21;
-        PyObject *tmp_import_name_from_16;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_16 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_16)) {
-            tmp_assign_source_21 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_16,
-                (PyObject *)moduledict_idna,
-                mod_consts[34],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_21 = IMPORT_NAME(tmp_import_name_from_16, mod_consts[34]);
-        }
-
-        if (tmp_assign_source_21 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[34], tmp_assign_source_21);
-    }
-    {
-        PyObject *tmp_assign_source_22;
-        PyObject *tmp_import_name_from_17;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_17 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_17)) {
-            tmp_assign_source_22 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_17,
-                (PyObject *)moduledict_idna,
-                mod_consts[35],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_22 = IMPORT_NAME(tmp_import_name_from_17, mod_consts[35]);
-        }
-
-        if (tmp_assign_source_22 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[35], tmp_assign_source_22);
-    }
-    {
-        PyObject *tmp_assign_source_23;
-        PyObject *tmp_import_name_from_18;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_18 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_18)) {
-            tmp_assign_source_23 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_18,
-                (PyObject *)moduledict_idna,
-                mod_consts[36],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_23 = IMPORT_NAME(tmp_import_name_from_18, mod_consts[36]);
-        }
-
-        if (tmp_assign_source_23 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[36], tmp_assign_source_23);
-    }
-    {
-        PyObject *tmp_assign_source_24;
-        PyObject *tmp_import_name_from_19;
-        CHECK_OBJECT(tmp_import_from_1__module);
-        tmp_import_name_from_19 = tmp_import_from_1__module;
-        if (PyModule_Check(tmp_import_name_from_19)) {
-            tmp_assign_source_24 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_19,
-                (PyObject *)moduledict_idna,
-                mod_consts[37],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_24 = IMPORT_NAME(tmp_import_name_from_19, mod_consts[37]);
-        }
-
-        if (tmp_assign_source_24 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 2;
-
-            goto try_except_handler_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[37], tmp_assign_source_24);
-    }
-    goto try_end_1;
-    // Exception handler code:
-    try_except_handler_1:;
-    exception_keeper_type_1 = exception_type;
-    exception_keeper_value_1 = exception_value;
-    exception_keeper_tb_1 = exception_tb;
-    exception_keeper_lineno_1 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = 0;
-
-    CHECK_OBJECT(tmp_import_from_1__module);
-    Py_DECREF(tmp_import_from_1__module);
-    tmp_import_from_1__module = NULL;
-    // Re-raise.
-    exception_type = exception_keeper_type_1;
-    exception_value = exception_keeper_value_1;
-    exception_tb = exception_keeper_tb_1;
-    exception_lineno = exception_keeper_lineno_1;
-
-    goto frame_exception_exit_1;
-    // End of try:
-    try_end_1:;
-    CHECK_OBJECT(tmp_import_from_1__module);
-    Py_DECREF(tmp_import_from_1__module);
-    tmp_import_from_1__module = NULL;
-    {
-        PyObject *tmp_assign_source_25;
-        PyObject *tmp_import_name_from_20;
-        PyObject *tmp_name_value_3;
-        PyObject *tmp_globals_arg_value_3;
-        PyObject *tmp_locals_arg_value_3;
-        PyObject *tmp_fromlist_value_3;
-        PyObject *tmp_level_value_3;
-        tmp_name_value_3 = mod_consts[38];
-        tmp_globals_arg_value_3 = (PyObject *)moduledict_idna;
-        tmp_locals_arg_value_3 = Py_None;
-        tmp_fromlist_value_3 = mod_consts[39];
-        tmp_level_value_3 = mod_consts[16];
-        frame_a769f2a4b549753eaaaf133b487bad79->m_frame.f_lineno = 22;
-        tmp_import_name_from_20 = IMPORT_MODULE5(tmp_name_value_3, tmp_globals_arg_value_3, tmp_locals_arg_value_3, tmp_fromlist_value_3, tmp_level_value_3);
-        if (tmp_import_name_from_20 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 22;
 
             goto frame_exception_exit_1;
         }
-        if (PyModule_Check(tmp_import_name_from_20)) {
-            tmp_assign_source_25 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_20,
-                (PyObject *)moduledict_idna,
-                mod_consts[40],
-                mod_consts[8]
-            );
-        } else {
-            tmp_assign_source_25 = IMPORT_NAME(tmp_import_name_from_20, mod_consts[40]);
-        }
-
-        Py_DECREF(tmp_import_name_from_20);
-        if (tmp_assign_source_25 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 22;
-
-            goto frame_exception_exit_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[40], tmp_assign_source_25);
     }
 
     // Restore frame exception if necessary.
@@ -1409,11 +833,6 @@ PyObject *modulecode_idna(PyObject *module, struct Nuitka_MetaPathBasedLoaderEnt
     goto module_exception_exit;
 
     frame_no_exception_1:;
-    {
-        PyObject *tmp_assign_source_26;
-        tmp_assign_source_26 = LIST_COPY(mod_consts[41]);
-        UPDATE_STRING_DICT1(moduledict_idna, (Nuitka_StringObject *)mod_consts[42], tmp_assign_source_26);
-    }
 
     // Report to PGO about leaving the module without error.
     PGO_onModuleExit("idna", false);

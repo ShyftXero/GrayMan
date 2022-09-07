@@ -33,9 +33,9 @@ PyObject *module_urllib3$util$url;
 PyDictObject *moduledict_urllib3$util$url;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[243];
+static PyObject *mod_consts[241];
 #ifndef __NUITKA_NO_ASSERT__
-static Py_hash_t mod_consts_hash[243];
+static Py_hash_t mod_consts_hash[241];
 #endif
 
 static PyObject *module_filename_obj = NULL;
@@ -50,7 +50,7 @@ static void createModuleConstants(void) {
         constants_created = true;
 
 #ifndef __NUITKA_NO_ASSERT__
-        for (int i = 0; i < 243; i++) {
+        for (int i = 0; i < 241; i++) {
             mod_consts_hash[i] = DEEP_HASH(mod_consts[i]);
         }
 #endif
@@ -70,7 +70,7 @@ void checkModuleConstants_urllib3$util$url(void) {
     // The module may not have been used at all, then ignore this.
     if (constants_created == false) return;
 
-    for (int i = 0; i < 243; i++) {
+    for (int i = 0; i < 241; i++) {
         assert(mod_consts_hash[i] == DEEP_HASH(mod_consts[i]));
         CHECK_OBJECT_DEEP(mod_consts[i]);
     }
@@ -79,54 +79,54 @@ void checkModuleConstants_urllib3$util$url(void) {
 
 // The module code objects.
 static PyCodeObject *codeobj_76bed160800f478e860e6e95015c4df7;
-static PyCodeObject *codeobj_3abcc95f5c9c453199c7f33a3df4a061;
+static PyCodeObject *codeobj_cc4aeaf9ac1d802a00bf3dc20e89a505;
 static PyCodeObject *codeobj_82c1e00ab4949466f1970cbd9623c546;
-static PyCodeObject *codeobj_d5e0be9377054813087de9cd6116f6c9;
+static PyCodeObject *codeobj_23bb9c166d80fa744b635c9b64d74e91;
 static PyCodeObject *codeobj_2c106d4fb0b59a8a313a74af02b9ae30;
 static PyCodeObject *codeobj_4879d87e1736932efe2349e57cf96b73;
 static PyCodeObject *codeobj_5a809e09d07af3a612a2febef9f28d49;
 static PyCodeObject *codeobj_7b7f04e2ce7f3fb96fb3d62036f6064e;
 static PyCodeObject *codeobj_d78b0219b4e1d981308c03f7b3d320a5;
-static PyCodeObject *codeobj_f5aec5b756613fdf20fa10f06ef0c3ac;
-static PyCodeObject *codeobj_694f8451b87bb519b31b59829e2c53f3;
+static PyCodeObject *codeobj_9e6b852c316e8ed04c484807a9e4a4ca;
+static PyCodeObject *codeobj_2bd36785b40e70b44d519de413b9ffa2;
 static PyCodeObject *codeobj_fa93794b391cc2269430f5158a552638;
 static PyCodeObject *codeobj_b0fbbcc4be4c05f8b2478d54883cb12e;
-static PyCodeObject *codeobj_80a47e6b48e6077d08469d2bdd212260;
-static PyCodeObject *codeobj_5dc978fcf89e5fbbb07d24b895279846;
+static PyCodeObject *codeobj_26da35f5c22f9257e2fb0af8ae19b14f;
+static PyCodeObject *codeobj_b2e0183b1968541f8fb494681067161a;
 static PyCodeObject *codeobj_f3374c1ab54d3e5e6e663fc9a0d026f9;
 static PyCodeObject *codeobj_bc58c4c04d908d5edbe2a4bd92451507;
-static PyCodeObject *codeobj_d569f2e8273c24d4a2bb953825b423c8;
+static PyCodeObject *codeobj_dfc30c439432b1d463cbe6022af0e241;
 static PyCodeObject *codeobj_50451d8ca2eeaa7a7866c8d78bee3373;
 static PyCodeObject *codeobj_fde49f1b70527e04634d016711aa0778;
 static PyCodeObject *codeobj_f594ee49ee9efd8918c6b8aeffc9e088;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[222]); CHECK_OBJECT(module_filename_obj);
-    codeobj_76bed160800f478e860e6e95015c4df7 = MAKE_CODEOBJECT(module_filename_obj, 223, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[34], mod_consts[223], NULL, 1, 0, 0);
-    codeobj_3abcc95f5c9c453199c7f33a3df4a061 = MAKE_CODEOBJECT(module_filename_obj, 300, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[224], mod_consts[225], NULL, 1, 0, 0);
-    codeobj_82c1e00ab4949466f1970cbd9623c546 = MAKE_CODEOBJECT(module_filename_obj, 54, CO_NEWLOCALS | CO_NOFREE, mod_consts[224], mod_consts[226], NULL, 1, 0, 0);
-    codeobj_d5e0be9377054813087de9cd6116f6c9 = MAKE_CODEOBJECT(module_filename_obj, 306, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[224], mod_consts[226], NULL, 1, 0, 0);
-    codeobj_2c106d4fb0b59a8a313a74af02b9ae30 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[227], NULL, NULL, 0, 0, 0);
-    codeobj_4879d87e1736932efe2349e57cf96b73 = MAKE_CODEOBJECT(module_filename_obj, 82, CO_NOFREE, mod_consts[5], mod_consts[228], NULL, 0, 0, 0);
-    codeobj_5a809e09d07af3a612a2febef9f28d49 = MAKE_CODEOBJECT(module_filename_obj, 91, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[6], mod_consts[229], NULL, 8, 0, 0);
-    codeobj_7b7f04e2ce7f3fb96fb3d62036f6064e = MAKE_CODEOBJECT(module_filename_obj, 171, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[215], mod_consts[230], NULL, 1, 0, 0);
-    codeobj_d78b0219b4e1d981308c03f7b3d320a5 = MAKE_CODEOBJECT(module_filename_obj, 210, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[80], mod_consts[231], NULL, 3, 0, 0);
-    codeobj_f5aec5b756613fdf20fa10f06ef0c3ac = MAKE_CODEOBJECT(module_filename_obj, 323, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[220], mod_consts[232], NULL, 1, 0, 0);
-    codeobj_694f8451b87bb519b31b59829e2c53f3 = MAKE_CODEOBJECT(module_filename_obj, 305, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[86], mod_consts[233], NULL, 1, 0, 0);
-    codeobj_fa93794b391cc2269430f5158a552638 = MAKE_CODEOBJECT(module_filename_obj, 274, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[113], mod_consts[234], NULL, 2, 0, 0);
-    codeobj_b0fbbcc4be4c05f8b2478d54883cb12e = MAKE_CODEOBJECT(module_filename_obj, 244, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[114], mod_consts[235], NULL, 1, 0, 0);
-    codeobj_80a47e6b48e6077d08469d2bdd212260 = MAKE_CODEOBJECT(module_filename_obj, 416, CO_OPTIMIZED | CO_NEWLOCALS, mod_consts[118], mod_consts[236], mod_consts[237], 1, 0, 0);
-    codeobj_5dc978fcf89e5fbbb07d24b895279846 = MAKE_CODEOBJECT(module_filename_obj, 430, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[221], mod_consts[238], NULL, 1, 0, 0);
-    codeobj_f3374c1ab54d3e5e6e663fc9a0d026f9 = MAKE_CODEOBJECT(module_filename_obj, 110, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[125], mod_consts[230], NULL, 1, 0, 0);
-    codeobj_bc58c4c04d908d5edbe2a4bd92451507 = MAKE_CODEOBJECT(module_filename_obj, 125, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[212], mod_consts[230], NULL, 1, 0, 0);
-    codeobj_d569f2e8273c24d4a2bb953825b423c8 = MAKE_CODEOBJECT(module_filename_obj, 333, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[123], mod_consts[239], NULL, 1, 0, 0);
-    codeobj_50451d8ca2eeaa7a7866c8d78bee3373 = MAKE_CODEOBJECT(module_filename_obj, 115, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[210], mod_consts[240], NULL, 1, 0, 0);
-    codeobj_fde49f1b70527e04634d016711aa0778 = MAKE_CODEOBJECT(module_filename_obj, 175, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[218], mod_consts[241], NULL, 2, 0, 0);
-    codeobj_f594ee49ee9efd8918c6b8aeffc9e088 = MAKE_CODEOBJECT(module_filename_obj, 132, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[22], mod_consts[242], NULL, 1, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[220]); CHECK_OBJECT(module_filename_obj);
+    codeobj_76bed160800f478e860e6e95015c4df7 = MAKE_CODEOBJECT(module_filename_obj, 223, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[34], mod_consts[221], NULL, 1, 0, 0);
+    codeobj_cc4aeaf9ac1d802a00bf3dc20e89a505 = MAKE_CODEOBJECT(module_filename_obj, 297, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[222], mod_consts[223], NULL, 1, 0, 0);
+    codeobj_82c1e00ab4949466f1970cbd9623c546 = MAKE_CODEOBJECT(module_filename_obj, 54, CO_NEWLOCALS | CO_NOFREE, mod_consts[222], mod_consts[224], NULL, 1, 0, 0);
+    codeobj_23bb9c166d80fa744b635c9b64d74e91 = MAKE_CODEOBJECT(module_filename_obj, 303, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[222], mod_consts[224], NULL, 1, 0, 0);
+    codeobj_2c106d4fb0b59a8a313a74af02b9ae30 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[225], NULL, NULL, 0, 0, 0);
+    codeobj_4879d87e1736932efe2349e57cf96b73 = MAKE_CODEOBJECT(module_filename_obj, 82, CO_NOFREE, mod_consts[5], mod_consts[226], NULL, 0, 0, 0);
+    codeobj_5a809e09d07af3a612a2febef9f28d49 = MAKE_CODEOBJECT(module_filename_obj, 91, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[6], mod_consts[227], NULL, 8, 0, 0);
+    codeobj_7b7f04e2ce7f3fb96fb3d62036f6064e = MAKE_CODEOBJECT(module_filename_obj, 171, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[213], mod_consts[228], NULL, 1, 0, 0);
+    codeobj_d78b0219b4e1d981308c03f7b3d320a5 = MAKE_CODEOBJECT(module_filename_obj, 210, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[80], mod_consts[229], NULL, 3, 0, 0);
+    codeobj_9e6b852c316e8ed04c484807a9e4a4ca = MAKE_CODEOBJECT(module_filename_obj, 320, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[218], mod_consts[230], NULL, 1, 0, 0);
+    codeobj_2bd36785b40e70b44d519de413b9ffa2 = MAKE_CODEOBJECT(module_filename_obj, 302, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[86], mod_consts[231], NULL, 1, 0, 0);
+    codeobj_fa93794b391cc2269430f5158a552638 = MAKE_CODEOBJECT(module_filename_obj, 274, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[111], mod_consts[232], NULL, 2, 0, 0);
+    codeobj_b0fbbcc4be4c05f8b2478d54883cb12e = MAKE_CODEOBJECT(module_filename_obj, 244, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[112], mod_consts[233], NULL, 1, 0, 0);
+    codeobj_26da35f5c22f9257e2fb0af8ae19b14f = MAKE_CODEOBJECT(module_filename_obj, 411, CO_OPTIMIZED | CO_NEWLOCALS, mod_consts[116], mod_consts[234], mod_consts[235], 1, 0, 0);
+    codeobj_b2e0183b1968541f8fb494681067161a = MAKE_CODEOBJECT(module_filename_obj, 425, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[219], mod_consts[236], NULL, 1, 0, 0);
+    codeobj_f3374c1ab54d3e5e6e663fc9a0d026f9 = MAKE_CODEOBJECT(module_filename_obj, 110, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[123], mod_consts[228], NULL, 1, 0, 0);
+    codeobj_bc58c4c04d908d5edbe2a4bd92451507 = MAKE_CODEOBJECT(module_filename_obj, 125, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[210], mod_consts[228], NULL, 1, 0, 0);
+    codeobj_dfc30c439432b1d463cbe6022af0e241 = MAKE_CODEOBJECT(module_filename_obj, 330, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[121], mod_consts[237], NULL, 1, 0, 0);
+    codeobj_50451d8ca2eeaa7a7866c8d78bee3373 = MAKE_CODEOBJECT(module_filename_obj, 115, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[208], mod_consts[238], NULL, 1, 0, 0);
+    codeobj_fde49f1b70527e04634d016711aa0778 = MAKE_CODEOBJECT(module_filename_obj, 175, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[216], mod_consts[239], NULL, 2, 0, 0);
+    codeobj_f594ee49ee9efd8918c6b8aeffc9e088 = MAKE_CODEOBJECT(module_filename_obj, 132, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[22], mod_consts[240], NULL, 1, 0, 0);
 }
 
 // The module function declarations.
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__10__normalize_host();
@@ -5428,14 +5428,14 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
     PyTracebackObject *exception_keeper_tb_2;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
     PyObject *tmp_return_value = NULL;
-    struct Nuitka_FrameObject *frame_3abcc95f5c9c453199c7f33a3df4a061_2;
+    struct Nuitka_FrameObject *frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2;
     NUITKA_MAY_BE_UNUSED char const *type_description_2 = NULL;
     bool tmp_result;
     PyObject *exception_keeper_type_3;
     PyObject *exception_keeper_value_3;
     PyTracebackObject *exception_keeper_tb_3;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_3;
-    static struct Nuitka_FrameObject *cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2 = NULL;
     PyObject *exception_keeper_type_4;
     PyObject *exception_keeper_value_4;
     PyTracebackObject *exception_keeper_tb_4;
@@ -5712,13 +5712,13 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 285;
+            exception_lineno = 282;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(par_host);
         tmp_args_element_value_3 = par_host;
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 285;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 282;
         tmp_assign_source_3 = CALL_METHOD_WITH_SINGLE_ARG(tmp_called_instance_3, mod_consts[72], tmp_args_element_value_3);
         if (tmp_assign_source_3 == NULL) {
             assert(ERROR_OCCURRED());
@@ -5726,7 +5726,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 285;
+            exception_lineno = 282;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -5744,7 +5744,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 286;
+            exception_lineno = 283;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -5763,7 +5763,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
         PyObject *tmp_called_instance_4;
         CHECK_OBJECT(var_match);
         tmp_called_instance_4 = var_match;
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 287;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 284;
         tmp_iter_arg_1 = CALL_METHOD_WITH_SINGLE_ARG(
             tmp_called_instance_4,
             mod_consts[73],
@@ -5776,7 +5776,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 287;
+            exception_lineno = 284;
             type_description_1 = "ooooooo";
             goto try_except_handler_2;
         }
@@ -5788,7 +5788,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 287;
+            exception_lineno = 284;
             type_description_1 = "ooooooo";
             goto try_except_handler_2;
         }
@@ -5814,7 +5814,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
 
 
             type_description_1 = "ooooooo";
-            exception_lineno = 287;
+            exception_lineno = 284;
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__element_1 == NULL);
@@ -5838,7 +5838,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
 
 
             type_description_1 = "ooooooo";
-            exception_lineno = 287;
+            exception_lineno = 284;
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__element_2 == NULL);
@@ -5863,7 +5863,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
                     type_description_1 = "ooooooo";
-                    exception_lineno = 287;
+                    exception_lineno = 284;
                     goto try_except_handler_3;
                 }
             }
@@ -5877,7 +5877,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             exception_tb = NULL;
 
             type_description_1 = "ooooooo";
-            exception_lineno = 287;
+            exception_lineno = 284;
             goto try_except_handler_3;
         }
     }
@@ -5977,7 +5977,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 288;
+            exception_lineno = 285;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6004,11 +6004,11 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 290;
+            exception_lineno = 287;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 290;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 287;
         tmp_call_result_1 = CALL_FUNCTION_WITH_POSARGS1(tmp_called_value_1, mod_consts[75]);
 
         Py_DECREF(tmp_called_value_1);
@@ -6018,7 +6018,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 290;
+            exception_lineno = 287;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6029,7 +6029,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_call_result_1);
 
-            exception_lineno = 290;
+            exception_lineno = 287;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6042,7 +6042,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 290;
+            exception_lineno = 287;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6062,7 +6062,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 290;
+            exception_lineno = 287;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6092,7 +6092,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 291;
+            exception_lineno = 288;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6120,7 +6120,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 293;
+            exception_lineno = 290;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6153,7 +6153,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 294;
+            exception_lineno = 291;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6171,11 +6171,11 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 294;
+            exception_lineno = 291;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 294;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 291;
         {
             PyObject *call_args[] = {tmp_args_element_value_4, tmp_args_element_value_5};
             tmp_add_expr_right_1 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_2, call_args);
@@ -6187,7 +6187,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 294;
+            exception_lineno = 291;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6199,7 +6199,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 294;
+            exception_lineno = 291;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6239,7 +6239,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 295;
+            exception_lineno = 292;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6251,11 +6251,11 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 295;
+            exception_lineno = 292;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 295;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 292;
         tmp_add_expr_left_3 = CALL_FUNCTION_NO_ARGS(tmp_called_value_3);
         Py_DECREF(tmp_called_value_3);
         if (tmp_add_expr_left_3 == NULL) {
@@ -6264,7 +6264,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 295;
+            exception_lineno = 292;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6278,7 +6278,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 295;
+            exception_lineno = 292;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6297,7 +6297,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_add_expr_left_2);
 
-            exception_lineno = 295;
+            exception_lineno = 292;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6310,7 +6310,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 295;
+            exception_lineno = 292;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6330,11 +6330,11 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 297;
+            exception_lineno = 294;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 297;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 294;
         tmp_return_value = CALL_FUNCTION_NO_ARGS(tmp_called_value_4);
         Py_DECREF(tmp_called_value_4);
         if (tmp_return_value == NULL) {
@@ -6343,7 +6343,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 297;
+            exception_lineno = 294;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6369,13 +6369,13 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 298;
+            exception_lineno = 295;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(par_host);
         tmp_args_element_value_6 = par_host;
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 298;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 295;
         tmp_operand_value_1 = CALL_METHOD_WITH_SINGLE_ARG(tmp_called_instance_5, mod_consts[70], tmp_args_element_value_6);
         if (tmp_operand_value_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -6383,7 +6383,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 298;
+            exception_lineno = 295;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6395,7 +6395,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 298;
+            exception_lineno = 295;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6426,7 +6426,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 299;
+            exception_lineno = 296;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6437,7 +6437,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 299;
+            exception_lineno = 296;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6459,11 +6459,11 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 300;
+                exception_lineno = 297;
                 type_description_1 = "ooooooo";
                 goto try_except_handler_4;
             }
-            frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 300;
+            frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 297;
             tmp_iter_arg_2 = CALL_FUNCTION_WITH_POSARGS1(tmp_called_value_7, mod_consts[85]);
 
             Py_DECREF(tmp_called_value_7);
@@ -6473,7 +6473,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 300;
+                exception_lineno = 297;
                 type_description_1 = "ooooooo";
                 goto try_except_handler_4;
             }
@@ -6485,7 +6485,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 300;
+                exception_lineno = 297;
                 type_description_1 = "ooooooo";
                 goto try_except_handler_4;
             }
@@ -6498,31 +6498,31 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             assert(tmp_listcomp_1__contraction == NULL);
             tmp_listcomp_1__contraction = tmp_assign_source_14;
         }
-        if (isFrameUnusable(cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2)) {
-            Py_XDECREF(cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2);
+        if (isFrameUnusable(cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2)) {
+            Py_XDECREF(cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
 
 #if _DEBUG_REFCOUNTS
-            if (cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2 == NULL) {
+            if (cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2 == NULL) {
                 count_active_frame_cache_instances += 1;
             } else {
                 count_released_frame_cache_instances += 1;
             }
             count_allocated_frame_cache_instances += 1;
 #endif
-            cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2 = MAKE_FUNCTION_FRAME(codeobj_3abcc95f5c9c453199c7f33a3df4a061, module_urllib3$util$url, sizeof(void *));
+            cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2 = MAKE_FUNCTION_FRAME(codeobj_cc4aeaf9ac1d802a00bf3dc20e89a505, module_urllib3$util$url, sizeof(void *));
 #if _DEBUG_REFCOUNTS
         } else {
             count_hit_frame_cache_instances += 1;
 #endif
         }
-        assert(cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2->m_type_description == NULL);
-        frame_3abcc95f5c9c453199c7f33a3df4a061_2 = cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2;
+        assert(cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2->m_type_description == NULL);
+        frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2 = cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2;
 
         // Push the new frame as the currently active one.
-        pushFrameStack(frame_3abcc95f5c9c453199c7f33a3df4a061_2);
+        pushFrameStack(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
 
         // Mark the frame object as in use, ref count 1 will be up for reuse.
-        assert(Py_REFCNT(frame_3abcc95f5c9c453199c7f33a3df4a061_2) == 2); // Frame stack
+        assert(Py_REFCNT(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2) == 2); // Frame stack
 
         // Framed code:
         // Tried code:
@@ -6541,7 +6541,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
 
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
                     type_description_2 = "o";
-                    exception_lineno = 300;
+                    exception_lineno = 297;
                     goto try_except_handler_5;
                 }
             }
@@ -6584,13 +6584,13 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 300;
+                exception_lineno = 297;
                 type_description_2 = "o";
                 goto try_except_handler_5;
             }
             CHECK_OBJECT(outline_0_var_label);
             tmp_args_element_value_9 = outline_0_var_label;
-            frame_3abcc95f5c9c453199c7f33a3df4a061_2->m_frame.f_lineno = 300;
+            frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2->m_frame.f_lineno = 297;
             tmp_append_value_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_8, tmp_args_element_value_9);
             if (tmp_append_value_1 == NULL) {
                 assert(ERROR_OCCURRED());
@@ -6598,7 +6598,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 300;
+                exception_lineno = 297;
                 type_description_2 = "o";
                 goto try_except_handler_5;
             }
@@ -6610,7 +6610,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 300;
+                exception_lineno = 297;
                 type_description_2 = "o";
                 goto try_except_handler_5;
             }
@@ -6621,7 +6621,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 300;
+            exception_lineno = 297;
             type_description_2 = "o";
             goto try_except_handler_5;
         }
@@ -6673,7 +6673,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
         // End of try:
 
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_3abcc95f5c9c453199c7f33a3df4a061_2);
+        RESTORE_FRAME_EXCEPTION(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
 #endif
 
         // Put the previous frame back on top.
@@ -6683,7 +6683,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
 
         frame_return_exit_2:;
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_3abcc95f5c9c453199c7f33a3df4a061_2);
+        RESTORE_FRAME_EXCEPTION(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
 #endif
 
         // Put the previous frame back on top.
@@ -6694,35 +6694,35 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
         frame_exception_exit_2:;
 
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_3abcc95f5c9c453199c7f33a3df4a061_2);
+        RESTORE_FRAME_EXCEPTION(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
 #endif
 
         if (exception_tb == NULL) {
-            exception_tb = MAKE_TRACEBACK(frame_3abcc95f5c9c453199c7f33a3df4a061_2, exception_lineno);
-        } else if (exception_tb->tb_frame != &frame_3abcc95f5c9c453199c7f33a3df4a061_2->m_frame) {
-            exception_tb = ADD_TRACEBACK(exception_tb, frame_3abcc95f5c9c453199c7f33a3df4a061_2, exception_lineno);
+            exception_tb = MAKE_TRACEBACK(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2, exception_lineno);
+        } else if (exception_tb->tb_frame != &frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2->m_frame) {
+            exception_tb = ADD_TRACEBACK(exception_tb, frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2, exception_lineno);
         }
 
         // Attaches locals to frame if any.
         Nuitka_Frame_AttachLocals(
-            frame_3abcc95f5c9c453199c7f33a3df4a061_2,
+            frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2,
             type_description_2,
             outline_0_var_label
         );
 
 
         // Release cached frame if used for exception.
-        if (frame_3abcc95f5c9c453199c7f33a3df4a061_2 == cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2) {
+        if (frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2 == cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2) {
 #if _DEBUG_REFCOUNTS
             count_active_frame_cache_instances -= 1;
             count_released_frame_cache_instances += 1;
 #endif
 
-            Py_DECREF(cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2);
-            cache_frame_3abcc95f5c9c453199c7f33a3df4a061_2 = NULL;
+            Py_DECREF(cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
+            cache_frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2 = NULL;
         }
 
-        assertFrameObject(frame_3abcc95f5c9c453199c7f33a3df4a061_2);
+        assertFrameObject(frame_cc4aeaf9ac1d802a00bf3dc20e89a505_2);
 
         // Put the previous frame back on top.
         popFrameStack();
@@ -6767,10 +6767,10 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
         NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
         return NULL;
         outline_exception_1:;
-        exception_lineno = 300;
+        exception_lineno = 297;
         goto frame_exception_exit_1;
         outline_result_1:;
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 300;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 297;
         tmp_args_element_value_7 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_6, tmp_args_element_value_8);
         Py_DECREF(tmp_called_value_6);
         Py_DECREF(tmp_args_element_value_8);
@@ -6780,11 +6780,11 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_5);
 
-            exception_lineno = 300;
+            exception_lineno = 297;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
-        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 299;
+        frame_fa93794b391cc2269430f5158a552638->m_frame.f_lineno = 296;
         tmp_return_value = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_5, tmp_args_element_value_7);
         Py_DECREF(tmp_called_value_5);
         Py_DECREF(tmp_args_element_value_7);
@@ -6794,7 +6794,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 299;
+            exception_lineno = 296;
             type_description_1 = "ooooooo";
             goto frame_exception_exit_1;
         }
@@ -6811,7 +6811,7 @@ static PyObject *impl_urllib3$util$url$$$function__10__normalize_host(struct Nui
         NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
         CHAIN_EXCEPTION(exception_value);
 
-        exception_lineno = 302;
+        exception_lineno = 299;
         type_description_1 = "ooooooo";
         goto frame_exception_exit_1;
     }
@@ -6970,20 +6970,20 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     PyObject *tmp_listcomp_1__$0 = NULL;
     PyObject *tmp_listcomp_1__contraction = NULL;
     PyObject *tmp_listcomp_1__iter_value_0 = NULL;
-    struct Nuitka_FrameObject *frame_694f8451b87bb519b31b59829e2c53f3;
+    struct Nuitka_FrameObject *frame_2bd36785b40e70b44d519de413b9ffa2;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    struct Nuitka_FrameObject *frame_d5e0be9377054813087de9cd6116f6c9_2;
+    struct Nuitka_FrameObject *frame_23bb9c166d80fa744b635c9b64d74e91_2;
     NUITKA_MAY_BE_UNUSED char const *type_description_2 = NULL;
     bool tmp_result;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
     PyTracebackObject *exception_keeper_tb_1;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
-    static struct Nuitka_FrameObject *cache_frame_d5e0be9377054813087de9cd6116f6c9_2 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_23bb9c166d80fa744b635c9b64d74e91_2 = NULL;
     PyObject *exception_keeper_type_2;
     PyObject *exception_keeper_value_2;
     PyTracebackObject *exception_keeper_tb_2;
@@ -7013,7 +7013,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     PyObject *exception_keeper_value_6;
     PyTracebackObject *exception_keeper_tb_6;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_6;
-    static struct Nuitka_FrameObject *cache_frame_694f8451b87bb519b31b59829e2c53f3 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_2bd36785b40e70b44d519de413b9ffa2 = NULL;
     PyObject *exception_keeper_type_7;
     PyObject *exception_keeper_value_7;
     PyTracebackObject *exception_keeper_tb_7;
@@ -7021,31 +7021,31 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_694f8451b87bb519b31b59829e2c53f3)) {
-        Py_XDECREF(cache_frame_694f8451b87bb519b31b59829e2c53f3);
+    if (isFrameUnusable(cache_frame_2bd36785b40e70b44d519de413b9ffa2)) {
+        Py_XDECREF(cache_frame_2bd36785b40e70b44d519de413b9ffa2);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_694f8451b87bb519b31b59829e2c53f3 == NULL) {
+        if (cache_frame_2bd36785b40e70b44d519de413b9ffa2 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_694f8451b87bb519b31b59829e2c53f3 = MAKE_FUNCTION_FRAME(codeobj_694f8451b87bb519b31b59829e2c53f3, module_urllib3$util$url, sizeof(void *)+sizeof(void *));
+        cache_frame_2bd36785b40e70b44d519de413b9ffa2 = MAKE_FUNCTION_FRAME(codeobj_2bd36785b40e70b44d519de413b9ffa2, module_urllib3$util$url, sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_694f8451b87bb519b31b59829e2c53f3->m_type_description == NULL);
-    frame_694f8451b87bb519b31b59829e2c53f3 = cache_frame_694f8451b87bb519b31b59829e2c53f3;
+    assert(cache_frame_2bd36785b40e70b44d519de413b9ffa2->m_type_description == NULL);
+    frame_2bd36785b40e70b44d519de413b9ffa2 = cache_frame_2bd36785b40e70b44d519de413b9ffa2;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_694f8451b87bb519b31b59829e2c53f3);
+    pushFrameStack(frame_2bd36785b40e70b44d519de413b9ffa2);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_694f8451b87bb519b31b59829e2c53f3) == 2); // Frame stack
+    assert(Py_REFCNT(frame_2bd36785b40e70b44d519de413b9ffa2) == 2); // Frame stack
 
     // Framed code:
     {
@@ -7065,7 +7065,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 306;
+            exception_lineno = 303;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -7077,7 +7077,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 306;
+            exception_lineno = 303;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -7100,7 +7100,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 306;
+                exception_lineno = 303;
                 type_description_1 = "oo";
                 goto try_except_handler_2;
             }
@@ -7113,31 +7113,31 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             assert(tmp_listcomp_1__contraction == NULL);
             tmp_listcomp_1__contraction = tmp_assign_source_2;
         }
-        if (isFrameUnusable(cache_frame_d5e0be9377054813087de9cd6116f6c9_2)) {
-            Py_XDECREF(cache_frame_d5e0be9377054813087de9cd6116f6c9_2);
+        if (isFrameUnusable(cache_frame_23bb9c166d80fa744b635c9b64d74e91_2)) {
+            Py_XDECREF(cache_frame_23bb9c166d80fa744b635c9b64d74e91_2);
 
 #if _DEBUG_REFCOUNTS
-            if (cache_frame_d5e0be9377054813087de9cd6116f6c9_2 == NULL) {
+            if (cache_frame_23bb9c166d80fa744b635c9b64d74e91_2 == NULL) {
                 count_active_frame_cache_instances += 1;
             } else {
                 count_released_frame_cache_instances += 1;
             }
             count_allocated_frame_cache_instances += 1;
 #endif
-            cache_frame_d5e0be9377054813087de9cd6116f6c9_2 = MAKE_FUNCTION_FRAME(codeobj_d5e0be9377054813087de9cd6116f6c9, module_urllib3$util$url, sizeof(void *));
+            cache_frame_23bb9c166d80fa744b635c9b64d74e91_2 = MAKE_FUNCTION_FRAME(codeobj_23bb9c166d80fa744b635c9b64d74e91, module_urllib3$util$url, sizeof(void *));
 #if _DEBUG_REFCOUNTS
         } else {
             count_hit_frame_cache_instances += 1;
 #endif
         }
-        assert(cache_frame_d5e0be9377054813087de9cd6116f6c9_2->m_type_description == NULL);
-        frame_d5e0be9377054813087de9cd6116f6c9_2 = cache_frame_d5e0be9377054813087de9cd6116f6c9_2;
+        assert(cache_frame_23bb9c166d80fa744b635c9b64d74e91_2->m_type_description == NULL);
+        frame_23bb9c166d80fa744b635c9b64d74e91_2 = cache_frame_23bb9c166d80fa744b635c9b64d74e91_2;
 
         // Push the new frame as the currently active one.
-        pushFrameStack(frame_d5e0be9377054813087de9cd6116f6c9_2);
+        pushFrameStack(frame_23bb9c166d80fa744b635c9b64d74e91_2);
 
         // Mark the frame object as in use, ref count 1 will be up for reuse.
-        assert(Py_REFCNT(frame_d5e0be9377054813087de9cd6116f6c9_2) == 2); // Frame stack
+        assert(Py_REFCNT(frame_23bb9c166d80fa744b635c9b64d74e91_2) == 2); // Frame stack
 
         // Framed code:
         // Tried code:
@@ -7156,7 +7156,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
 
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
                     type_description_2 = "o";
-                    exception_lineno = 306;
+                    exception_lineno = 303;
                     goto try_except_handler_3;
                 }
             }
@@ -7197,7 +7197,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 306;
+                exception_lineno = 303;
                 type_description_2 = "o";
                 goto try_except_handler_3;
             }
@@ -7210,7 +7210,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 306;
+                exception_lineno = 303;
                 type_description_2 = "o";
                 goto try_except_handler_3;
             }
@@ -7222,7 +7222,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 306;
+                exception_lineno = 303;
                 type_description_2 = "o";
                 goto try_except_handler_3;
             }
@@ -7233,7 +7233,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 306;
+            exception_lineno = 303;
             type_description_2 = "o";
             goto try_except_handler_3;
         }
@@ -7285,7 +7285,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
         // End of try:
 
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_d5e0be9377054813087de9cd6116f6c9_2);
+        RESTORE_FRAME_EXCEPTION(frame_23bb9c166d80fa744b635c9b64d74e91_2);
 #endif
 
         // Put the previous frame back on top.
@@ -7295,7 +7295,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
 
         frame_return_exit_2:;
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_d5e0be9377054813087de9cd6116f6c9_2);
+        RESTORE_FRAME_EXCEPTION(frame_23bb9c166d80fa744b635c9b64d74e91_2);
 #endif
 
         // Put the previous frame back on top.
@@ -7306,35 +7306,35 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
         frame_exception_exit_2:;
 
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_d5e0be9377054813087de9cd6116f6c9_2);
+        RESTORE_FRAME_EXCEPTION(frame_23bb9c166d80fa744b635c9b64d74e91_2);
 #endif
 
         if (exception_tb == NULL) {
-            exception_tb = MAKE_TRACEBACK(frame_d5e0be9377054813087de9cd6116f6c9_2, exception_lineno);
-        } else if (exception_tb->tb_frame != &frame_d5e0be9377054813087de9cd6116f6c9_2->m_frame) {
-            exception_tb = ADD_TRACEBACK(exception_tb, frame_d5e0be9377054813087de9cd6116f6c9_2, exception_lineno);
+            exception_tb = MAKE_TRACEBACK(frame_23bb9c166d80fa744b635c9b64d74e91_2, exception_lineno);
+        } else if (exception_tb->tb_frame != &frame_23bb9c166d80fa744b635c9b64d74e91_2->m_frame) {
+            exception_tb = ADD_TRACEBACK(exception_tb, frame_23bb9c166d80fa744b635c9b64d74e91_2, exception_lineno);
         }
 
         // Attaches locals to frame if any.
         Nuitka_Frame_AttachLocals(
-            frame_d5e0be9377054813087de9cd6116f6c9_2,
+            frame_23bb9c166d80fa744b635c9b64d74e91_2,
             type_description_2,
             outline_0_var_x
         );
 
 
         // Release cached frame if used for exception.
-        if (frame_d5e0be9377054813087de9cd6116f6c9_2 == cache_frame_d5e0be9377054813087de9cd6116f6c9_2) {
+        if (frame_23bb9c166d80fa744b635c9b64d74e91_2 == cache_frame_23bb9c166d80fa744b635c9b64d74e91_2) {
 #if _DEBUG_REFCOUNTS
             count_active_frame_cache_instances -= 1;
             count_released_frame_cache_instances += 1;
 #endif
 
-            Py_DECREF(cache_frame_d5e0be9377054813087de9cd6116f6c9_2);
-            cache_frame_d5e0be9377054813087de9cd6116f6c9_2 = NULL;
+            Py_DECREF(cache_frame_23bb9c166d80fa744b635c9b64d74e91_2);
+            cache_frame_23bb9c166d80fa744b635c9b64d74e91_2 = NULL;
         }
 
-        assertFrameObject(frame_d5e0be9377054813087de9cd6116f6c9_2);
+        assertFrameObject(frame_23bb9c166d80fa744b635c9b64d74e91_2);
 
         // Put the previous frame back on top.
         popFrameStack();
@@ -7379,7 +7379,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
         NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
         return NULL;
         outline_exception_1:;
-        exception_lineno = 306;
+        exception_lineno = 303;
         goto frame_exception_exit_1;
         outline_result_1:;
         tmp_capi_result_1 = BUILTIN_ANY(tmp_any_arg_1);
@@ -7390,7 +7390,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 306;
+            exception_lineno = 303;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -7423,7 +7423,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
         tmp_locals_arg_value_1 = Py_None;
         tmp_fromlist_value_1 = Py_None;
         tmp_level_value_1 = mod_consts[25];
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 308;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 305;
         tmp_assign_source_5 = IMPORT_MODULE5(tmp_name_value_1, tmp_globals_arg_value_1, tmp_locals_arg_value_1, tmp_fromlist_value_1, tmp_level_value_1);
         if (tmp_assign_source_5 == NULL) {
             assert(ERROR_OCCURRED());
@@ -7431,7 +7431,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 308;
+            exception_lineno = 305;
             type_description_1 = "oo";
             goto try_except_handler_4;
         }
@@ -7454,9 +7454,9 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     GET_CURRENT_EXCEPTION(&exception_preserved_type_1, &exception_preserved_value_1, &exception_preserved_tb_1);
 
     if (exception_keeper_tb_3 == NULL) {
-        exception_keeper_tb_3 = MAKE_TRACEBACK(frame_694f8451b87bb519b31b59829e2c53f3, exception_keeper_lineno_3);
+        exception_keeper_tb_3 = MAKE_TRACEBACK(frame_2bd36785b40e70b44d519de413b9ffa2, exception_keeper_lineno_3);
     } else if (exception_keeper_lineno_3 != 0) {
-        exception_keeper_tb_3 = ADD_TRACEBACK(exception_keeper_tb_3, frame_694f8451b87bb519b31b59829e2c53f3, exception_keeper_lineno_3);
+        exception_keeper_tb_3 = ADD_TRACEBACK(exception_keeper_tb_3, frame_2bd36785b40e70b44d519de413b9ffa2, exception_keeper_lineno_3);
     }
 
     NORMALIZE_EXCEPTION(&exception_keeper_type_3, &exception_keeper_value_3, &exception_keeper_tb_3);
@@ -7498,7 +7498,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 310;
+            exception_lineno = 307;
             type_description_1 = "oo";
             goto try_except_handler_5;
         }
@@ -7509,7 +7509,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 310;
+            exception_lineno = 307;
             type_description_1 = "oo";
             goto try_except_handler_5;
         }
@@ -7525,11 +7525,11 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_1);
 
-            exception_lineno = 311;
+            exception_lineno = 308;
             type_description_1 = "oo";
             goto try_except_handler_5;
         }
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 311;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 308;
         tmp_args_element_value_1 = CALL_FUNCTION_WITH_POSARGS1(tmp_called_value_2, mod_consts[90]);
 
         if (tmp_args_element_value_1 == NULL) {
@@ -7538,12 +7538,12 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_1);
 
-            exception_lineno = 311;
+            exception_lineno = 308;
             type_description_1 = "oo";
             goto try_except_handler_5;
         }
         tmp_args_element_value_2 = Py_None;
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 310;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 307;
         {
             PyObject *call_args[] = {tmp_args_element_value_1, tmp_args_element_value_2};
             tmp_call_result_1 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_1, call_args);
@@ -7557,7 +7557,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 310;
+            exception_lineno = 307;
             type_description_1 = "oo";
             goto try_except_handler_5;
         }
@@ -7567,10 +7567,10 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     branch_no_2:;
     tmp_result = RERAISE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
     if (unlikely(tmp_result == false)) {
-        exception_lineno = 307;
+        exception_lineno = 304;
     }
 
-    if (exception_tb && exception_tb->tb_frame == &frame_694f8451b87bb519b31b59829e2c53f3->m_frame) frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = exception_tb->tb_lineno;
+    if (exception_tb && exception_tb->tb_frame == &frame_2bd36785b40e70b44d519de413b9ffa2->m_frame) frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = exception_tb->tb_lineno;
     type_description_1 = "oo";
     goto try_except_handler_5;
     branch_end_2:;
@@ -7622,7 +7622,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 315;
+            exception_lineno = 312;
             type_description_1 = "oo";
             goto try_except_handler_6;
         }
@@ -7635,7 +7635,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 315;
+            exception_lineno = 312;
             type_description_1 = "oo";
             goto try_except_handler_6;
         }
@@ -7646,7 +7646,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 315;
+            exception_lineno = 312;
             type_description_1 = "oo";
             goto try_except_handler_6;
         }
@@ -7659,11 +7659,11 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_3);
 
-            exception_lineno = 315;
+            exception_lineno = 312;
             type_description_1 = "oo";
             goto try_except_handler_6;
         }
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 315;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 312;
         tmp_tuple_element_1 = CALL_FUNCTION_NO_ARGS(tmp_called_value_4);
         Py_DECREF(tmp_called_value_4);
         if (tmp_tuple_element_1 == NULL) {
@@ -7672,14 +7672,14 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_3);
 
-            exception_lineno = 315;
+            exception_lineno = 312;
             type_description_1 = "oo";
             goto try_except_handler_6;
         }
         tmp_args_value_1 = PyTuple_New(1);
         PyTuple_SET_ITEM(tmp_args_value_1, 0, tmp_tuple_element_1);
         tmp_kwargs_value_1 = PyDict_Copy(mod_consts[92]);
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 315;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 312;
         tmp_return_value = CALL_FUNCTION(tmp_called_value_3, tmp_args_value_1, tmp_kwargs_value_1);
         Py_DECREF(tmp_called_value_3);
         Py_DECREF(tmp_args_value_1);
@@ -7690,7 +7690,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 315;
+            exception_lineno = 312;
             type_description_1 = "oo";
             goto try_except_handler_6;
         }
@@ -7713,9 +7713,9 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     GET_CURRENT_EXCEPTION(&exception_preserved_type_2, &exception_preserved_value_2, &exception_preserved_tb_2);
 
     if (exception_keeper_tb_5 == NULL) {
-        exception_keeper_tb_5 = MAKE_TRACEBACK(frame_694f8451b87bb519b31b59829e2c53f3, exception_keeper_lineno_5);
+        exception_keeper_tb_5 = MAKE_TRACEBACK(frame_2bd36785b40e70b44d519de413b9ffa2, exception_keeper_lineno_5);
     } else if (exception_keeper_lineno_5 != 0) {
-        exception_keeper_tb_5 = ADD_TRACEBACK(exception_keeper_tb_5, frame_694f8451b87bb519b31b59829e2c53f3, exception_keeper_lineno_5);
+        exception_keeper_tb_5 = ADD_TRACEBACK(exception_keeper_tb_5, frame_2bd36785b40e70b44d519de413b9ffa2, exception_keeper_lineno_5);
     }
 
     NORMALIZE_EXCEPTION(&exception_keeper_type_5, &exception_keeper_value_5, &exception_keeper_tb_5);
@@ -7735,7 +7735,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 316;
+            exception_lineno = 313;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7748,7 +7748,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 316;
+            exception_lineno = 313;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7760,7 +7760,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 316;
+            exception_lineno = 313;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7794,7 +7794,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 317;
+            exception_lineno = 314;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7805,7 +7805,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 317;
+            exception_lineno = 314;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7821,7 +7821,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_5);
 
-            exception_lineno = 318;
+            exception_lineno = 315;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7833,7 +7833,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 318;
+            exception_lineno = 315;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7846,11 +7846,11 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_5);
 
-            exception_lineno = 318;
+            exception_lineno = 315;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 318;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 315;
         tmp_args_element_value_3 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_6, tmp_args_element_value_4);
         Py_DECREF(tmp_args_element_value_4);
         if (tmp_args_element_value_3 == NULL) {
@@ -7859,12 +7859,12 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_value_5);
 
-            exception_lineno = 318;
+            exception_lineno = 315;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
         tmp_args_element_value_5 = Py_None;
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 317;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 314;
         {
             PyObject *call_args[] = {tmp_args_element_value_3, tmp_args_element_value_5};
             tmp_call_result_2 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_5, call_args);
@@ -7878,7 +7878,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 317;
+            exception_lineno = 314;
             type_description_1 = "oo";
             goto try_except_handler_7;
         }
@@ -7888,10 +7888,10 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     branch_no_3:;
     tmp_result = RERAISE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
     if (unlikely(tmp_result == false)) {
-        exception_lineno = 314;
+        exception_lineno = 311;
     }
 
-    if (exception_tb && exception_tb->tb_frame == &frame_694f8451b87bb519b31b59829e2c53f3->m_frame) frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = exception_tb->tb_lineno;
+    if (exception_tb && exception_tb->tb_frame == &frame_2bd36785b40e70b44d519de413b9ffa2->m_frame) frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = exception_tb->tb_lineno;
     type_description_1 = "oo";
     goto try_except_handler_7;
     branch_end_3:;
@@ -7940,7 +7940,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 320;
+            exception_lineno = 317;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -7953,11 +7953,11 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 320;
+            exception_lineno = 317;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 320;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 317;
         tmp_expression_value_6 = CALL_FUNCTION_NO_ARGS(tmp_called_value_8);
         Py_DECREF(tmp_called_value_8);
         if (tmp_expression_value_6 == NULL) {
@@ -7966,7 +7966,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 320;
+            exception_lineno = 317;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -7978,11 +7978,11 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 320;
+            exception_lineno = 317;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_694f8451b87bb519b31b59829e2c53f3->m_frame.f_lineno = 320;
+        frame_2bd36785b40e70b44d519de413b9ffa2->m_frame.f_lineno = 317;
         tmp_return_value = CALL_FUNCTION_WITH_POSARGS1(tmp_called_value_7, mod_consts[95]);
 
         Py_DECREF(tmp_called_value_7);
@@ -7992,7 +7992,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 320;
+            exception_lineno = 317;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -8000,7 +8000,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_694f8451b87bb519b31b59829e2c53f3);
+    RESTORE_FRAME_EXCEPTION(frame_2bd36785b40e70b44d519de413b9ffa2);
 #endif
 
     // Put the previous frame back on top.
@@ -8010,7 +8010,7 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
 
     frame_return_exit_1:;
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_694f8451b87bb519b31b59829e2c53f3);
+    RESTORE_FRAME_EXCEPTION(frame_2bd36785b40e70b44d519de413b9ffa2);
 #endif
 
     // Put the previous frame back on top.
@@ -8021,18 +8021,18 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_694f8451b87bb519b31b59829e2c53f3);
+    RESTORE_FRAME_EXCEPTION(frame_2bd36785b40e70b44d519de413b9ffa2);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_694f8451b87bb519b31b59829e2c53f3, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_694f8451b87bb519b31b59829e2c53f3->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_694f8451b87bb519b31b59829e2c53f3, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_2bd36785b40e70b44d519de413b9ffa2, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_2bd36785b40e70b44d519de413b9ffa2->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_2bd36785b40e70b44d519de413b9ffa2, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_694f8451b87bb519b31b59829e2c53f3,
+        frame_2bd36785b40e70b44d519de413b9ffa2,
         type_description_1,
         par_name,
         var_idna
@@ -8040,17 +8040,17 @@ static PyObject *impl_urllib3$util$url$$$function__11__idna_encode(struct Nuitka
 
 
     // Release cached frame if used for exception.
-    if (frame_694f8451b87bb519b31b59829e2c53f3 == cache_frame_694f8451b87bb519b31b59829e2c53f3) {
+    if (frame_2bd36785b40e70b44d519de413b9ffa2 == cache_frame_2bd36785b40e70b44d519de413b9ffa2) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_694f8451b87bb519b31b59829e2c53f3);
-        cache_frame_694f8451b87bb519b31b59829e2c53f3 = NULL;
+        Py_DECREF(cache_frame_2bd36785b40e70b44d519de413b9ffa2);
+        cache_frame_2bd36785b40e70b44d519de413b9ffa2 = NULL;
     }
 
-    assertFrameObject(frame_694f8451b87bb519b31b59829e2c53f3);
+    assertFrameObject(frame_2bd36785b40e70b44d519de413b9ffa2);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -8124,7 +8124,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
     PyObject *tmp_tuple_unpack_1__element_1 = NULL;
     PyObject *tmp_tuple_unpack_1__element_2 = NULL;
     PyObject *tmp_tuple_unpack_1__source_iter = NULL;
-    struct Nuitka_FrameObject *frame_f5aec5b756613fdf20fa10f06ef0c3ac;
+    struct Nuitka_FrameObject *frame_9e6b852c316e8ed04c484807a9e4a4ca;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
@@ -8140,7 +8140,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
     PyTracebackObject *exception_keeper_tb_2;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
     bool tmp_result;
-    static struct Nuitka_FrameObject *cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac = NULL;
+    static struct Nuitka_FrameObject *cache_frame_9e6b852c316e8ed04c484807a9e4a4ca = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_3;
     PyObject *exception_keeper_value_3;
@@ -8149,31 +8149,31 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac)) {
-        Py_XDECREF(cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac);
+    if (isFrameUnusable(cache_frame_9e6b852c316e8ed04c484807a9e4a4ca)) {
+        Py_XDECREF(cache_frame_9e6b852c316e8ed04c484807a9e4a4ca);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac == NULL) {
+        if (cache_frame_9e6b852c316e8ed04c484807a9e4a4ca == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac = MAKE_FUNCTION_FRAME(codeobj_f5aec5b756613fdf20fa10f06ef0c3ac, module_urllib3$util$url, sizeof(void *)+sizeof(void *)+sizeof(void *));
+        cache_frame_9e6b852c316e8ed04c484807a9e4a4ca = MAKE_FUNCTION_FRAME(codeobj_9e6b852c316e8ed04c484807a9e4a4ca, module_urllib3$util$url, sizeof(void *)+sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac->m_type_description == NULL);
-    frame_f5aec5b756613fdf20fa10f06ef0c3ac = cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac;
+    assert(cache_frame_9e6b852c316e8ed04c484807a9e4a4ca->m_type_description == NULL);
+    frame_9e6b852c316e8ed04c484807a9e4a4ca = cache_frame_9e6b852c316e8ed04c484807a9e4a4ca;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_f5aec5b756613fdf20fa10f06ef0c3ac);
+    pushFrameStack(frame_9e6b852c316e8ed04c484807a9e4a4ca);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_f5aec5b756613fdf20fa10f06ef0c3ac) == 2); // Frame stack
+    assert(Py_REFCNT(frame_9e6b852c316e8ed04c484807a9e4a4ca) == 2); // Frame stack
 
     // Framed code:
     // Tried code:
@@ -8195,13 +8195,13 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 325;
+            exception_lineno = 322;
             type_description_1 = "ooo";
             goto try_except_handler_2;
         }
         CHECK_OBJECT(par_target);
         tmp_args_element_value_1 = par_target;
-        frame_f5aec5b756613fdf20fa10f06ef0c3ac->m_frame.f_lineno = 325;
+        frame_9e6b852c316e8ed04c484807a9e4a4ca->m_frame.f_lineno = 322;
         tmp_called_instance_1 = CALL_METHOD_WITH_SINGLE_ARG(tmp_called_instance_2, mod_consts[70], tmp_args_element_value_1);
         if (tmp_called_instance_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -8209,11 +8209,11 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 325;
+            exception_lineno = 322;
             type_description_1 = "ooo";
             goto try_except_handler_2;
         }
-        frame_f5aec5b756613fdf20fa10f06ef0c3ac->m_frame.f_lineno = 325;
+        frame_9e6b852c316e8ed04c484807a9e4a4ca->m_frame.f_lineno = 322;
         tmp_iter_arg_1 = CALL_METHOD_NO_ARGS(tmp_called_instance_1, mod_consts[97]);
         Py_DECREF(tmp_called_instance_1);
         if (tmp_iter_arg_1 == NULL) {
@@ -8222,7 +8222,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 325;
+            exception_lineno = 322;
             type_description_1 = "ooo";
             goto try_except_handler_2;
         }
@@ -8234,7 +8234,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 325;
+            exception_lineno = 322;
             type_description_1 = "ooo";
             goto try_except_handler_2;
         }
@@ -8260,7 +8260,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
 
 
             type_description_1 = "ooo";
-            exception_lineno = 325;
+            exception_lineno = 322;
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__element_1 == NULL);
@@ -8284,7 +8284,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
 
 
             type_description_1 = "ooo";
-            exception_lineno = 325;
+            exception_lineno = 322;
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__element_2 == NULL);
@@ -8309,7 +8309,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
                     type_description_1 = "ooo";
-                    exception_lineno = 325;
+                    exception_lineno = 322;
                     goto try_except_handler_3;
                 }
             }
@@ -8323,7 +8323,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             exception_tb = NULL;
 
             type_description_1 = "ooo";
-            exception_lineno = 325;
+            exception_lineno = 322;
             goto try_except_handler_3;
         }
     }
@@ -8418,7 +8418,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 326;
+            exception_lineno = 323;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
@@ -8436,11 +8436,11 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 326;
+            exception_lineno = 323;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
-        frame_f5aec5b756613fdf20fa10f06ef0c3ac->m_frame.f_lineno = 326;
+        frame_9e6b852c316e8ed04c484807a9e4a4ca->m_frame.f_lineno = 323;
         {
             PyObject *call_args[] = {tmp_args_element_value_2, tmp_args_element_value_3};
             tmp_assign_source_6 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_1, call_args);
@@ -8452,7 +8452,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 326;
+            exception_lineno = 323;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
@@ -8481,7 +8481,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 327;
+            exception_lineno = 324;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
@@ -8499,11 +8499,11 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 327;
+            exception_lineno = 324;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
-        frame_f5aec5b756613fdf20fa10f06ef0c3ac->m_frame.f_lineno = 327;
+        frame_9e6b852c316e8ed04c484807a9e4a4ca->m_frame.f_lineno = 324;
         {
             PyObject *call_args[] = {tmp_args_element_value_4, tmp_args_element_value_5};
             tmp_assign_source_7 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_2, call_args);
@@ -8515,7 +8515,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 327;
+            exception_lineno = 324;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
@@ -8560,7 +8560,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 329;
+            exception_lineno = 326;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
@@ -8572,7 +8572,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 329;
+            exception_lineno = 326;
             type_description_1 = "ooo";
             goto frame_exception_exit_1;
         }
@@ -8583,7 +8583,7 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
     branch_no_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_f5aec5b756613fdf20fa10f06ef0c3ac);
+    RESTORE_FRAME_EXCEPTION(frame_9e6b852c316e8ed04c484807a9e4a4ca);
 #endif
 
     // Put the previous frame back on top.
@@ -8594,18 +8594,18 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_f5aec5b756613fdf20fa10f06ef0c3ac);
+    RESTORE_FRAME_EXCEPTION(frame_9e6b852c316e8ed04c484807a9e4a4ca);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_f5aec5b756613fdf20fa10f06ef0c3ac, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_f5aec5b756613fdf20fa10f06ef0c3ac->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_f5aec5b756613fdf20fa10f06ef0c3ac, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_9e6b852c316e8ed04c484807a9e4a4ca, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_9e6b852c316e8ed04c484807a9e4a4ca->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_9e6b852c316e8ed04c484807a9e4a4ca, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_f5aec5b756613fdf20fa10f06ef0c3ac,
+        frame_9e6b852c316e8ed04c484807a9e4a4ca,
         type_description_1,
         par_target,
         var_path,
@@ -8614,17 +8614,17 @@ static PyObject *impl_urllib3$util$url$$$function__12__encode_target(struct Nuit
 
 
     // Release cached frame if used for exception.
-    if (frame_f5aec5b756613fdf20fa10f06ef0c3ac == cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac) {
+    if (frame_9e6b852c316e8ed04c484807a9e4a4ca == cache_frame_9e6b852c316e8ed04c484807a9e4a4ca) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac);
-        cache_frame_f5aec5b756613fdf20fa10f06ef0c3ac = NULL;
+        Py_DECREF(cache_frame_9e6b852c316e8ed04c484807a9e4a4ca);
+        cache_frame_9e6b852c316e8ed04c484807a9e4a4ca = NULL;
     }
 
-    assertFrameObject(frame_f5aec5b756613fdf20fa10f06ef0c3ac);
+    assertFrameObject(frame_9e6b852c316e8ed04c484807a9e4a4ca);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -8713,8 +8713,6 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     PyObject *var_fragment = NULL;
     PyObject *var_normalize_uri = NULL;
     PyObject *var_auth = NULL;
-    PyObject *var__ = NULL;
-    PyObject *var_host_port = NULL;
     PyObject *var_host = NULL;
     PyObject *var_port = NULL;
     struct Nuitka_CellObject *var_ensure_func = Nuitka_Cell_Empty();
@@ -8733,12 +8731,9 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     PyObject *tmp_tuple_unpack_2__source_iter = NULL;
     PyObject *tmp_tuple_unpack_3__element_1 = NULL;
     PyObject *tmp_tuple_unpack_3__element_2 = NULL;
+    PyObject *tmp_tuple_unpack_3__element_3 = NULL;
     PyObject *tmp_tuple_unpack_3__source_iter = NULL;
-    PyObject *tmp_tuple_unpack_4__element_1 = NULL;
-    PyObject *tmp_tuple_unpack_4__element_2 = NULL;
-    PyObject *tmp_tuple_unpack_4__element_3 = NULL;
-    PyObject *tmp_tuple_unpack_4__source_iter = NULL;
-    struct Nuitka_FrameObject *frame_d569f2e8273c24d4a2bb953825b423c8;
+    struct Nuitka_FrameObject *frame_dfc30c439432b1d463cbe6022af0e241;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     int tmp_res;
     PyObject *exception_type = NULL;
@@ -8779,55 +8774,47 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     PyObject *exception_keeper_value_8;
     PyTracebackObject *exception_keeper_tb_8;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_8;
-    PyObject *exception_keeper_type_9;
-    PyObject *exception_keeper_value_9;
-    PyTracebackObject *exception_keeper_tb_9;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_9;
-    PyObject *exception_keeper_type_10;
-    PyObject *exception_keeper_value_10;
-    PyTracebackObject *exception_keeper_tb_10;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_10;
     PyObject *exception_preserved_type_1;
     PyObject *exception_preserved_value_1;
     PyTracebackObject *exception_preserved_tb_1;
     bool tmp_result;
-    PyObject *exception_keeper_type_11;
-    PyObject *exception_keeper_value_11;
-    PyTracebackObject *exception_keeper_tb_11;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_11;
-    static struct Nuitka_FrameObject *cache_frame_d569f2e8273c24d4a2bb953825b423c8 = NULL;
-    PyObject *exception_keeper_type_12;
-    PyObject *exception_keeper_value_12;
-    PyTracebackObject *exception_keeper_tb_12;
-    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_12;
+    PyObject *exception_keeper_type_9;
+    PyObject *exception_keeper_value_9;
+    PyTracebackObject *exception_keeper_tb_9;
+    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_9;
+    static struct Nuitka_FrameObject *cache_frame_dfc30c439432b1d463cbe6022af0e241 = NULL;
+    PyObject *exception_keeper_type_10;
+    PyObject *exception_keeper_value_10;
+    PyTracebackObject *exception_keeper_tb_10;
+    NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_10;
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_d569f2e8273c24d4a2bb953825b423c8)) {
-        Py_XDECREF(cache_frame_d569f2e8273c24d4a2bb953825b423c8);
+    if (isFrameUnusable(cache_frame_dfc30c439432b1d463cbe6022af0e241)) {
+        Py_XDECREF(cache_frame_dfc30c439432b1d463cbe6022af0e241);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_d569f2e8273c24d4a2bb953825b423c8 == NULL) {
+        if (cache_frame_dfc30c439432b1d463cbe6022af0e241 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_d569f2e8273c24d4a2bb953825b423c8 = MAKE_FUNCTION_FRAME(codeobj_d569f2e8273c24d4a2bb953825b423c8, module_urllib3$util$url, sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *));
+        cache_frame_dfc30c439432b1d463cbe6022af0e241 = MAKE_FUNCTION_FRAME(codeobj_dfc30c439432b1d463cbe6022af0e241, module_urllib3$util$url, sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_d569f2e8273c24d4a2bb953825b423c8->m_type_description == NULL);
-    frame_d569f2e8273c24d4a2bb953825b423c8 = cache_frame_d569f2e8273c24d4a2bb953825b423c8;
+    assert(cache_frame_dfc30c439432b1d463cbe6022af0e241->m_type_description == NULL);
+    frame_dfc30c439432b1d463cbe6022af0e241 = cache_frame_dfc30c439432b1d463cbe6022af0e241;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_d569f2e8273c24d4a2bb953825b423c8);
+    pushFrameStack(frame_dfc30c439432b1d463cbe6022af0e241);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_d569f2e8273c24d4a2bb953825b423c8) == 2); // Frame stack
+    assert(Py_REFCNT(frame_dfc30c439432b1d463cbe6022af0e241) == 2); // Frame stack
 
     // Framed code:
     {
@@ -8842,8 +8829,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 355;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 352;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         tmp_condition_result_1 = (tmp_res == 0) ? true : false;
@@ -8868,11 +8855,11 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 357;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 354;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 357;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 354;
         tmp_return_value = CALL_FUNCTION_NO_ARGS(tmp_called_value_1);
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());
@@ -8880,8 +8867,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 357;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 354;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         goto frame_return_exit_1;
@@ -8912,13 +8899,13 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 360;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 357;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(par_url);
         tmp_args_element_value_1 = par_url;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 360;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 357;
         tmp_operand_value_2 = CALL_METHOD_WITH_SINGLE_ARG(tmp_called_instance_1, mod_consts[72], tmp_args_element_value_1);
         if (tmp_operand_value_2 == NULL) {
             assert(ERROR_OCCURRED());
@@ -8926,8 +8913,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 360;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 357;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         tmp_res = CHECK_IF_TRUE(tmp_operand_value_2);
@@ -8938,8 +8925,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 360;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 357;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         tmp_condition_result_2 = (tmp_res == 0) ? true : false;
@@ -8964,8 +8951,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 361;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 358;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         {
@@ -8998,8 +8985,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 364;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 361;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_3;
         }
         tmp_called_value_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_1, mod_consts[70]);
@@ -9009,8 +8996,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 364;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 361;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_3;
         }
         if (par_url == NULL) {
@@ -9020,13 +9007,13 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 364;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 361;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_3;
         }
 
         tmp_args_element_value_2 = par_url;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 364;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 361;
         tmp_called_instance_2 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_2, tmp_args_element_value_2);
         Py_DECREF(tmp_called_value_2);
         if (tmp_called_instance_2 == NULL) {
@@ -9035,11 +9022,11 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 364;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 361;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_3;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 364;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 361;
         tmp_iter_arg_1 = CALL_METHOD_NO_ARGS(tmp_called_instance_2, mod_consts[97]);
         Py_DECREF(tmp_called_instance_2);
         if (tmp_iter_arg_1 == NULL) {
@@ -9048,8 +9035,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 364;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 361;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_3;
         }
         tmp_assign_source_3 = MAKE_UNPACK_ITERATOR(tmp_iter_arg_1);
@@ -9060,8 +9047,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 364;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 361;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_3;
         }
         assert(tmp_tuple_unpack_1__source_iter == NULL);
@@ -9085,8 +9072,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 361;
             goto try_except_handler_4;
         }
         assert(tmp_tuple_unpack_1__element_1 == NULL);
@@ -9109,8 +9096,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 361;
             goto try_except_handler_4;
         }
         assert(tmp_tuple_unpack_1__element_2 == NULL);
@@ -9133,8 +9120,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 361;
             goto try_except_handler_4;
         }
         assert(tmp_tuple_unpack_1__element_3 == NULL);
@@ -9157,8 +9144,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 361;
             goto try_except_handler_4;
         }
         assert(tmp_tuple_unpack_1__element_4 == NULL);
@@ -9181,8 +9168,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 361;
             goto try_except_handler_4;
         }
         assert(tmp_tuple_unpack_1__element_5 == NULL);
@@ -9206,8 +9193,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
                 } else {
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
-                    type_description_1 = "oooooooooooooco";
-                    exception_lineno = 364;
+                    type_description_1 = "oooooooooooco";
+                    exception_lineno = 361;
                     goto try_except_handler_4;
                 }
             }
@@ -9220,8 +9207,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             Py_INCREF(exception_value);
             exception_tb = NULL;
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 361;
             goto try_except_handler_4;
         }
     }
@@ -9369,11 +9356,11 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 365;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 362;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 365;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 362;
         tmp_cmp_expr_left_2 = CALL_FUNCTION_NO_ARGS(tmp_called_value_3);
         Py_DECREF(tmp_called_value_3);
         if (tmp_cmp_expr_left_2 == NULL) {
@@ -9382,8 +9369,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 365;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 362;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_cmp_expr_right_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[68]);
@@ -9398,8 +9385,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_cmp_expr_left_2);
 
-            exception_lineno = 365;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 362;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_res = PySequence_Contains(tmp_cmp_expr_right_2, tmp_cmp_expr_left_2);
@@ -9410,8 +9397,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 365;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 362;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_or_right_value_1 = (tmp_res == 1) ? Py_True : Py_False;
@@ -9434,8 +9421,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 367;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
 
@@ -9446,8 +9433,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 367;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 364;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_condition_result_3 = tmp_truth_name_1 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -9469,8 +9456,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 368;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 365;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
 
@@ -9482,11 +9469,11 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 368;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 365;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 368;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 365;
         tmp_assign_source_15 = CALL_FUNCTION_NO_ARGS(tmp_called_value_4);
         Py_DECREF(tmp_called_value_4);
         if (tmp_assign_source_15 == NULL) {
@@ -9495,8 +9482,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 368;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 365;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         {
@@ -9518,8 +9505,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 370;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 367;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_condition_result_4 = tmp_truth_name_2 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -9534,33 +9521,50 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     {
         PyObject *tmp_assign_source_16;
         PyObject *tmp_iter_arg_2;
-        PyObject *tmp_called_value_5;
-        PyObject *tmp_expression_value_4;
-        CHECK_OBJECT(var_authority);
-        tmp_expression_value_4 = var_authority;
-        tmp_called_value_5 = LOOKUP_ATTRIBUTE(tmp_expression_value_4, mod_consts[106]);
-        if (tmp_called_value_5 == NULL) {
+        PyObject *tmp_called_instance_3;
+        PyObject *tmp_called_instance_4;
+        PyObject *tmp_args_element_value_3;
+        tmp_called_instance_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[106]);
+
+        if (unlikely(tmp_called_instance_4 == NULL)) {
+            tmp_called_instance_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[106]);
+        }
+
+        if (tmp_called_instance_4 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 371;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 368;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_5;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 371;
-        tmp_iter_arg_2 = CALL_FUNCTION_WITH_POSARGS1(tmp_called_value_5, mod_consts[107]);
+        CHECK_OBJECT(var_authority);
+        tmp_args_element_value_3 = var_authority;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 368;
+        tmp_called_instance_3 = CALL_METHOD_WITH_SINGLE_ARG(tmp_called_instance_4, mod_consts[70], tmp_args_element_value_3);
+        if (tmp_called_instance_3 == NULL) {
+            assert(ERROR_OCCURRED());
 
-        Py_DECREF(tmp_called_value_5);
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 368;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_5;
+        }
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 368;
+        tmp_iter_arg_2 = CALL_METHOD_NO_ARGS(tmp_called_instance_3, mod_consts[97]);
+        Py_DECREF(tmp_called_instance_3);
         if (tmp_iter_arg_2 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 371;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 368;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_5;
         }
         tmp_assign_source_16 = MAKE_UNPACK_ITERATOR(tmp_iter_arg_2);
@@ -9571,8 +9575,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 371;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 368;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_5;
         }
         assert(tmp_tuple_unpack_2__source_iter == NULL);
@@ -9596,8 +9600,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 371;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 368;
             goto try_except_handler_6;
         }
         assert(tmp_tuple_unpack_2__element_1 == NULL);
@@ -9620,8 +9624,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 371;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 368;
             goto try_except_handler_6;
         }
         assert(tmp_tuple_unpack_2__element_2 == NULL);
@@ -9644,8 +9648,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 371;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 368;
             goto try_except_handler_6;
         }
         assert(tmp_tuple_unpack_2__element_3 == NULL);
@@ -9669,8 +9673,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
                 } else {
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
-                    type_description_1 = "oooooooooooooco";
-                    exception_lineno = 371;
+                    type_description_1 = "oooooooooooco";
+                    exception_lineno = 368;
                     goto try_except_handler_6;
                 }
             }
@@ -9679,12 +9683,12 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
 
             exception_type = PyExc_ValueError;
             Py_INCREF(PyExc_ValueError);
-            exception_value = mod_consts[108];
+            exception_value = mod_consts[107];
             Py_INCREF(exception_value);
             exception_tb = NULL;
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 371;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 368;
             goto try_except_handler_6;
         }
     }
@@ -9757,9 +9761,9 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         PyObject *tmp_assign_source_21;
         CHECK_OBJECT(tmp_tuple_unpack_2__element_2);
         tmp_assign_source_21 = tmp_tuple_unpack_2__element_2;
-        assert(var__ == NULL);
+        assert(var_host == NULL);
         Py_INCREF(tmp_assign_source_21);
-        var__ = tmp_assign_source_21;
+        var_host = tmp_assign_source_21;
     }
     Py_XDECREF(tmp_tuple_unpack_2__element_2);
     tmp_tuple_unpack_2__element_2 = NULL;
@@ -9768,148 +9772,196 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         PyObject *tmp_assign_source_22;
         CHECK_OBJECT(tmp_tuple_unpack_2__element_3);
         tmp_assign_source_22 = tmp_tuple_unpack_2__element_3;
-        assert(var_host_port == NULL);
+        assert(var_port == NULL);
         Py_INCREF(tmp_assign_source_22);
-        var_host_port = tmp_assign_source_22;
+        var_port = tmp_assign_source_22;
     }
     Py_XDECREF(tmp_tuple_unpack_2__element_3);
     tmp_tuple_unpack_2__element_3 = NULL;
 
     {
-        PyObject *tmp_assign_source_23;
-        int tmp_or_left_truth_2;
-        PyObject *tmp_or_left_value_2;
-        PyObject *tmp_or_right_value_2;
+        nuitka_bool tmp_condition_result_5;
+        int tmp_and_left_truth_1;
+        nuitka_bool tmp_and_left_value_1;
+        nuitka_bool tmp_and_right_value_1;
+        int tmp_truth_name_3;
+        int tmp_truth_name_4;
         CHECK_OBJECT(var_auth);
-        tmp_or_left_value_2 = var_auth;
-        tmp_or_left_truth_2 = CHECK_IF_TRUE(tmp_or_left_value_2);
-        if (tmp_or_left_truth_2 == -1) {
+        tmp_truth_name_3 = CHECK_IF_TRUE(var_auth);
+        if (tmp_truth_name_3 == -1) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 372;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 369;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
-        if (tmp_or_left_truth_2 == 1) {
-            goto or_left_2;
-        } else {
-            goto or_right_2;
+        tmp_and_left_value_1 = tmp_truth_name_3 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
+        tmp_and_left_truth_1 = tmp_and_left_value_1 == NUITKA_BOOL_TRUE ? 1 : 0;
+        if (tmp_and_left_truth_1 == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 369;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
         }
-        or_right_2:;
-        tmp_or_right_value_2 = Py_None;
-        tmp_assign_source_23 = tmp_or_right_value_2;
-        goto or_end_2;
-        or_left_2:;
-        tmp_assign_source_23 = tmp_or_left_value_2;
-        or_end_2:;
+        if (tmp_and_left_truth_1 == 1) {
+            goto and_right_1;
+        } else {
+            goto and_left_1;
+        }
+        and_right_1:;
+        CHECK_OBJECT(var_normalize_uri);
+        tmp_truth_name_4 = CHECK_IF_TRUE(var_normalize_uri);
+        if (tmp_truth_name_4 == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 369;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
+        tmp_and_right_value_1 = tmp_truth_name_4 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
+        tmp_condition_result_5 = tmp_and_right_value_1;
+        goto and_end_1;
+        and_left_1:;
+        tmp_condition_result_5 = tmp_and_left_value_1;
+        and_end_1:;
+        if (tmp_condition_result_5 == NUITKA_BOOL_TRUE) {
+            goto branch_yes_5;
+        } else {
+            goto branch_no_5;
+        }
+    }
+    branch_yes_5:;
+    {
+        PyObject *tmp_assign_source_23;
+        PyObject *tmp_called_value_5;
+        PyObject *tmp_args_element_value_4;
+        PyObject *tmp_args_element_value_5;
+        tmp_called_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
+
+        if (unlikely(tmp_called_value_5 == NULL)) {
+            tmp_called_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
+        }
+
+        if (tmp_called_value_5 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 370;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
+        CHECK_OBJECT(var_auth);
+        tmp_args_element_value_4 = var_auth;
+        tmp_args_element_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[108]);
+
+        if (unlikely(tmp_args_element_value_5 == NULL)) {
+            tmp_args_element_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[108]);
+        }
+
+        if (tmp_args_element_value_5 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 370;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 370;
+        {
+            PyObject *call_args[] = {tmp_args_element_value_4, tmp_args_element_value_5};
+            tmp_assign_source_23 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_5, call_args);
+        }
+
+        if (tmp_assign_source_23 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 370;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
         {
             PyObject *old = var_auth;
             assert(old != NULL);
             var_auth = tmp_assign_source_23;
-            Py_INCREF(var_auth);
             Py_DECREF(old);
         }
 
     }
-    // Tried code:
+    branch_no_5:;
+    {
+        nuitka_bool tmp_condition_result_6;
+        PyObject *tmp_cmp_expr_left_3;
+        PyObject *tmp_cmp_expr_right_3;
+        CHECK_OBJECT(var_port);
+        tmp_cmp_expr_left_3 = var_port;
+        tmp_cmp_expr_right_3 = mod_consts[16];
+        tmp_condition_result_6 = RICH_COMPARE_EQ_NBOOL_OBJECT_UNICODE(tmp_cmp_expr_left_3, tmp_cmp_expr_right_3);
+        if (tmp_condition_result_6 == NUITKA_BOOL_EXCEPTION) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 371;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
+        if (tmp_condition_result_6 == NUITKA_BOOL_TRUE) {
+            goto branch_yes_6;
+        } else {
+            goto branch_no_6;
+        }
+    }
+    branch_yes_6:;
     {
         PyObject *tmp_assign_source_24;
-        PyObject *tmp_iter_arg_3;
-        PyObject *tmp_called_instance_3;
-        PyObject *tmp_called_instance_4;
-        PyObject *tmp_args_element_value_3;
-        tmp_called_instance_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[109]);
-
-        if (unlikely(tmp_called_instance_4 == NULL)) {
-            tmp_called_instance_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[109]);
+        tmp_assign_source_24 = Py_None;
+        {
+            PyObject *old = var_port;
+            assert(old != NULL);
+            var_port = tmp_assign_source_24;
+            Py_INCREF(var_port);
+            Py_DECREF(old);
         }
 
-        if (tmp_called_instance_4 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 373;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_7;
-        }
-        CHECK_OBJECT(var_host_port);
-        tmp_args_element_value_3 = var_host_port;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 373;
-        tmp_called_instance_3 = CALL_METHOD_WITH_SINGLE_ARG(tmp_called_instance_4, mod_consts[70], tmp_args_element_value_3);
-        if (tmp_called_instance_3 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 373;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_7;
-        }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 373;
-        tmp_iter_arg_3 = CALL_METHOD_NO_ARGS(tmp_called_instance_3, mod_consts[97]);
-        Py_DECREF(tmp_called_instance_3);
-        if (tmp_iter_arg_3 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 373;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_7;
-        }
-        tmp_assign_source_24 = MAKE_UNPACK_ITERATOR(tmp_iter_arg_3);
-        Py_DECREF(tmp_iter_arg_3);
-        if (tmp_assign_source_24 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 373;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_7;
-        }
-        assert(tmp_tuple_unpack_3__source_iter == NULL);
-        tmp_tuple_unpack_3__source_iter = tmp_assign_source_24;
     }
-    // Tried code:
+    branch_no_6:;
+    goto branch_end_4;
+    branch_no_4:;
     {
         PyObject *tmp_assign_source_25;
+        PyObject *tmp_iter_arg_3;
+        tmp_iter_arg_3 = mod_consts[109];
+        tmp_assign_source_25 = MAKE_ITERATOR_INFALLIBLE(tmp_iter_arg_3);
+        assert(!(tmp_assign_source_25 == NULL));
+        assert(tmp_tuple_unpack_3__source_iter == NULL);
+        tmp_tuple_unpack_3__source_iter = tmp_assign_source_25;
+    }
+    // Tried code:
+    // Tried code:
+    {
+        PyObject *tmp_assign_source_26;
         PyObject *tmp_unpack_9;
         CHECK_OBJECT(tmp_tuple_unpack_3__source_iter);
         tmp_unpack_9 = tmp_tuple_unpack_3__source_iter;
-        tmp_assign_source_25 = UNPACK_NEXT(tmp_unpack_9, 0, 2);
-        if (tmp_assign_source_25 == NULL) {
-            if (!ERROR_OCCURRED()) {
-                exception_type = PyExc_StopIteration;
-                Py_INCREF(exception_type);
-                exception_value = NULL;
-                exception_tb = NULL;
-            } else {
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-            }
-
-
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 373;
-            goto try_except_handler_8;
-        }
-        assert(tmp_tuple_unpack_3__element_1 == NULL);
-        tmp_tuple_unpack_3__element_1 = tmp_assign_source_25;
-    }
-    {
-        PyObject *tmp_assign_source_26;
-        PyObject *tmp_unpack_10;
-        CHECK_OBJECT(tmp_tuple_unpack_3__source_iter);
-        tmp_unpack_10 = tmp_tuple_unpack_3__source_iter;
-        tmp_assign_source_26 = UNPACK_NEXT(tmp_unpack_10, 1, 2);
+        tmp_assign_source_26 = UNPACK_NEXT(tmp_unpack_9, 0, 3);
         if (tmp_assign_source_26 == NULL) {
             if (!ERROR_OCCURRED()) {
                 exception_type = PyExc_StopIteration;
@@ -9921,12 +9973,60 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             }
 
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 373;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 374;
+            goto try_except_handler_8;
+        }
+        assert(tmp_tuple_unpack_3__element_1 == NULL);
+        tmp_tuple_unpack_3__element_1 = tmp_assign_source_26;
+    }
+    {
+        PyObject *tmp_assign_source_27;
+        PyObject *tmp_unpack_10;
+        CHECK_OBJECT(tmp_tuple_unpack_3__source_iter);
+        tmp_unpack_10 = tmp_tuple_unpack_3__source_iter;
+        tmp_assign_source_27 = UNPACK_NEXT(tmp_unpack_10, 1, 3);
+        if (tmp_assign_source_27 == NULL) {
+            if (!ERROR_OCCURRED()) {
+                exception_type = PyExc_StopIteration;
+                Py_INCREF(exception_type);
+                exception_value = NULL;
+                exception_tb = NULL;
+            } else {
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+            }
+
+
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 374;
             goto try_except_handler_8;
         }
         assert(tmp_tuple_unpack_3__element_2 == NULL);
-        tmp_tuple_unpack_3__element_2 = tmp_assign_source_26;
+        tmp_tuple_unpack_3__element_2 = tmp_assign_source_27;
+    }
+    {
+        PyObject *tmp_assign_source_28;
+        PyObject *tmp_unpack_11;
+        CHECK_OBJECT(tmp_tuple_unpack_3__source_iter);
+        tmp_unpack_11 = tmp_tuple_unpack_3__source_iter;
+        tmp_assign_source_28 = UNPACK_NEXT(tmp_unpack_11, 2, 3);
+        if (tmp_assign_source_28 == NULL) {
+            if (!ERROR_OCCURRED()) {
+                exception_type = PyExc_StopIteration;
+                Py_INCREF(exception_type);
+                exception_value = NULL;
+                exception_tb = NULL;
+            } else {
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+            }
+
+
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 374;
+            goto try_except_handler_8;
+        }
+        assert(tmp_tuple_unpack_3__element_3 == NULL);
+        tmp_tuple_unpack_3__element_3 = tmp_assign_source_28;
     }
     {
         PyObject *tmp_iterator_name_3;
@@ -9946,8 +10046,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
                 } else {
                     FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
-                    type_description_1 = "oooooooooooooco";
-                    exception_lineno = 373;
+                    type_description_1 = "oooooooooooco";
+                    exception_lineno = 374;
                     goto try_except_handler_8;
                 }
             }
@@ -9956,12 +10056,12 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
 
             exception_type = PyExc_ValueError;
             Py_INCREF(PyExc_ValueError);
-            exception_value = mod_consts[36];
+            exception_value = mod_consts[107];
             Py_INCREF(exception_value);
             exception_tb = NULL;
 
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 373;
+            type_description_1 = "oooooooooooco";
+            exception_lineno = 374;
             goto try_except_handler_8;
         }
     }
@@ -10005,6 +10105,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     tmp_tuple_unpack_3__element_1 = NULL;
     Py_XDECREF(tmp_tuple_unpack_3__element_2);
     tmp_tuple_unpack_3__element_2 = NULL;
+    Py_XDECREF(tmp_tuple_unpack_3__element_3);
+    tmp_tuple_unpack_3__element_3 = NULL;
     // Re-raise.
     exception_type = exception_keeper_type_6;
     exception_value = exception_keeper_value_6;
@@ -10018,399 +10120,37 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     Py_DECREF(tmp_tuple_unpack_3__source_iter);
     tmp_tuple_unpack_3__source_iter = NULL;
     {
-        PyObject *tmp_assign_source_27;
+        PyObject *tmp_assign_source_29;
         CHECK_OBJECT(tmp_tuple_unpack_3__element_1);
-        tmp_assign_source_27 = tmp_tuple_unpack_3__element_1;
-        assert(var_host == NULL);
-        Py_INCREF(tmp_assign_source_27);
-        var_host = tmp_assign_source_27;
+        tmp_assign_source_29 = tmp_tuple_unpack_3__element_1;
+        assert(var_auth == NULL);
+        Py_INCREF(tmp_assign_source_29);
+        var_auth = tmp_assign_source_29;
     }
     Py_XDECREF(tmp_tuple_unpack_3__element_1);
     tmp_tuple_unpack_3__element_1 = NULL;
 
     {
-        PyObject *tmp_assign_source_28;
+        PyObject *tmp_assign_source_30;
         CHECK_OBJECT(tmp_tuple_unpack_3__element_2);
-        tmp_assign_source_28 = tmp_tuple_unpack_3__element_2;
-        assert(var_port == NULL);
-        Py_INCREF(tmp_assign_source_28);
-        var_port = tmp_assign_source_28;
+        tmp_assign_source_30 = tmp_tuple_unpack_3__element_2;
+        assert(var_host == NULL);
+        Py_INCREF(tmp_assign_source_30);
+        var_host = tmp_assign_source_30;
     }
     Py_XDECREF(tmp_tuple_unpack_3__element_2);
     tmp_tuple_unpack_3__element_2 = NULL;
 
     {
-        nuitka_bool tmp_condition_result_5;
-        int tmp_and_left_truth_1;
-        nuitka_bool tmp_and_left_value_1;
-        nuitka_bool tmp_and_right_value_1;
-        int tmp_truth_name_3;
-        int tmp_truth_name_4;
-        CHECK_OBJECT(var_auth);
-        tmp_truth_name_3 = CHECK_IF_TRUE(var_auth);
-        if (tmp_truth_name_3 == -1) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 374;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        tmp_and_left_value_1 = tmp_truth_name_3 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
-        tmp_and_left_truth_1 = tmp_and_left_value_1 == NUITKA_BOOL_TRUE ? 1 : 0;
-        if (tmp_and_left_truth_1 == -1) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 374;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        if (tmp_and_left_truth_1 == 1) {
-            goto and_right_1;
-        } else {
-            goto and_left_1;
-        }
-        and_right_1:;
-        CHECK_OBJECT(var_normalize_uri);
-        tmp_truth_name_4 = CHECK_IF_TRUE(var_normalize_uri);
-        if (tmp_truth_name_4 == -1) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 374;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        tmp_and_right_value_1 = tmp_truth_name_4 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
-        tmp_condition_result_5 = tmp_and_right_value_1;
-        goto and_end_1;
-        and_left_1:;
-        tmp_condition_result_5 = tmp_and_left_value_1;
-        and_end_1:;
-        if (tmp_condition_result_5 == NUITKA_BOOL_TRUE) {
-            goto branch_yes_5;
-        } else {
-            goto branch_no_5;
-        }
-    }
-    branch_yes_5:;
-    {
-        PyObject *tmp_assign_source_29;
-        PyObject *tmp_called_value_6;
-        PyObject *tmp_args_element_value_4;
-        PyObject *tmp_args_element_value_5;
-        tmp_called_value_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
-
-        if (unlikely(tmp_called_value_6 == NULL)) {
-            tmp_called_value_6 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
-        }
-
-        if (tmp_called_value_6 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 375;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        CHECK_OBJECT(var_auth);
-        tmp_args_element_value_4 = var_auth;
-        tmp_args_element_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[110]);
-
-        if (unlikely(tmp_args_element_value_5 == NULL)) {
-            tmp_args_element_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[110]);
-        }
-
-        if (tmp_args_element_value_5 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 375;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 375;
-        {
-            PyObject *call_args[] = {tmp_args_element_value_4, tmp_args_element_value_5};
-            tmp_assign_source_29 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_6, call_args);
-        }
-
-        if (tmp_assign_source_29 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 375;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        {
-            PyObject *old = var_auth;
-            assert(old != NULL);
-            var_auth = tmp_assign_source_29;
-            Py_DECREF(old);
-        }
-
-    }
-    branch_no_5:;
-    {
-        nuitka_bool tmp_condition_result_6;
-        PyObject *tmp_cmp_expr_left_3;
-        PyObject *tmp_cmp_expr_right_3;
-        CHECK_OBJECT(var_port);
-        tmp_cmp_expr_left_3 = var_port;
-        tmp_cmp_expr_right_3 = mod_consts[16];
-        tmp_condition_result_6 = RICH_COMPARE_EQ_NBOOL_OBJECT_UNICODE(tmp_cmp_expr_left_3, tmp_cmp_expr_right_3);
-        if (tmp_condition_result_6 == NUITKA_BOOL_EXCEPTION) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 376;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        if (tmp_condition_result_6 == NUITKA_BOOL_TRUE) {
-            goto branch_yes_6;
-        } else {
-            goto branch_no_6;
-        }
-    }
-    branch_yes_6:;
-    {
-        PyObject *tmp_assign_source_30;
-        tmp_assign_source_30 = Py_None;
-        {
-            PyObject *old = var_port;
-            assert(old != NULL);
-            var_port = tmp_assign_source_30;
-            Py_INCREF(var_port);
-            Py_DECREF(old);
-        }
-
-    }
-    branch_no_6:;
-    goto branch_end_4;
-    branch_no_4:;
-    {
         PyObject *tmp_assign_source_31;
-        PyObject *tmp_iter_arg_4;
-        tmp_iter_arg_4 = mod_consts[111];
-        tmp_assign_source_31 = MAKE_ITERATOR_INFALLIBLE(tmp_iter_arg_4);
-        assert(!(tmp_assign_source_31 == NULL));
-        assert(tmp_tuple_unpack_4__source_iter == NULL);
-        tmp_tuple_unpack_4__source_iter = tmp_assign_source_31;
-    }
-    // Tried code:
-    // Tried code:
-    {
-        PyObject *tmp_assign_source_32;
-        PyObject *tmp_unpack_11;
-        CHECK_OBJECT(tmp_tuple_unpack_4__source_iter);
-        tmp_unpack_11 = tmp_tuple_unpack_4__source_iter;
-        tmp_assign_source_32 = UNPACK_NEXT(tmp_unpack_11, 0, 3);
-        if (tmp_assign_source_32 == NULL) {
-            if (!ERROR_OCCURRED()) {
-                exception_type = PyExc_StopIteration;
-                Py_INCREF(exception_type);
-                exception_value = NULL;
-                exception_tb = NULL;
-            } else {
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-            }
-
-
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 379;
-            goto try_except_handler_10;
-        }
-        assert(tmp_tuple_unpack_4__element_1 == NULL);
-        tmp_tuple_unpack_4__element_1 = tmp_assign_source_32;
-    }
-    {
-        PyObject *tmp_assign_source_33;
-        PyObject *tmp_unpack_12;
-        CHECK_OBJECT(tmp_tuple_unpack_4__source_iter);
-        tmp_unpack_12 = tmp_tuple_unpack_4__source_iter;
-        tmp_assign_source_33 = UNPACK_NEXT(tmp_unpack_12, 1, 3);
-        if (tmp_assign_source_33 == NULL) {
-            if (!ERROR_OCCURRED()) {
-                exception_type = PyExc_StopIteration;
-                Py_INCREF(exception_type);
-                exception_value = NULL;
-                exception_tb = NULL;
-            } else {
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-            }
-
-
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 379;
-            goto try_except_handler_10;
-        }
-        assert(tmp_tuple_unpack_4__element_2 == NULL);
-        tmp_tuple_unpack_4__element_2 = tmp_assign_source_33;
-    }
-    {
-        PyObject *tmp_assign_source_34;
-        PyObject *tmp_unpack_13;
-        CHECK_OBJECT(tmp_tuple_unpack_4__source_iter);
-        tmp_unpack_13 = tmp_tuple_unpack_4__source_iter;
-        tmp_assign_source_34 = UNPACK_NEXT(tmp_unpack_13, 2, 3);
-        if (tmp_assign_source_34 == NULL) {
-            if (!ERROR_OCCURRED()) {
-                exception_type = PyExc_StopIteration;
-                Py_INCREF(exception_type);
-                exception_value = NULL;
-                exception_tb = NULL;
-            } else {
-                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-            }
-
-
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 379;
-            goto try_except_handler_10;
-        }
-        assert(tmp_tuple_unpack_4__element_3 == NULL);
-        tmp_tuple_unpack_4__element_3 = tmp_assign_source_34;
-    }
-    {
-        PyObject *tmp_iterator_name_4;
-        CHECK_OBJECT(tmp_tuple_unpack_4__source_iter);
-        tmp_iterator_name_4 = tmp_tuple_unpack_4__source_iter;
-        // Check if iterator has left-over elements.
-        CHECK_OBJECT(tmp_iterator_name_4); assert(HAS_ITERNEXT(tmp_iterator_name_4));
-
-        tmp_iterator_attempt = (*Py_TYPE(tmp_iterator_name_4)->tp_iternext)(tmp_iterator_name_4);
-
-        if (likely(tmp_iterator_attempt == NULL)) {
-            PyObject *error = GET_ERROR_OCCURRED();
-
-            if (error != NULL) {
-                if (EXCEPTION_MATCH_BOOL_SINGLE(error, PyExc_StopIteration)) {
-                    CLEAR_ERROR_OCCURRED();
-                } else {
-                    FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-                    type_description_1 = "oooooooooooooco";
-                    exception_lineno = 379;
-                    goto try_except_handler_10;
-                }
-            }
-        } else {
-            Py_DECREF(tmp_iterator_attempt);
-
-            exception_type = PyExc_ValueError;
-            Py_INCREF(PyExc_ValueError);
-            exception_value = mod_consts[108];
-            Py_INCREF(exception_value);
-            exception_tb = NULL;
-
-            type_description_1 = "oooooooooooooco";
-            exception_lineno = 379;
-            goto try_except_handler_10;
-        }
-    }
-    goto try_end_7;
-    // Exception handler code:
-    try_except_handler_10:;
-    exception_keeper_type_7 = exception_type;
-    exception_keeper_value_7 = exception_value;
-    exception_keeper_tb_7 = exception_tb;
-    exception_keeper_lineno_7 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = 0;
-
-    CHECK_OBJECT(tmp_tuple_unpack_4__source_iter);
-    Py_DECREF(tmp_tuple_unpack_4__source_iter);
-    tmp_tuple_unpack_4__source_iter = NULL;
-    // Re-raise.
-    exception_type = exception_keeper_type_7;
-    exception_value = exception_keeper_value_7;
-    exception_tb = exception_keeper_tb_7;
-    exception_lineno = exception_keeper_lineno_7;
-
-    goto try_except_handler_9;
-    // End of try:
-    try_end_7:;
-    goto try_end_8;
-    // Exception handler code:
-    try_except_handler_9:;
-    exception_keeper_type_8 = exception_type;
-    exception_keeper_value_8 = exception_value;
-    exception_keeper_tb_8 = exception_tb;
-    exception_keeper_lineno_8 = exception_lineno;
-    exception_type = NULL;
-    exception_value = NULL;
-    exception_tb = NULL;
-    exception_lineno = 0;
-
-    Py_XDECREF(tmp_tuple_unpack_4__element_1);
-    tmp_tuple_unpack_4__element_1 = NULL;
-    Py_XDECREF(tmp_tuple_unpack_4__element_2);
-    tmp_tuple_unpack_4__element_2 = NULL;
-    Py_XDECREF(tmp_tuple_unpack_4__element_3);
-    tmp_tuple_unpack_4__element_3 = NULL;
-    // Re-raise.
-    exception_type = exception_keeper_type_8;
-    exception_value = exception_keeper_value_8;
-    exception_tb = exception_keeper_tb_8;
-    exception_lineno = exception_keeper_lineno_8;
-
-    goto try_except_handler_2;
-    // End of try:
-    try_end_8:;
-    CHECK_OBJECT(tmp_tuple_unpack_4__source_iter);
-    Py_DECREF(tmp_tuple_unpack_4__source_iter);
-    tmp_tuple_unpack_4__source_iter = NULL;
-    {
-        PyObject *tmp_assign_source_35;
-        CHECK_OBJECT(tmp_tuple_unpack_4__element_1);
-        tmp_assign_source_35 = tmp_tuple_unpack_4__element_1;
-        assert(var_auth == NULL);
-        Py_INCREF(tmp_assign_source_35);
-        var_auth = tmp_assign_source_35;
-    }
-    Py_XDECREF(tmp_tuple_unpack_4__element_1);
-    tmp_tuple_unpack_4__element_1 = NULL;
-
-    {
-        PyObject *tmp_assign_source_36;
-        CHECK_OBJECT(tmp_tuple_unpack_4__element_2);
-        tmp_assign_source_36 = tmp_tuple_unpack_4__element_2;
-        assert(var_host == NULL);
-        Py_INCREF(tmp_assign_source_36);
-        var_host = tmp_assign_source_36;
-    }
-    Py_XDECREF(tmp_tuple_unpack_4__element_2);
-    tmp_tuple_unpack_4__element_2 = NULL;
-
-    {
-        PyObject *tmp_assign_source_37;
-        CHECK_OBJECT(tmp_tuple_unpack_4__element_3);
-        tmp_assign_source_37 = tmp_tuple_unpack_4__element_3;
+        CHECK_OBJECT(tmp_tuple_unpack_3__element_3);
+        tmp_assign_source_31 = tmp_tuple_unpack_3__element_3;
         assert(var_port == NULL);
-        Py_INCREF(tmp_assign_source_37);
-        var_port = tmp_assign_source_37;
+        Py_INCREF(tmp_assign_source_31);
+        var_port = tmp_assign_source_31;
     }
-    Py_XDECREF(tmp_tuple_unpack_4__element_3);
-    tmp_tuple_unpack_4__element_3 = NULL;
+    Py_XDECREF(tmp_tuple_unpack_3__element_3);
+    tmp_tuple_unpack_3__element_3 = NULL;
 
     branch_end_4:;
     {
@@ -10429,25 +10169,25 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     }
     branch_yes_7:;
     {
-        PyObject *tmp_assign_source_38;
+        PyObject *tmp_assign_source_32;
         PyObject *tmp_int_arg_1;
         CHECK_OBJECT(var_port);
         tmp_int_arg_1 = var_port;
-        tmp_assign_source_38 = PyNumber_Int(tmp_int_arg_1);
-        if (tmp_assign_source_38 == NULL) {
+        tmp_assign_source_32 = PyNumber_Int(tmp_int_arg_1);
+        if (tmp_assign_source_32 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 382;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 377;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         {
             PyObject *old = var_port;
             assert(old != NULL);
-            var_port = tmp_assign_source_38;
+            var_port = tmp_assign_source_32;
             Py_DECREF(old);
         }
 
@@ -10456,34 +10196,34 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         bool tmp_condition_result_8;
         PyObject *tmp_operand_value_3;
         {
-            PyObject *tmp_assign_source_39;
+            PyObject *tmp_assign_source_33;
             CHECK_OBJECT(var_port);
-            tmp_assign_source_39 = var_port;
+            tmp_assign_source_33 = var_port;
             assert(tmp_comparison_chain_1__operand_2 == NULL);
-            Py_INCREF(tmp_assign_source_39);
-            tmp_comparison_chain_1__operand_2 = tmp_assign_source_39;
+            Py_INCREF(tmp_assign_source_33);
+            tmp_comparison_chain_1__operand_2 = tmp_assign_source_33;
         }
         // Tried code:
         {
-            PyObject *tmp_assign_source_40;
+            PyObject *tmp_assign_source_34;
             PyObject *tmp_cmp_expr_left_5;
             PyObject *tmp_cmp_expr_right_5;
             tmp_cmp_expr_left_5 = mod_consts[25];
             CHECK_OBJECT(tmp_comparison_chain_1__operand_2);
             tmp_cmp_expr_right_5 = tmp_comparison_chain_1__operand_2;
-            tmp_assign_source_40 = RICH_COMPARE_LE_OBJECT_LONG_OBJECT(tmp_cmp_expr_left_5, tmp_cmp_expr_right_5);
-            if (tmp_assign_source_40 == NULL) {
+            tmp_assign_source_34 = RICH_COMPARE_LE_OBJECT_LONG_OBJECT(tmp_cmp_expr_left_5, tmp_cmp_expr_right_5);
+            if (tmp_assign_source_34 == NULL) {
                 assert(ERROR_OCCURRED());
 
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 383;
-                type_description_1 = "oooooooooooooco";
-                goto try_except_handler_11;
+                exception_lineno = 378;
+                type_description_1 = "oooooooooooco";
+                goto try_except_handler_9;
             }
             assert(tmp_comparison_chain_1__comparison_result == NULL);
-            tmp_comparison_chain_1__comparison_result = tmp_assign_source_40;
+            tmp_comparison_chain_1__comparison_result = tmp_assign_source_34;
         }
         {
             bool tmp_condition_result_9;
@@ -10497,9 +10237,9 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 383;
-                type_description_1 = "oooooooooooooco";
-                goto try_except_handler_11;
+                exception_lineno = 378;
+                type_description_1 = "oooooooooooco";
+                goto try_except_handler_9;
             }
             tmp_condition_result_9 = (tmp_res == 0) ? true : false;
             if (tmp_condition_result_9 != false) {
@@ -10512,14 +10252,14 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         CHECK_OBJECT(tmp_comparison_chain_1__comparison_result);
         tmp_operand_value_3 = tmp_comparison_chain_1__comparison_result;
         Py_INCREF(tmp_operand_value_3);
-        goto try_return_handler_11;
+        goto try_return_handler_9;
         branch_no_9:;
         {
             PyObject *tmp_cmp_expr_left_6;
             PyObject *tmp_cmp_expr_right_6;
             CHECK_OBJECT(tmp_comparison_chain_1__operand_2);
             tmp_cmp_expr_left_6 = tmp_comparison_chain_1__operand_2;
-            tmp_cmp_expr_right_6 = mod_consts[112];
+            tmp_cmp_expr_right_6 = mod_consts[110];
             tmp_operand_value_3 = RICH_COMPARE_LE_OBJECT_OBJECT_LONG(tmp_cmp_expr_left_6, tmp_cmp_expr_right_6);
             if (tmp_operand_value_3 == NULL) {
                 assert(ERROR_OCCURRED());
@@ -10527,16 +10267,16 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 383;
-                type_description_1 = "oooooooooooooco";
-                goto try_except_handler_11;
+                exception_lineno = 378;
+                type_description_1 = "oooooooooooco";
+                goto try_except_handler_9;
             }
-            goto try_return_handler_11;
+            goto try_return_handler_9;
         }
         NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
         return NULL;
         // Return handler code:
-        try_return_handler_11:;
+        try_return_handler_9:;
         CHECK_OBJECT(tmp_comparison_chain_1__operand_2);
         Py_DECREF(tmp_comparison_chain_1__operand_2);
         tmp_comparison_chain_1__operand_2 = NULL;
@@ -10545,11 +10285,11 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         tmp_comparison_chain_1__comparison_result = NULL;
         goto outline_result_1;
         // Exception handler code:
-        try_except_handler_11:;
-        exception_keeper_type_9 = exception_type;
-        exception_keeper_value_9 = exception_value;
-        exception_keeper_tb_9 = exception_tb;
-        exception_keeper_lineno_9 = exception_lineno;
+        try_except_handler_9:;
+        exception_keeper_type_7 = exception_type;
+        exception_keeper_value_7 = exception_value;
+        exception_keeper_tb_7 = exception_tb;
+        exception_keeper_lineno_7 = exception_lineno;
         exception_type = NULL;
         exception_value = NULL;
         exception_tb = NULL;
@@ -10561,10 +10301,10 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         Py_XDECREF(tmp_comparison_chain_1__comparison_result);
         tmp_comparison_chain_1__comparison_result = NULL;
         // Re-raise.
-        exception_type = exception_keeper_type_9;
-        exception_value = exception_keeper_value_9;
-        exception_tb = exception_keeper_tb_9;
-        exception_lineno = exception_keeper_lineno_9;
+        exception_type = exception_keeper_type_7;
+        exception_value = exception_keeper_value_7;
+        exception_tb = exception_keeper_tb_7;
+        exception_lineno = exception_keeper_lineno_7;
 
         goto try_except_handler_2;
         // End of try:
@@ -10579,8 +10319,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 383;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 378;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_condition_result_8 = (tmp_res == 0) ? true : false;
@@ -10593,22 +10333,22 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     branch_yes_8:;
     {
         PyObject *tmp_raise_type_1;
-        PyObject *tmp_called_value_7;
+        PyObject *tmp_called_value_6;
         PyObject *tmp_args_element_value_6;
-        tmp_called_value_7 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[89]);
+        tmp_called_value_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[89]);
 
-        if (unlikely(tmp_called_value_7 == NULL)) {
-            tmp_called_value_7 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[89]);
+        if (unlikely(tmp_called_value_6 == NULL)) {
+            tmp_called_value_6 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[89]);
         }
 
-        if (tmp_called_value_7 == NULL) {
+        if (tmp_called_value_6 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 384;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 379;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         if (par_url == NULL) {
@@ -10618,51 +10358,51 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 384;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 379;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
 
         tmp_args_element_value_6 = par_url;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 384;
-        tmp_raise_type_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_7, tmp_args_element_value_6);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 379;
+        tmp_raise_type_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_6, tmp_args_element_value_6);
         if (tmp_raise_type_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 384;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 379;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         exception_type = tmp_raise_type_1;
-        exception_lineno = 384;
+        exception_lineno = 379;
         RAISE_EXCEPTION_WITH_TYPE(&exception_type, &exception_value, &exception_tb);
-        type_description_1 = "oooooooooooooco";
+        type_description_1 = "oooooooooooco";
         goto try_except_handler_2;
     }
     branch_no_8:;
     branch_no_7:;
     {
-        PyObject *tmp_assign_source_41;
-        PyObject *tmp_called_value_8;
+        PyObject *tmp_assign_source_35;
+        PyObject *tmp_called_value_7;
         PyObject *tmp_args_element_value_7;
         PyObject *tmp_args_element_value_8;
-        tmp_called_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[113]);
+        tmp_called_value_7 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[111]);
 
-        if (unlikely(tmp_called_value_8 == NULL)) {
-            tmp_called_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[113]);
+        if (unlikely(tmp_called_value_7 == NULL)) {
+            tmp_called_value_7 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[111]);
         }
 
-        if (tmp_called_value_8 == NULL) {
+        if (tmp_called_value_7 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 386;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 381;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         CHECK_OBJECT(var_host);
@@ -10674,32 +10414,32 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 386;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 381;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
 
         tmp_args_element_value_8 = var_scheme;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 386;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 381;
         {
             PyObject *call_args[] = {tmp_args_element_value_7, tmp_args_element_value_8};
-            tmp_assign_source_41 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_8, call_args);
+            tmp_assign_source_35 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_7, call_args);
         }
 
-        if (tmp_assign_source_41 == NULL) {
+        if (tmp_assign_source_35 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 386;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 381;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         {
             PyObject *old = var_host;
             assert(old != NULL);
-            var_host = tmp_assign_source_41;
+            var_host = tmp_assign_source_35;
             Py_DECREF(old);
         }
 
@@ -10719,8 +10459,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 388;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 383;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_and_left_value_2 = tmp_truth_name_5 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -10731,8 +10471,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 388;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 383;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         if (tmp_and_left_truth_2 == 1) {
@@ -10749,8 +10489,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 388;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 383;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_and_right_value_2 = tmp_truth_name_6 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -10767,13 +10507,56 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     }
     branch_yes_10:;
     {
-        PyObject *tmp_assign_source_42;
-        PyObject *tmp_called_value_9;
+        PyObject *tmp_assign_source_36;
+        PyObject *tmp_called_value_8;
         PyObject *tmp_args_element_value_9;
-        tmp_called_value_9 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[114]);
+        tmp_called_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[112]);
+
+        if (unlikely(tmp_called_value_8 == NULL)) {
+            tmp_called_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[112]);
+        }
+
+        if (tmp_called_value_8 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 384;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
+        CHECK_OBJECT(var_path);
+        tmp_args_element_value_9 = var_path;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 384;
+        tmp_assign_source_36 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_8, tmp_args_element_value_9);
+        if (tmp_assign_source_36 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 384;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_2;
+        }
+        {
+            PyObject *old = var_path;
+            assert(old != NULL);
+            var_path = tmp_assign_source_36;
+            Py_DECREF(old);
+        }
+
+    }
+    {
+        PyObject *tmp_assign_source_37;
+        PyObject *tmp_called_value_9;
+        PyObject *tmp_args_element_value_10;
+        PyObject *tmp_args_element_value_11;
+        tmp_called_value_9 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
 
         if (unlikely(tmp_called_value_9 == NULL)) {
-            tmp_called_value_9 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[114]);
+            tmp_called_value_9 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
         }
 
         if (tmp_called_value_9 == NULL) {
@@ -10782,51 +10565,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 389;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        CHECK_OBJECT(var_path);
-        tmp_args_element_value_9 = var_path;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 389;
-        tmp_assign_source_42 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_9, tmp_args_element_value_9);
-        if (tmp_assign_source_42 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 389;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_2;
-        }
-        {
-            PyObject *old = var_path;
-            assert(old != NULL);
-            var_path = tmp_assign_source_42;
-            Py_DECREF(old);
-        }
-
-    }
-    {
-        PyObject *tmp_assign_source_43;
-        PyObject *tmp_called_value_10;
-        PyObject *tmp_args_element_value_10;
-        PyObject *tmp_args_element_value_11;
-        tmp_called_value_10 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
-
-        if (unlikely(tmp_called_value_10 == NULL)) {
-            tmp_called_value_10 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
-        }
-
-        if (tmp_called_value_10 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 390;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 385;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         CHECK_OBJECT(var_path);
@@ -10843,30 +10583,30 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 390;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 385;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 390;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 385;
         {
             PyObject *call_args[] = {tmp_args_element_value_10, tmp_args_element_value_11};
-            tmp_assign_source_43 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_10, call_args);
+            tmp_assign_source_37 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_9, call_args);
         }
 
-        if (tmp_assign_source_43 == NULL) {
+        if (tmp_assign_source_37 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 390;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 385;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         {
             PyObject *old = var_path;
             assert(old != NULL);
-            var_path = tmp_assign_source_43;
+            var_path = tmp_assign_source_37;
             Py_DECREF(old);
         }
 
@@ -10887,8 +10627,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 391;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 386;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_and_left_value_3 = tmp_truth_name_7 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -10899,8 +10639,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 391;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 386;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         if (tmp_and_left_truth_3 == 1) {
@@ -10917,8 +10657,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 391;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 386;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_and_right_value_3 = tmp_truth_name_8 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -10935,24 +10675,24 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     }
     branch_yes_11:;
     {
-        PyObject *tmp_assign_source_44;
-        PyObject *tmp_called_value_11;
+        PyObject *tmp_assign_source_38;
+        PyObject *tmp_called_value_10;
         PyObject *tmp_args_element_value_12;
         PyObject *tmp_args_element_value_13;
-        tmp_called_value_11 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
+        tmp_called_value_10 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
 
-        if (unlikely(tmp_called_value_11 == NULL)) {
-            tmp_called_value_11 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
+        if (unlikely(tmp_called_value_10 == NULL)) {
+            tmp_called_value_10 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
         }
 
-        if (tmp_called_value_11 == NULL) {
+        if (tmp_called_value_10 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 392;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 387;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         CHECK_OBJECT(var_query);
@@ -10969,30 +10709,30 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 392;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 387;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 392;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 387;
         {
             PyObject *call_args[] = {tmp_args_element_value_12, tmp_args_element_value_13};
-            tmp_assign_source_44 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_11, call_args);
+            tmp_assign_source_38 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_10, call_args);
         }
 
-        if (tmp_assign_source_44 == NULL) {
+        if (tmp_assign_source_38 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 392;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 387;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         {
             PyObject *old = var_query;
             assert(old != NULL);
-            var_query = tmp_assign_source_44;
+            var_query = tmp_assign_source_38;
             Py_DECREF(old);
         }
 
@@ -11013,8 +10753,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 393;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 388;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_and_left_value_4 = tmp_truth_name_9 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -11025,8 +10765,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 393;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 388;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         if (tmp_and_left_truth_4 == 1) {
@@ -11043,8 +10783,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 393;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 388;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         tmp_and_right_value_4 = tmp_truth_name_10 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
@@ -11061,32 +10801,32 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     }
     branch_yes_12:;
     {
-        PyObject *tmp_assign_source_45;
-        PyObject *tmp_called_value_12;
+        PyObject *tmp_assign_source_39;
+        PyObject *tmp_called_value_11;
         PyObject *tmp_args_element_value_14;
         PyObject *tmp_args_element_value_15;
-        tmp_called_value_12 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
+        tmp_called_value_11 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[80]);
 
-        if (unlikely(tmp_called_value_12 == NULL)) {
-            tmp_called_value_12 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
+        if (unlikely(tmp_called_value_11 == NULL)) {
+            tmp_called_value_11 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[80]);
         }
 
-        if (tmp_called_value_12 == NULL) {
+        if (tmp_called_value_11 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 394;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 389;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         CHECK_OBJECT(var_fragment);
         tmp_args_element_value_14 = var_fragment;
-        tmp_args_element_value_15 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[115]);
+        tmp_args_element_value_15 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[113]);
 
         if (unlikely(tmp_args_element_value_15 == NULL)) {
-            tmp_args_element_value_15 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[115]);
+            tmp_args_element_value_15 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[113]);
         }
 
         if (tmp_args_element_value_15 == NULL) {
@@ -11095,42 +10835,42 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 394;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 389;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 394;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 389;
         {
             PyObject *call_args[] = {tmp_args_element_value_14, tmp_args_element_value_15};
-            tmp_assign_source_45 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_12, call_args);
+            tmp_assign_source_39 = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_11, call_args);
         }
 
-        if (tmp_assign_source_45 == NULL) {
+        if (tmp_assign_source_39 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 394;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 389;
+            type_description_1 = "oooooooooooco";
             goto try_except_handler_2;
         }
         {
             PyObject *old = var_fragment;
             assert(old != NULL);
-            var_fragment = tmp_assign_source_45;
+            var_fragment = tmp_assign_source_39;
             Py_DECREF(old);
         }
 
     }
     branch_no_12:;
-    goto try_end_9;
+    goto try_end_7;
     // Exception handler code:
     try_except_handler_2:;
-    exception_keeper_type_10 = exception_type;
-    exception_keeper_value_10 = exception_value;
-    exception_keeper_tb_10 = exception_tb;
-    exception_keeper_lineno_10 = exception_lineno;
+    exception_keeper_type_8 = exception_type;
+    exception_keeper_value_8 = exception_value;
+    exception_keeper_tb_8 = exception_tb;
+    exception_keeper_lineno_8 = exception_lineno;
     exception_type = NULL;
     exception_value = NULL;
     exception_tb = NULL;
@@ -11139,22 +10879,22 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     // Preserve existing published exception id 1.
     GET_CURRENT_EXCEPTION(&exception_preserved_type_1, &exception_preserved_value_1, &exception_preserved_tb_1);
 
-    if (exception_keeper_tb_10 == NULL) {
-        exception_keeper_tb_10 = MAKE_TRACEBACK(frame_d569f2e8273c24d4a2bb953825b423c8, exception_keeper_lineno_10);
-    } else if (exception_keeper_lineno_10 != 0) {
-        exception_keeper_tb_10 = ADD_TRACEBACK(exception_keeper_tb_10, frame_d569f2e8273c24d4a2bb953825b423c8, exception_keeper_lineno_10);
+    if (exception_keeper_tb_8 == NULL) {
+        exception_keeper_tb_8 = MAKE_TRACEBACK(frame_dfc30c439432b1d463cbe6022af0e241, exception_keeper_lineno_8);
+    } else if (exception_keeper_lineno_8 != 0) {
+        exception_keeper_tb_8 = ADD_TRACEBACK(exception_keeper_tb_8, frame_dfc30c439432b1d463cbe6022af0e241, exception_keeper_lineno_8);
     }
 
-    NORMALIZE_EXCEPTION(&exception_keeper_type_10, &exception_keeper_value_10, &exception_keeper_tb_10);
-    ATTACH_TRACEBACK_TO_EXCEPTION_VALUE(exception_keeper_value_10, exception_keeper_tb_10);
-    PUBLISH_EXCEPTION(&exception_keeper_type_10, &exception_keeper_value_10, &exception_keeper_tb_10);
+    NORMALIZE_EXCEPTION(&exception_keeper_type_8, &exception_keeper_value_8, &exception_keeper_tb_8);
+    ATTACH_TRACEBACK_TO_EXCEPTION_VALUE(exception_keeper_value_8, exception_keeper_tb_8);
+    PUBLISH_EXCEPTION(&exception_keeper_type_8, &exception_keeper_value_8, &exception_keeper_tb_8);
     // Tried code:
     {
         bool tmp_condition_result_13;
         PyObject *tmp_cmp_expr_left_7;
         PyObject *tmp_cmp_expr_right_7;
         tmp_cmp_expr_left_7 = EXC_TYPE(PyThreadState_GET());
-        tmp_cmp_expr_right_7 = mod_consts[116];
+        tmp_cmp_expr_right_7 = mod_consts[114];
         tmp_res = EXCEPTION_MATCH_BOOL(tmp_cmp_expr_left_7, tmp_cmp_expr_right_7);
         if (tmp_res == -1) {
             assert(ERROR_OCCURRED());
@@ -11162,9 +10902,9 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 396;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_12;
+            exception_lineno = 391;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_10;
         }
         tmp_condition_result_13 = (tmp_res != 0) ? true : false;
         if (tmp_condition_result_13 != false) {
@@ -11175,77 +10915,77 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     }
     branch_yes_13:;
     {
-        PyObject *tmp_called_value_13;
-        PyObject *tmp_expression_value_5;
+        PyObject *tmp_called_value_12;
+        PyObject *tmp_expression_value_4;
         PyObject *tmp_args_element_value_16;
-        PyObject *tmp_called_value_14;
+        PyObject *tmp_called_value_13;
         PyObject *tmp_args_element_value_17;
         PyObject *tmp_args_element_value_18;
-        tmp_expression_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[30]);
+        tmp_expression_value_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[30]);
 
-        if (unlikely(tmp_expression_value_5 == NULL)) {
-            tmp_expression_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[30]);
+        if (unlikely(tmp_expression_value_4 == NULL)) {
+            tmp_expression_value_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[30]);
         }
 
-        if (tmp_expression_value_5 == NULL) {
+        if (tmp_expression_value_4 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 397;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_12;
+            exception_lineno = 392;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_10;
         }
-        tmp_called_value_13 = LOOKUP_ATTRIBUTE(tmp_expression_value_5, mod_consts[88]);
+        tmp_called_value_12 = LOOKUP_ATTRIBUTE(tmp_expression_value_4, mod_consts[88]);
+        if (tmp_called_value_12 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 392;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_10;
+        }
+        tmp_called_value_13 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[89]);
+
+        if (unlikely(tmp_called_value_13 == NULL)) {
+            tmp_called_value_13 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[89]);
+        }
+
         if (tmp_called_value_13 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+            Py_DECREF(tmp_called_value_12);
 
-
-            exception_lineno = 397;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_12;
-        }
-        tmp_called_value_14 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[89]);
-
-        if (unlikely(tmp_called_value_14 == NULL)) {
-            tmp_called_value_14 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[89]);
-        }
-
-        if (tmp_called_value_14 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-            Py_DECREF(tmp_called_value_13);
-
-            exception_lineno = 397;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_12;
+            exception_lineno = 392;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_10;
         }
         CHECK_OBJECT(var_source_url);
         tmp_args_element_value_17 = var_source_url;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 397;
-        tmp_args_element_value_16 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_14, tmp_args_element_value_17);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 392;
+        tmp_args_element_value_16 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_13, tmp_args_element_value_17);
         if (tmp_args_element_value_16 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-            Py_DECREF(tmp_called_value_13);
+            Py_DECREF(tmp_called_value_12);
 
-            exception_lineno = 397;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_12;
+            exception_lineno = 392;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_10;
         }
         tmp_args_element_value_18 = Py_None;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 397;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 392;
         {
             PyObject *call_args[] = {tmp_args_element_value_16, tmp_args_element_value_18};
-            tmp_return_value = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_13, call_args);
+            tmp_return_value = CALL_FUNCTION_WITH_ARGS2(tmp_called_value_12, call_args);
         }
 
-        Py_DECREF(tmp_called_value_13);
+        Py_DECREF(tmp_called_value_12);
         Py_DECREF(tmp_args_element_value_16);
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());
@@ -11253,37 +10993,37 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 397;
-            type_description_1 = "oooooooooooooco";
-            goto try_except_handler_12;
+            exception_lineno = 392;
+            type_description_1 = "oooooooooooco";
+            goto try_except_handler_10;
         }
-        goto try_return_handler_12;
+        goto try_return_handler_10;
     }
     goto branch_end_13;
     branch_no_13:;
     tmp_result = RERAISE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
     if (unlikely(tmp_result == false)) {
-        exception_lineno = 363;
+        exception_lineno = 360;
     }
 
-    if (exception_tb && exception_tb->tb_frame == &frame_d569f2e8273c24d4a2bb953825b423c8->m_frame) frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = exception_tb->tb_lineno;
-    type_description_1 = "oooooooooooooco";
-    goto try_except_handler_12;
+    if (exception_tb && exception_tb->tb_frame == &frame_dfc30c439432b1d463cbe6022af0e241->m_frame) frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = exception_tb->tb_lineno;
+    type_description_1 = "oooooooooooco";
+    goto try_except_handler_10;
     branch_end_13:;
     NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
     return NULL;
     // Return handler code:
-    try_return_handler_12:;
+    try_return_handler_10:;
     // Restore previous exception id 1.
     SET_CURRENT_EXCEPTION(exception_preserved_type_1, exception_preserved_value_1, exception_preserved_tb_1);
 
     goto frame_return_exit_1;
     // Exception handler code:
-    try_except_handler_12:;
-    exception_keeper_type_11 = exception_type;
-    exception_keeper_value_11 = exception_value;
-    exception_keeper_tb_11 = exception_tb;
-    exception_keeper_lineno_11 = exception_lineno;
+    try_except_handler_10:;
+    exception_keeper_type_9 = exception_type;
+    exception_keeper_value_9 = exception_value;
+    exception_keeper_tb_9 = exception_tb;
+    exception_keeper_lineno_9 = exception_lineno;
     exception_type = NULL;
     exception_value = NULL;
     exception_tb = NULL;
@@ -11293,15 +11033,15 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     SET_CURRENT_EXCEPTION(exception_preserved_type_1, exception_preserved_value_1, exception_preserved_tb_1);
 
     // Re-raise.
-    exception_type = exception_keeper_type_11;
-    exception_value = exception_keeper_value_11;
-    exception_tb = exception_keeper_tb_11;
-    exception_lineno = exception_keeper_lineno_11;
+    exception_type = exception_keeper_type_9;
+    exception_value = exception_keeper_value_9;
+    exception_tb = exception_keeper_tb_9;
+    exception_lineno = exception_keeper_lineno_9;
 
     goto frame_exception_exit_1;
     // End of try:
     // End of try:
-    try_end_9:;
+    try_end_7:;
     {
         bool tmp_condition_result_14;
         PyObject *tmp_operand_value_5;
@@ -11314,8 +11054,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 403;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 398;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         tmp_condition_result_14 = (tmp_res == 0) ? true : false;
@@ -11328,9 +11068,9 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     branch_yes_14:;
     {
         bool tmp_condition_result_15;
-        int tmp_or_left_truth_3;
-        bool tmp_or_left_value_3;
-        bool tmp_or_right_value_3;
+        int tmp_or_left_truth_2;
+        bool tmp_or_left_value_2;
+        bool tmp_or_right_value_2;
         PyObject *tmp_cmp_expr_left_8;
         PyObject *tmp_cmp_expr_right_8;
         PyObject *tmp_cmp_expr_left_9;
@@ -11338,23 +11078,23 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         CHECK_OBJECT(var_query);
         tmp_cmp_expr_left_8 = var_query;
         tmp_cmp_expr_right_8 = Py_None;
-        tmp_or_left_value_3 = (tmp_cmp_expr_left_8 != tmp_cmp_expr_right_8) ? true : false;
-        tmp_or_left_truth_3 = tmp_or_left_value_3 != false ? 1 : 0;
-        if (tmp_or_left_truth_3 == 1) {
-            goto or_left_3;
+        tmp_or_left_value_2 = (tmp_cmp_expr_left_8 != tmp_cmp_expr_right_8) ? true : false;
+        tmp_or_left_truth_2 = tmp_or_left_value_2 != false ? 1 : 0;
+        if (tmp_or_left_truth_2 == 1) {
+            goto or_left_2;
         } else {
-            goto or_right_3;
+            goto or_right_2;
         }
-        or_right_3:;
+        or_right_2:;
         CHECK_OBJECT(var_fragment);
         tmp_cmp_expr_left_9 = var_fragment;
         tmp_cmp_expr_right_9 = Py_None;
-        tmp_or_right_value_3 = (tmp_cmp_expr_left_9 != tmp_cmp_expr_right_9) ? true : false;
-        tmp_condition_result_15 = tmp_or_right_value_3;
-        goto or_end_3;
-        or_left_3:;
-        tmp_condition_result_15 = tmp_or_left_value_3;
-        or_end_3:;
+        tmp_or_right_value_2 = (tmp_cmp_expr_left_9 != tmp_cmp_expr_right_9) ? true : false;
+        tmp_condition_result_15 = tmp_or_right_value_2;
+        goto or_end_2;
+        or_left_2:;
+        tmp_condition_result_15 = tmp_or_left_value_2;
+        or_end_2:;
         if (tmp_condition_result_15 != false) {
             goto branch_yes_15;
         } else {
@@ -11363,12 +11103,12 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     }
     branch_yes_15:;
     {
-        PyObject *tmp_assign_source_46;
-        tmp_assign_source_46 = mod_consts[16];
+        PyObject *tmp_assign_source_40;
+        tmp_assign_source_40 = mod_consts[16];
         {
             PyObject *old = var_path;
             assert(old != NULL);
-            var_path = tmp_assign_source_46;
+            var_path = tmp_assign_source_40;
             Py_INCREF(var_path);
             Py_DECREF(old);
         }
@@ -11377,12 +11117,12 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     goto branch_end_15;
     branch_no_15:;
     {
-        PyObject *tmp_assign_source_47;
-        tmp_assign_source_47 = Py_None;
+        PyObject *tmp_assign_source_41;
+        tmp_assign_source_41 = Py_None;
         {
             PyObject *old = var_path;
             assert(old != NULL);
-            var_path = tmp_assign_source_47;
+            var_path = tmp_assign_source_41;
             Py_INCREF(var_path);
             Py_DECREF(old);
         }
@@ -11394,7 +11134,7 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         nuitka_bool tmp_condition_result_16;
         PyObject *tmp_isinstance_inst_1;
         PyObject *tmp_isinstance_cls_1;
-        PyObject *tmp_expression_value_6;
+        PyObject *tmp_expression_value_5;
         if (par_url == NULL) {
 
             FORMAT_UNBOUND_LOCAL_ERROR(&exception_type, &exception_value, mod_consts[22]);
@@ -11402,12 +11142,62 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 411;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 406;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
 
         tmp_isinstance_inst_1 = par_url;
+        tmp_expression_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[30]);
+
+        if (unlikely(tmp_expression_value_5 == NULL)) {
+            tmp_expression_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[30]);
+        }
+
+        if (tmp_expression_value_5 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 406;
+            type_description_1 = "oooooooooooco";
+            goto frame_exception_exit_1;
+        }
+        tmp_isinstance_cls_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_5, mod_consts[115]);
+        if (tmp_isinstance_cls_1 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 406;
+            type_description_1 = "oooooooooooco";
+            goto frame_exception_exit_1;
+        }
+        tmp_res = PyObject_IsInstance(tmp_isinstance_inst_1, tmp_isinstance_cls_1);
+        Py_DECREF(tmp_isinstance_cls_1);
+        if (tmp_res == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 406;
+            type_description_1 = "oooooooooooco";
+            goto frame_exception_exit_1;
+        }
+        tmp_condition_result_16 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_16 == NUITKA_BOOL_TRUE) {
+            goto branch_yes_16;
+        } else {
+            goto branch_no_16;
+        }
+    }
+    branch_yes_16:;
+    {
+        PyObject *tmp_assign_source_42;
+        PyObject *tmp_expression_value_6;
         tmp_expression_value_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[30]);
 
         if (unlikely(tmp_expression_value_6 == NULL)) {
@@ -11420,43 +11210,29 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 411;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 407;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
-        tmp_isinstance_cls_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_6, mod_consts[117]);
-        if (tmp_isinstance_cls_1 == NULL) {
+        tmp_assign_source_42 = LOOKUP_ATTRIBUTE(tmp_expression_value_6, mod_consts[31]);
+        if (tmp_assign_source_42 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 411;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 407;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
-        tmp_res = PyObject_IsInstance(tmp_isinstance_inst_1, tmp_isinstance_cls_1);
-        Py_DECREF(tmp_isinstance_cls_1);
-        if (tmp_res == -1) {
-            assert(ERROR_OCCURRED());
+        assert(Nuitka_Cell_GET(var_ensure_func) == NULL);
+        PyCell_SET(var_ensure_func, tmp_assign_source_42);
 
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 411;
-            type_description_1 = "oooooooooooooco";
-            goto frame_exception_exit_1;
-        }
-        tmp_condition_result_16 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_16 == NUITKA_BOOL_TRUE) {
-            goto branch_yes_16;
-        } else {
-            goto branch_no_16;
-        }
     }
-    branch_yes_16:;
+    goto branch_end_16;
+    branch_no_16:;
     {
-        PyObject *tmp_assign_source_48;
+        PyObject *tmp_assign_source_43;
         PyObject *tmp_expression_value_7;
         tmp_expression_value_7 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[30]);
 
@@ -11470,113 +11246,77 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 412;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 409;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
-        tmp_assign_source_48 = LOOKUP_ATTRIBUTE(tmp_expression_value_7, mod_consts[31]);
-        if (tmp_assign_source_48 == NULL) {
+        tmp_assign_source_43 = LOOKUP_ATTRIBUTE(tmp_expression_value_7, mod_consts[67]);
+        if (tmp_assign_source_43 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 412;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 409;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         assert(Nuitka_Cell_GET(var_ensure_func) == NULL);
-        PyCell_SET(var_ensure_func, tmp_assign_source_48);
-
-    }
-    goto branch_end_16;
-    branch_no_16:;
-    {
-        PyObject *tmp_assign_source_49;
-        PyObject *tmp_expression_value_8;
-        tmp_expression_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[30]);
-
-        if (unlikely(tmp_expression_value_8 == NULL)) {
-            tmp_expression_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[30]);
-        }
-
-        if (tmp_expression_value_8 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 414;
-            type_description_1 = "oooooooooooooco";
-            goto frame_exception_exit_1;
-        }
-        tmp_assign_source_49 = LOOKUP_ATTRIBUTE(tmp_expression_value_8, mod_consts[67]);
-        if (tmp_assign_source_49 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 414;
-            type_description_1 = "oooooooooooooco";
-            goto frame_exception_exit_1;
-        }
-        assert(Nuitka_Cell_GET(var_ensure_func) == NULL);
-        PyCell_SET(var_ensure_func, tmp_assign_source_49);
+        PyCell_SET(var_ensure_func, tmp_assign_source_43);
 
     }
     branch_end_16:;
     {
-        PyObject *tmp_assign_source_50;
+        PyObject *tmp_assign_source_44;
         struct Nuitka_CellObject *tmp_closure_1[1];
 
         tmp_closure_1[0] = var_ensure_func;
         Py_INCREF(tmp_closure_1[0]);
 
-        tmp_assign_source_50 = MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url$$$function__1_ensure_type(tmp_closure_1);
+        tmp_assign_source_44 = MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url$$$function__1_ensure_type(tmp_closure_1);
 
         assert(var_ensure_type == NULL);
-        var_ensure_type = tmp_assign_source_50;
+        var_ensure_type = tmp_assign_source_44;
     }
     {
-        PyObject *tmp_called_value_15;
+        PyObject *tmp_called_value_14;
         PyObject *tmp_kw_call_value_0_1;
-        PyObject *tmp_called_value_16;
+        PyObject *tmp_called_value_15;
         PyObject *tmp_args_element_value_19;
         PyObject *tmp_kw_call_value_1_1;
-        PyObject *tmp_called_value_17;
+        PyObject *tmp_called_value_16;
         PyObject *tmp_args_element_value_20;
         PyObject *tmp_kw_call_value_2_1;
-        PyObject *tmp_called_value_18;
+        PyObject *tmp_called_value_17;
         PyObject *tmp_args_element_value_21;
         PyObject *tmp_kw_call_value_3_1;
         PyObject *tmp_kw_call_value_4_1;
-        PyObject *tmp_called_value_19;
+        PyObject *tmp_called_value_18;
         PyObject *tmp_args_element_value_22;
         PyObject *tmp_kw_call_value_5_1;
-        PyObject *tmp_called_value_20;
+        PyObject *tmp_called_value_19;
         PyObject *tmp_args_element_value_23;
         PyObject *tmp_kw_call_value_6_1;
-        PyObject *tmp_called_value_21;
+        PyObject *tmp_called_value_20;
         PyObject *tmp_args_element_value_24;
-        tmp_called_value_15 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[5]);
+        tmp_called_value_14 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[5]);
 
-        if (unlikely(tmp_called_value_15 == NULL)) {
-            tmp_called_value_15 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[5]);
+        if (unlikely(tmp_called_value_14 == NULL)) {
+            tmp_called_value_14 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[5]);
         }
 
-        if (tmp_called_value_15 == NULL) {
+        if (tmp_called_value_14 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 419;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 414;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(var_ensure_type);
-        tmp_called_value_16 = var_ensure_type;
+        tmp_called_value_15 = var_ensure_type;
         if (var_scheme == NULL) {
 
             FORMAT_UNBOUND_LOCAL_ERROR(&exception_type, &exception_value, mod_consts[105]);
@@ -11584,46 +11324,46 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 420;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 415;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_value_19 = var_scheme;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 420;
-        tmp_kw_call_value_0_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_16, tmp_args_element_value_19);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 415;
+        tmp_kw_call_value_0_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_15, tmp_args_element_value_19);
         if (tmp_kw_call_value_0_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 420;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 415;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(var_ensure_type);
-        tmp_called_value_17 = var_ensure_type;
+        tmp_called_value_16 = var_ensure_type;
         CHECK_OBJECT(var_auth);
         tmp_args_element_value_20 = var_auth;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 421;
-        tmp_kw_call_value_1_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_17, tmp_args_element_value_20);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 416;
+        tmp_kw_call_value_1_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_16, tmp_args_element_value_20);
         if (tmp_kw_call_value_1_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_kw_call_value_0_1);
 
-            exception_lineno = 421;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 416;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(var_ensure_type);
-        tmp_called_value_18 = var_ensure_type;
+        tmp_called_value_17 = var_ensure_type;
         CHECK_OBJECT(var_host);
         tmp_args_element_value_21 = var_host;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 422;
-        tmp_kw_call_value_2_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_18, tmp_args_element_value_21);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 417;
+        tmp_kw_call_value_2_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_17, tmp_args_element_value_21);
         if (tmp_kw_call_value_2_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -11631,8 +11371,8 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             Py_DECREF(tmp_kw_call_value_0_1);
             Py_DECREF(tmp_kw_call_value_1_1);
 
-            exception_lineno = 422;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 417;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         if (var_port == NULL) {
@@ -11644,18 +11384,18 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 423;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 418;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
 
         tmp_kw_call_value_3_1 = var_port;
         CHECK_OBJECT(var_ensure_type);
-        tmp_called_value_19 = var_ensure_type;
+        tmp_called_value_18 = var_ensure_type;
         CHECK_OBJECT(var_path);
         tmp_args_element_value_22 = var_path;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 424;
-        tmp_kw_call_value_4_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_19, tmp_args_element_value_22);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 419;
+        tmp_kw_call_value_4_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_18, tmp_args_element_value_22);
         if (tmp_kw_call_value_4_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -11664,16 +11404,16 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             Py_DECREF(tmp_kw_call_value_1_1);
             Py_DECREF(tmp_kw_call_value_2_1);
 
-            exception_lineno = 424;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 419;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(var_ensure_type);
-        tmp_called_value_20 = var_ensure_type;
+        tmp_called_value_19 = var_ensure_type;
         CHECK_OBJECT(var_query);
         tmp_args_element_value_23 = var_query;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 425;
-        tmp_kw_call_value_5_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_20, tmp_args_element_value_23);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 420;
+        tmp_kw_call_value_5_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_19, tmp_args_element_value_23);
         if (tmp_kw_call_value_5_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -11683,16 +11423,16 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             Py_DECREF(tmp_kw_call_value_2_1);
             Py_DECREF(tmp_kw_call_value_4_1);
 
-            exception_lineno = 425;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 420;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(var_ensure_type);
-        tmp_called_value_21 = var_ensure_type;
+        tmp_called_value_20 = var_ensure_type;
         CHECK_OBJECT(var_fragment);
         tmp_args_element_value_24 = var_fragment;
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 426;
-        tmp_kw_call_value_6_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_21, tmp_args_element_value_24);
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 421;
+        tmp_kw_call_value_6_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_20, tmp_args_element_value_24);
         if (tmp_kw_call_value_6_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -11703,15 +11443,15 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             Py_DECREF(tmp_kw_call_value_4_1);
             Py_DECREF(tmp_kw_call_value_5_1);
 
-            exception_lineno = 426;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 421;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
-        frame_d569f2e8273c24d4a2bb953825b423c8->m_frame.f_lineno = 419;
+        frame_dfc30c439432b1d463cbe6022af0e241->m_frame.f_lineno = 414;
         {
             PyObject *kw_values[7] = {tmp_kw_call_value_0_1, tmp_kw_call_value_1_1, tmp_kw_call_value_2_1, tmp_kw_call_value_3_1, tmp_kw_call_value_4_1, tmp_kw_call_value_5_1, tmp_kw_call_value_6_1};
 
-            tmp_return_value = CALL_FUNCTION_WITH_NO_ARGS_KWSPLIT(tmp_called_value_15, kw_values, mod_consts[120]);
+            tmp_return_value = CALL_FUNCTION_WITH_NO_ARGS_KWSPLIT(tmp_called_value_14, kw_values, mod_consts[118]);
         }
 
         Py_DECREF(tmp_kw_call_value_0_1);
@@ -11726,15 +11466,15 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 419;
-            type_description_1 = "oooooooooooooco";
+            exception_lineno = 414;
+            type_description_1 = "oooooooooooco";
             goto frame_exception_exit_1;
         }
         goto frame_return_exit_1;
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_d569f2e8273c24d4a2bb953825b423c8);
+    RESTORE_FRAME_EXCEPTION(frame_dfc30c439432b1d463cbe6022af0e241);
 #endif
 
     // Put the previous frame back on top.
@@ -11744,7 +11484,7 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
 
     frame_return_exit_1:;
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_d569f2e8273c24d4a2bb953825b423c8);
+    RESTORE_FRAME_EXCEPTION(frame_dfc30c439432b1d463cbe6022af0e241);
 #endif
 
     // Put the previous frame back on top.
@@ -11755,18 +11495,18 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_d569f2e8273c24d4a2bb953825b423c8);
+    RESTORE_FRAME_EXCEPTION(frame_dfc30c439432b1d463cbe6022af0e241);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_d569f2e8273c24d4a2bb953825b423c8, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_d569f2e8273c24d4a2bb953825b423c8->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_d569f2e8273c24d4a2bb953825b423c8, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_dfc30c439432b1d463cbe6022af0e241, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_dfc30c439432b1d463cbe6022af0e241->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_dfc30c439432b1d463cbe6022af0e241, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_d569f2e8273c24d4a2bb953825b423c8,
+        frame_dfc30c439432b1d463cbe6022af0e241,
         type_description_1,
         par_url,
         var_source_url,
@@ -11777,8 +11517,6 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
         var_fragment,
         var_normalize_uri,
         var_auth,
-        var__,
-        var_host_port,
         var_host,
         var_port,
         var_ensure_func,
@@ -11787,17 +11525,17 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
 
 
     // Release cached frame if used for exception.
-    if (frame_d569f2e8273c24d4a2bb953825b423c8 == cache_frame_d569f2e8273c24d4a2bb953825b423c8) {
+    if (frame_dfc30c439432b1d463cbe6022af0e241 == cache_frame_dfc30c439432b1d463cbe6022af0e241) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_d569f2e8273c24d4a2bb953825b423c8);
-        cache_frame_d569f2e8273c24d4a2bb953825b423c8 = NULL;
+        Py_DECREF(cache_frame_dfc30c439432b1d463cbe6022af0e241);
+        cache_frame_dfc30c439432b1d463cbe6022af0e241 = NULL;
     }
 
-    assertFrameObject(frame_d569f2e8273c24d4a2bb953825b423c8);
+    assertFrameObject(frame_dfc30c439432b1d463cbe6022af0e241);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -11828,10 +11566,6 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     var_normalize_uri = NULL;
     Py_XDECREF(var_auth);
     var_auth = NULL;
-    Py_XDECREF(var__);
-    var__ = NULL;
-    Py_XDECREF(var_host_port);
-    var_host_port = NULL;
     Py_XDECREF(var_host);
     var_host = NULL;
     Py_XDECREF(var_port);
@@ -11844,10 +11578,10 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     goto function_return_exit;
     // Exception handler code:
     try_except_handler_1:;
-    exception_keeper_type_12 = exception_type;
-    exception_keeper_value_12 = exception_value;
-    exception_keeper_tb_12 = exception_tb;
-    exception_keeper_lineno_12 = exception_lineno;
+    exception_keeper_type_10 = exception_type;
+    exception_keeper_value_10 = exception_value;
+    exception_keeper_tb_10 = exception_tb;
+    exception_keeper_lineno_10 = exception_lineno;
     exception_type = NULL;
     exception_value = NULL;
     exception_tb = NULL;
@@ -11871,10 +11605,6 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     var_normalize_uri = NULL;
     Py_XDECREF(var_auth);
     var_auth = NULL;
-    Py_XDECREF(var__);
-    var__ = NULL;
-    Py_XDECREF(var_host_port);
-    var_host_port = NULL;
     Py_XDECREF(var_host);
     var_host = NULL;
     Py_XDECREF(var_port);
@@ -11885,10 +11615,10 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url(struct Nuitka_Fu
     Py_XDECREF(var_ensure_type);
     var_ensure_type = NULL;
     // Re-raise.
-    exception_type = exception_keeper_type_12;
-    exception_value = exception_keeper_value_12;
-    exception_tb = exception_keeper_tb_12;
-    exception_lineno = exception_keeper_lineno_12;
+    exception_type = exception_keeper_type_10;
+    exception_value = exception_keeper_value_10;
+    exception_tb = exception_keeper_tb_10;
+    exception_lineno = exception_keeper_lineno_10;
 
     goto function_exception_exit;
     // End of try:
@@ -11922,41 +11652,41 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
 
     // Local variable declarations.
     PyObject *par_x = python_pars[0];
-    struct Nuitka_FrameObject *frame_80a47e6b48e6077d08469d2bdd212260;
+    struct Nuitka_FrameObject *frame_26da35f5c22f9257e2fb0af8ae19b14f;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    static struct Nuitka_FrameObject *cache_frame_80a47e6b48e6077d08469d2bdd212260 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_26da35f5c22f9257e2fb0af8ae19b14f = NULL;
 
     // Actual function body.
-    if (isFrameUnusable(cache_frame_80a47e6b48e6077d08469d2bdd212260)) {
-        Py_XDECREF(cache_frame_80a47e6b48e6077d08469d2bdd212260);
+    if (isFrameUnusable(cache_frame_26da35f5c22f9257e2fb0af8ae19b14f)) {
+        Py_XDECREF(cache_frame_26da35f5c22f9257e2fb0af8ae19b14f);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_80a47e6b48e6077d08469d2bdd212260 == NULL) {
+        if (cache_frame_26da35f5c22f9257e2fb0af8ae19b14f == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_80a47e6b48e6077d08469d2bdd212260 = MAKE_FUNCTION_FRAME(codeobj_80a47e6b48e6077d08469d2bdd212260, module_urllib3$util$url, sizeof(void *)+sizeof(void *));
+        cache_frame_26da35f5c22f9257e2fb0af8ae19b14f = MAKE_FUNCTION_FRAME(codeobj_26da35f5c22f9257e2fb0af8ae19b14f, module_urllib3$util$url, sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_80a47e6b48e6077d08469d2bdd212260->m_type_description == NULL);
-    frame_80a47e6b48e6077d08469d2bdd212260 = cache_frame_80a47e6b48e6077d08469d2bdd212260;
+    assert(cache_frame_26da35f5c22f9257e2fb0af8ae19b14f->m_type_description == NULL);
+    frame_26da35f5c22f9257e2fb0af8ae19b14f = cache_frame_26da35f5c22f9257e2fb0af8ae19b14f;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_80a47e6b48e6077d08469d2bdd212260);
+    pushFrameStack(frame_26da35f5c22f9257e2fb0af8ae19b14f);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_80a47e6b48e6077d08469d2bdd212260) == 2); // Frame stack
+    assert(Py_REFCNT(frame_26da35f5c22f9257e2fb0af8ae19b14f) == 2); // Frame stack
 
     // Framed code:
     {
@@ -11982,12 +11712,12 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
         condexpr_false_1:;
         if (Nuitka_Cell_GET(self->m_closure[0]) == NULL) {
 
-            FORMAT_UNBOUND_CLOSURE_ERROR(&exception_type, &exception_value, mod_consts[122]);
+            FORMAT_UNBOUND_CLOSURE_ERROR(&exception_type, &exception_value, mod_consts[120]);
             exception_tb = NULL;
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 417;
+            exception_lineno = 412;
             type_description_1 = "oc";
             goto frame_exception_exit_1;
         }
@@ -11995,7 +11725,7 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
         tmp_called_value_1 = Nuitka_Cell_GET(self->m_closure[0]);
         CHECK_OBJECT(par_x);
         tmp_args_element_value_1 = par_x;
-        frame_80a47e6b48e6077d08469d2bdd212260->m_frame.f_lineno = 417;
+        frame_26da35f5c22f9257e2fb0af8ae19b14f->m_frame.f_lineno = 412;
         tmp_return_value = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_1, tmp_args_element_value_1);
         if (tmp_return_value == NULL) {
             assert(ERROR_OCCURRED());
@@ -12003,7 +11733,7 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 417;
+            exception_lineno = 412;
             type_description_1 = "oc";
             goto frame_exception_exit_1;
         }
@@ -12012,7 +11742,7 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_80a47e6b48e6077d08469d2bdd212260);
+    RESTORE_FRAME_EXCEPTION(frame_26da35f5c22f9257e2fb0af8ae19b14f);
 #endif
 
     // Put the previous frame back on top.
@@ -12022,7 +11752,7 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
 
     frame_return_exit_1:;
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_80a47e6b48e6077d08469d2bdd212260);
+    RESTORE_FRAME_EXCEPTION(frame_26da35f5c22f9257e2fb0af8ae19b14f);
 #endif
 
     // Put the previous frame back on top.
@@ -12033,18 +11763,18 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_80a47e6b48e6077d08469d2bdd212260);
+    RESTORE_FRAME_EXCEPTION(frame_26da35f5c22f9257e2fb0af8ae19b14f);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_80a47e6b48e6077d08469d2bdd212260, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_80a47e6b48e6077d08469d2bdd212260->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_80a47e6b48e6077d08469d2bdd212260, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_26da35f5c22f9257e2fb0af8ae19b14f, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_26da35f5c22f9257e2fb0af8ae19b14f->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_26da35f5c22f9257e2fb0af8ae19b14f, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_80a47e6b48e6077d08469d2bdd212260,
+        frame_26da35f5c22f9257e2fb0af8ae19b14f,
         type_description_1,
         par_x,
         self->m_closure[0]
@@ -12052,17 +11782,17 @@ static PyObject *impl_urllib3$util$url$$$function__13_parse_url$$$function__1_en
 
 
     // Release cached frame if used for exception.
-    if (frame_80a47e6b48e6077d08469d2bdd212260 == cache_frame_80a47e6b48e6077d08469d2bdd212260) {
+    if (frame_26da35f5c22f9257e2fb0af8ae19b14f == cache_frame_26da35f5c22f9257e2fb0af8ae19b14f) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_80a47e6b48e6077d08469d2bdd212260);
-        cache_frame_80a47e6b48e6077d08469d2bdd212260 = NULL;
+        Py_DECREF(cache_frame_26da35f5c22f9257e2fb0af8ae19b14f);
+        cache_frame_26da35f5c22f9257e2fb0af8ae19b14f = NULL;
     }
 
-    assertFrameObject(frame_80a47e6b48e6077d08469d2bdd212260);
+    assertFrameObject(frame_26da35f5c22f9257e2fb0af8ae19b14f);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -12104,14 +11834,14 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
     // Local variable declarations.
     PyObject *par_url = python_pars[0];
     PyObject *var_p = NULL;
-    struct Nuitka_FrameObject *frame_5dc978fcf89e5fbbb07d24b895279846;
+    struct Nuitka_FrameObject *frame_b2e0183b1968541f8fb494681067161a;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
     PyObject *tmp_return_value = NULL;
-    static struct Nuitka_FrameObject *cache_frame_5dc978fcf89e5fbbb07d24b895279846 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_b2e0183b1968541f8fb494681067161a = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
     PyTracebackObject *exception_keeper_tb_1;
@@ -12119,41 +11849,41 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_5dc978fcf89e5fbbb07d24b895279846)) {
-        Py_XDECREF(cache_frame_5dc978fcf89e5fbbb07d24b895279846);
+    if (isFrameUnusable(cache_frame_b2e0183b1968541f8fb494681067161a)) {
+        Py_XDECREF(cache_frame_b2e0183b1968541f8fb494681067161a);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_5dc978fcf89e5fbbb07d24b895279846 == NULL) {
+        if (cache_frame_b2e0183b1968541f8fb494681067161a == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_5dc978fcf89e5fbbb07d24b895279846 = MAKE_FUNCTION_FRAME(codeobj_5dc978fcf89e5fbbb07d24b895279846, module_urllib3$util$url, sizeof(void *)+sizeof(void *));
+        cache_frame_b2e0183b1968541f8fb494681067161a = MAKE_FUNCTION_FRAME(codeobj_b2e0183b1968541f8fb494681067161a, module_urllib3$util$url, sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_5dc978fcf89e5fbbb07d24b895279846->m_type_description == NULL);
-    frame_5dc978fcf89e5fbbb07d24b895279846 = cache_frame_5dc978fcf89e5fbbb07d24b895279846;
+    assert(cache_frame_b2e0183b1968541f8fb494681067161a->m_type_description == NULL);
+    frame_b2e0183b1968541f8fb494681067161a = cache_frame_b2e0183b1968541f8fb494681067161a;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_5dc978fcf89e5fbbb07d24b895279846);
+    pushFrameStack(frame_b2e0183b1968541f8fb494681067161a);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_5dc978fcf89e5fbbb07d24b895279846) == 2); // Frame stack
+    assert(Py_REFCNT(frame_b2e0183b1968541f8fb494681067161a) == 2); // Frame stack
 
     // Framed code:
     {
         PyObject *tmp_assign_source_1;
         PyObject *tmp_called_value_1;
         PyObject *tmp_args_element_value_1;
-        tmp_called_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[123]);
+        tmp_called_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[121]);
 
         if (unlikely(tmp_called_value_1 == NULL)) {
-            tmp_called_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[123]);
+            tmp_called_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[121]);
         }
 
         if (tmp_called_value_1 == NULL) {
@@ -12162,13 +11892,13 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 434;
+            exception_lineno = 429;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
         CHECK_OBJECT(par_url);
         tmp_args_element_value_1 = par_url;
-        frame_5dc978fcf89e5fbbb07d24b895279846->m_frame.f_lineno = 434;
+        frame_b2e0183b1968541f8fb494681067161a->m_frame.f_lineno = 429;
         tmp_assign_source_1 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_value_1, tmp_args_element_value_1);
         if (tmp_assign_source_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -12176,7 +11906,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 434;
+            exception_lineno = 429;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -12198,7 +11928,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 435;
+            exception_lineno = 430;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -12209,7 +11939,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_or_left_value_1);
 
-            exception_lineno = 435;
+            exception_lineno = 430;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -12220,7 +11950,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
         }
         or_right_1:;
         Py_DECREF(tmp_or_left_value_1);
-        tmp_or_right_value_1 = mod_consts[124];
+        tmp_or_right_value_1 = mod_consts[122];
         Py_INCREF(tmp_or_right_value_1);
         tmp_tuple_element_1 = tmp_or_right_value_1;
         goto or_end_1;
@@ -12234,14 +11964,14 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
             PyTuple_SET_ITEM(tmp_return_value, 0, tmp_tuple_element_1);
             CHECK_OBJECT(var_p);
             tmp_expression_value_2 = var_p;
-            tmp_tuple_element_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_2, mod_consts[125]);
+            tmp_tuple_element_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_2, mod_consts[123]);
             if (tmp_tuple_element_1 == NULL) {
                 assert(ERROR_OCCURRED());
 
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 435;
+                exception_lineno = 430;
                 type_description_1 = "oo";
                 goto tuple_build_exception_1;
             }
@@ -12255,7 +11985,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 435;
+                exception_lineno = 430;
                 type_description_1 = "oo";
                 goto tuple_build_exception_1;
             }
@@ -12272,7 +12002,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_5dc978fcf89e5fbbb07d24b895279846);
+    RESTORE_FRAME_EXCEPTION(frame_b2e0183b1968541f8fb494681067161a);
 #endif
 
     // Put the previous frame back on top.
@@ -12282,7 +12012,7 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
 
     frame_return_exit_1:;
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_5dc978fcf89e5fbbb07d24b895279846);
+    RESTORE_FRAME_EXCEPTION(frame_b2e0183b1968541f8fb494681067161a);
 #endif
 
     // Put the previous frame back on top.
@@ -12293,18 +12023,18 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_5dc978fcf89e5fbbb07d24b895279846);
+    RESTORE_FRAME_EXCEPTION(frame_b2e0183b1968541f8fb494681067161a);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_5dc978fcf89e5fbbb07d24b895279846, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_5dc978fcf89e5fbbb07d24b895279846->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_5dc978fcf89e5fbbb07d24b895279846, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_b2e0183b1968541f8fb494681067161a, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_b2e0183b1968541f8fb494681067161a->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_b2e0183b1968541f8fb494681067161a, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_5dc978fcf89e5fbbb07d24b895279846,
+        frame_b2e0183b1968541f8fb494681067161a,
         type_description_1,
         par_url,
         var_p
@@ -12312,17 +12042,17 @@ static PyObject *impl_urllib3$util$url$$$function__14_get_host(struct Nuitka_Fun
 
 
     // Release cached frame if used for exception.
-    if (frame_5dc978fcf89e5fbbb07d24b895279846 == cache_frame_5dc978fcf89e5fbbb07d24b895279846) {
+    if (frame_b2e0183b1968541f8fb494681067161a == cache_frame_b2e0183b1968541f8fb494681067161a) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_5dc978fcf89e5fbbb07d24b895279846);
-        cache_frame_5dc978fcf89e5fbbb07d24b895279846 = NULL;
+        Py_DECREF(cache_frame_b2e0183b1968541f8fb494681067161a);
+        cache_frame_b2e0183b1968541f8fb494681067161a = NULL;
     }
 
-    assertFrameObject(frame_5dc978fcf89e5fbbb07d24b895279846);
+    assertFrameObject(frame_b2e0183b1968541f8fb494681067161a);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -12388,7 +12118,7 @@ function_return_exit:
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__10__normalize_host() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__10__normalize_host,
-        mod_consts[113],
+        mod_consts[111],
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
@@ -12417,7 +12147,7 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__11__idna_encode() {
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_694f8451b87bb519b31b59829e2c53f3,
+        codeobj_2bd36785b40e70b44d519de413b9ffa2,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -12438,11 +12168,11 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__11__idna_encode() {
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__12__encode_target() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__12__encode_target,
-        mod_consts[220],
+        mod_consts[218],
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_f5aec5b756613fdf20fa10f06ef0c3ac,
+        codeobj_9e6b852c316e8ed04c484807a9e4a4ca,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -12463,18 +12193,18 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__12__encode_target() 
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__13_parse_url,
-        mod_consts[123],
+        mod_consts[121],
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_d569f2e8273c24d4a2bb953825b423c8,
+        codeobj_dfc30c439432b1d463cbe6022af0e241,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
         NULL,
 #endif
         module_urllib3$util$url,
-        mod_consts[121],
+        mod_consts[119],
         NULL,
         0
     );
@@ -12488,11 +12218,11 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url() {
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url$$$function__1_ensure_type(struct Nuitka_CellObject **closure) {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__13_parse_url$$$function__1_ensure_type,
-        mod_consts[118],
+        mod_consts[116],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[119],
+        mod_consts[117],
 #endif
-        codeobj_80a47e6b48e6077d08469d2bdd212260,
+        codeobj_26da35f5c22f9257e2fb0af8ae19b14f,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -12513,18 +12243,18 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url$$$funct
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__14_get_host() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__14_get_host,
-        mod_consts[221],
+        mod_consts[219],
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
-        codeobj_5dc978fcf89e5fbbb07d24b895279846,
+        codeobj_b2e0183b1968541f8fb494681067161a,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
         NULL,
 #endif
         module_urllib3$util$url,
-        mod_consts[126],
+        mod_consts[124],
         NULL,
         0
     );
@@ -12540,7 +12270,7 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__1___new__(PyObject *
         impl_urllib3$util$url$$$function__1___new__,
         mod_consts[6],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[207],
+        mod_consts[205],
 #endif
         codeobj_5a809e09d07af3a612a2febef9f28d49,
         defaults,
@@ -12563,9 +12293,9 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__1___new__(PyObject *
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__2_hostname() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__2_hostname,
-        mod_consts[125],
+        mod_consts[123],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[209],
+        mod_consts[207],
 #endif
         codeobj_f3374c1ab54d3e5e6e663fc9a0d026f9,
         NULL,
@@ -12588,9 +12318,9 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__2_hostname() {
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__3_request_uri() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__3_request_uri,
-        mod_consts[210],
+        mod_consts[208],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[211],
+        mod_consts[209],
 #endif
         codeobj_50451d8ca2eeaa7a7866c8d78bee3373,
         NULL,
@@ -12613,9 +12343,9 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__3_request_uri() {
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__4_netloc() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__4_netloc,
-        mod_consts[212],
+        mod_consts[210],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[213],
+        mod_consts[211],
 #endif
         codeobj_bc58c4c04d908d5edbe2a4bd92451507,
         NULL,
@@ -12640,7 +12370,7 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__5_url() {
         impl_urllib3$util$url$$$function__5_url,
         mod_consts[22],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[214],
+        mod_consts[212],
 #endif
         codeobj_f594ee49ee9efd8918c6b8aeffc9e088,
         NULL,
@@ -12663,9 +12393,9 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__5_url() {
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__6___str__() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__6___str__,
-        mod_consts[215],
+        mod_consts[213],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[216],
+        mod_consts[214],
 #endif
         codeobj_7b7f04e2ce7f3fb96fb3d62036f6064e,
         NULL,
@@ -12688,7 +12418,7 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__6___str__() {
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__7_split_first() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__7_split_first,
-        mod_consts[218],
+        mod_consts[216],
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
@@ -12763,7 +12493,7 @@ static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__8__encode_invalid_ch
 static PyObject *MAKE_FUNCTION_urllib3$util$url$$$function__9__remove_path_dot_segments() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_urllib3$util$url$$$function__9__remove_path_dot_segments,
-        mod_consts[114],
+        mod_consts[112],
 #if PYTHON_VERSION >= 0x300
         NULL,
 #endif
@@ -13198,12 +12928,12 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
     {
         PyObject *tmp_assign_source_1;
         tmp_assign_source_1 = Py_None;
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[127], tmp_assign_source_1);
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[125], tmp_assign_source_1);
     }
     {
         PyObject *tmp_assign_source_2;
         tmp_assign_source_2 = module_filename_obj;
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[128], tmp_assign_source_2);
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[126], tmp_assign_source_2);
     }
     // Frame without reuse.
     frame_2c106d4fb0b59a8a313a74af02b9ae30 = MAKE_MODULE_FRAME(codeobj_2c106d4fb0b59a8a313a74af02b9ae30, module_urllib3$util$url);
@@ -13218,14 +12948,14 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_assattr_value_1;
         PyObject *tmp_assattr_target_1;
         tmp_assattr_value_1 = module_filename_obj;
-        tmp_assattr_target_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[129]);
+        tmp_assattr_target_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[127]);
 
         if (unlikely(tmp_assattr_target_1 == NULL)) {
-            tmp_assattr_target_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[129]);
+            tmp_assattr_target_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[127]);
         }
 
         assert(!(tmp_assattr_target_1 == NULL));
-        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_1, mod_consts[130], tmp_assattr_value_1);
+        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_1, mod_consts[128], tmp_assattr_value_1);
         if (tmp_result == false) {
             assert(ERROR_OCCURRED());
 
@@ -13241,14 +12971,14 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_assattr_value_2;
         PyObject *tmp_assattr_target_2;
         tmp_assattr_value_2 = Py_True;
-        tmp_assattr_target_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[129]);
+        tmp_assattr_target_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[127]);
 
         if (unlikely(tmp_assattr_target_2 == NULL)) {
-            tmp_assattr_target_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[129]);
+            tmp_assattr_target_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[127]);
         }
 
         assert(!(tmp_assattr_target_2 == NULL));
-        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_2, mod_consts[131], tmp_assattr_value_2);
+        tmp_result = SET_ATTRIBUTE(tmp_assattr_target_2, mod_consts[129], tmp_assattr_value_2);
         if (tmp_result == false) {
             assert(ERROR_OCCURRED());
 
@@ -13263,16 +12993,16 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
     {
         PyObject *tmp_assign_source_3;
         tmp_assign_source_3 = Py_None;
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132], tmp_assign_source_3);
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[130], tmp_assign_source_3);
     }
     {
         PyObject *tmp_assign_source_4;
         {
             PyObject *hard_module = IMPORT_HARD___FUTURE__();
-            tmp_assign_source_4 = LOOKUP_ATTRIBUTE(hard_module, mod_consts[133]);
+            tmp_assign_source_4 = LOOKUP_ATTRIBUTE(hard_module, mod_consts[131]);
         }
         assert(!(tmp_assign_source_4 == NULL));
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[133], tmp_assign_source_4);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[131], tmp_assign_source_4);
     }
     {
         PyObject *tmp_assign_source_5;
@@ -13281,12 +13011,12 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_locals_arg_value_1;
         PyObject *tmp_fromlist_value_1;
         PyObject *tmp_level_value_1;
-        tmp_name_value_1 = mod_consts[134];
+        tmp_name_value_1 = mod_consts[132];
         tmp_globals_arg_value_1 = (PyObject *)moduledict_urllib3$util$url;
         tmp_locals_arg_value_1 = Py_None;
         tmp_fromlist_value_1 = Py_None;
         tmp_level_value_1 = mod_consts[25];
-        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 3;
+        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 2;
         tmp_assign_source_5 = IMPORT_MODULE5(tmp_name_value_1, tmp_globals_arg_value_1, tmp_locals_arg_value_1, tmp_fromlist_value_1, tmp_level_value_1);
         if (tmp_assign_source_5 == NULL) {
             assert(ERROR_OCCURRED());
@@ -13294,11 +13024,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 3;
+            exception_lineno = 2;
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134], tmp_assign_source_5);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132], tmp_assign_source_5);
     }
     {
         PyObject *tmp_assign_source_6;
@@ -13308,12 +13038,12 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_locals_arg_value_2;
         PyObject *tmp_fromlist_value_2;
         PyObject *tmp_level_value_2;
-        tmp_name_value_2 = mod_consts[135];
+        tmp_name_value_2 = mod_consts[133];
         tmp_globals_arg_value_2 = (PyObject *)moduledict_urllib3$util$url;
         tmp_locals_arg_value_2 = Py_None;
-        tmp_fromlist_value_2 = mod_consts[136];
+        tmp_fromlist_value_2 = mod_consts[134];
         tmp_level_value_2 = mod_consts[25];
-        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 4;
+        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 3;
         tmp_import_name_from_1 = IMPORT_MODULE5(tmp_name_value_2, tmp_globals_arg_value_2, tmp_locals_arg_value_2, tmp_fromlist_value_2, tmp_level_value_2);
         if (tmp_import_name_from_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -13321,7 +13051,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 4;
+            exception_lineno = 3;
 
             goto frame_exception_exit_1;
         }
@@ -13329,11 +13059,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             tmp_assign_source_6 = IMPORT_NAME_OR_MODULE(
                 tmp_import_name_from_1,
                 (PyObject *)moduledict_urllib3$util$url,
-                mod_consts[137],
+                mod_consts[135],
                 mod_consts[25]
             );
         } else {
-            tmp_assign_source_6 = IMPORT_NAME(tmp_import_name_from_1, mod_consts[137]);
+            tmp_assign_source_6 = IMPORT_NAME(tmp_import_name_from_1, mod_consts[135]);
         }
 
         Py_DECREF(tmp_import_name_from_1);
@@ -13343,11 +13073,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 4;
+            exception_lineno = 3;
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[137], tmp_assign_source_6);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[135], tmp_assign_source_6);
     }
     {
         PyObject *tmp_assign_source_7;
@@ -13357,12 +13087,12 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_locals_arg_value_3;
         PyObject *tmp_fromlist_value_3;
         PyObject *tmp_level_value_3;
-        tmp_name_value_3 = mod_consts[138];
+        tmp_name_value_3 = mod_consts[136];
         tmp_globals_arg_value_3 = (PyObject *)moduledict_urllib3$util$url;
         tmp_locals_arg_value_3 = Py_None;
-        tmp_fromlist_value_3 = mod_consts[139];
-        tmp_level_value_3 = mod_consts[140];
-        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 6;
+        tmp_fromlist_value_3 = mod_consts[137];
+        tmp_level_value_3 = mod_consts[138];
+        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 5;
         tmp_import_name_from_2 = IMPORT_MODULE5(tmp_name_value_3, tmp_globals_arg_value_3, tmp_locals_arg_value_3, tmp_fromlist_value_3, tmp_level_value_3);
         if (tmp_import_name_from_2 == NULL) {
             assert(ERROR_OCCURRED());
@@ -13370,7 +13100,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 6;
+            exception_lineno = 5;
 
             goto frame_exception_exit_1;
         }
@@ -13392,7 +13122,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 6;
+            exception_lineno = 5;
 
             goto frame_exception_exit_1;
         }
@@ -13406,12 +13136,12 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_locals_arg_value_4;
         PyObject *tmp_fromlist_value_4;
         PyObject *tmp_level_value_4;
-        tmp_name_value_4 = mod_consts[141];
+        tmp_name_value_4 = mod_consts[139];
         tmp_globals_arg_value_4 = (PyObject *)moduledict_urllib3$util$url;
         tmp_locals_arg_value_4 = Py_None;
-        tmp_fromlist_value_4 = mod_consts[142];
-        tmp_level_value_4 = mod_consts[140];
-        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 7;
+        tmp_fromlist_value_4 = mod_consts[140];
+        tmp_level_value_4 = mod_consts[138];
+        frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 6;
         tmp_import_name_from_3 = IMPORT_MODULE5(tmp_name_value_4, tmp_globals_arg_value_4, tmp_locals_arg_value_4, tmp_fromlist_value_4, tmp_level_value_4);
         if (tmp_import_name_from_3 == NULL) {
             assert(ERROR_OCCURRED());
@@ -13419,7 +13149,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 7;
+            exception_lineno = 6;
 
             goto frame_exception_exit_1;
         }
@@ -13441,7 +13171,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 7;
+            exception_lineno = 6;
 
             goto frame_exception_exit_1;
         }
@@ -13449,21 +13179,21 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
     }
     {
         PyObject *tmp_assign_source_9;
-        tmp_assign_source_9 = LIST_COPY(mod_consts[143]);
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[144], tmp_assign_source_9);
+        tmp_assign_source_9 = LIST_COPY(mod_consts[141]);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[142], tmp_assign_source_9);
     }
     {
         PyObject *tmp_assign_source_10;
-        tmp_assign_source_10 = mod_consts[145];
+        tmp_assign_source_10 = mod_consts[143];
         UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[68], tmp_assign_source_10);
     }
     {
         PyObject *tmp_assign_source_11;
         PyObject *tmp_called_instance_1;
-        tmp_called_instance_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_called_instance_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_called_instance_1 == NULL)) {
-            tmp_called_instance_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_called_instance_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_called_instance_1 == NULL) {
@@ -13479,8 +13209,8 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 17;
         tmp_assign_source_11 = CALL_METHOD_WITH_SINGLE_ARG(
             tmp_called_instance_1,
-            mod_consts[146],
-            PyTuple_GET_ITEM(mod_consts[147], 0)
+            mod_consts[144],
+            PyTuple_GET_ITEM(mod_consts[145], 0)
         );
 
         if (tmp_assign_source_11 == NULL) {
@@ -13498,10 +13228,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
     {
         PyObject *tmp_assign_source_12;
         PyObject *tmp_called_instance_2;
-        tmp_called_instance_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_called_instance_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_called_instance_2 == NULL)) {
-            tmp_called_instance_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_called_instance_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_called_instance_2 == NULL) {
@@ -13517,8 +13247,8 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 18;
         tmp_assign_source_12 = CALL_METHOD_WITH_SINGLE_ARG(
             tmp_called_instance_2,
-            mod_consts[146],
-            PyTuple_GET_ITEM(mod_consts[148], 0)
+            mod_consts[144],
+            PyTuple_GET_ITEM(mod_consts[146], 0)
         );
 
         if (tmp_assign_source_12 == NULL) {
@@ -13543,10 +13273,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_bitor_expr_right_1;
         PyObject *tmp_expression_value_2;
         PyObject *tmp_expression_value_3;
-        tmp_expression_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_1 == NULL)) {
-            tmp_expression_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_1 == NULL) {
@@ -13559,7 +13289,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_1, mod_consts[146]);
+        tmp_called_value_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_1, mod_consts[144]);
         if (tmp_called_value_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -13570,11 +13300,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_args_element_value_1 = mod_consts[149];
-        tmp_expression_value_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_args_element_value_1 = mod_consts[147];
+        tmp_expression_value_2 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_2 == NULL)) {
-            tmp_expression_value_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_2 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_2 == NULL) {
@@ -13587,7 +13317,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_bitor_expr_left_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_2, mod_consts[150]);
+        tmp_bitor_expr_left_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_2, mod_consts[148]);
         if (tmp_bitor_expr_left_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -13598,10 +13328,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_expression_value_3 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_3 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_3 == NULL)) {
-            tmp_expression_value_3 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_3 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_3 == NULL) {
@@ -13615,7 +13345,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_bitor_expr_right_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_3, mod_consts[151]);
+        tmp_bitor_expr_right_1 = LOOKUP_ATTRIBUTE(tmp_expression_value_3, mod_consts[149]);
         if (tmp_bitor_expr_right_1 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -13662,31 +13392,31 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
     }
     {
         PyObject *tmp_assign_source_14;
-        tmp_assign_source_14 = mod_consts[152];
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153], tmp_assign_source_14);
+        tmp_assign_source_14 = mod_consts[150];
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[151], tmp_assign_source_14);
     }
     {
         PyObject *tmp_assign_source_15;
-        tmp_assign_source_15 = mod_consts[154];
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[155], tmp_assign_source_15);
+        tmp_assign_source_15 = mod_consts[152];
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153], tmp_assign_source_15);
     }
     {
         PyObject *tmp_assign_source_16;
         PyObject *tmp_kw_call_arg_value_0_1;
         PyObject *tmp_kw_call_dict_value_0_1;
         PyObject *tmp_kw_call_dict_value_1_1;
-        tmp_kw_call_arg_value_0_1 = mod_consts[156];
-        tmp_kw_call_dict_value_0_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[155]);
+        tmp_kw_call_arg_value_0_1 = mod_consts[154];
+        tmp_kw_call_dict_value_0_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153]);
 
         if (unlikely(tmp_kw_call_dict_value_0_1 == NULL)) {
-            tmp_kw_call_dict_value_0_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[155]);
+            tmp_kw_call_dict_value_0_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[153]);
         }
 
         assert(!(tmp_kw_call_dict_value_0_1 == NULL));
-        tmp_kw_call_dict_value_1_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153]);
+        tmp_kw_call_dict_value_1_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[151]);
 
         if (unlikely(tmp_kw_call_dict_value_1_1 == NULL)) {
-            tmp_kw_call_dict_value_1_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[153]);
+            tmp_kw_call_dict_value_1_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[151]);
         }
 
         assert(!(tmp_kw_call_dict_value_1_1 == NULL));
@@ -13694,7 +13424,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         {
             PyObject *args[] = {tmp_kw_call_arg_value_0_1};
             PyObject *kw_values[2] = {tmp_kw_call_dict_value_0_1, tmp_kw_call_dict_value_1_1};
-            tmp_assign_source_16 = CALL_FUNCTION_WITH_ARGS1_KWSPLIT(unicode_builtin_format, args, kw_values, mod_consts[157]);
+            tmp_assign_source_16 = CALL_FUNCTION_WITH_ARGS1_KWSPLIT(unicode_builtin_format, args, kw_values, mod_consts[155]);
         }
 
         if (tmp_assign_source_16 == NULL) {
@@ -13707,44 +13437,44 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[158], tmp_assign_source_16);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[156], tmp_assign_source_16);
     }
     {
         PyObject *tmp_assign_source_17;
         PyObject *tmp_dict_key_1;
         PyObject *tmp_dict_value_1;
-        tmp_dict_key_1 = mod_consts[159];
-        tmp_dict_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[155]);
+        tmp_dict_key_1 = mod_consts[157];
+        tmp_dict_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153]);
 
         if (unlikely(tmp_dict_value_1 == NULL)) {
-            tmp_dict_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[155]);
+            tmp_dict_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[153]);
         }
 
         assert(!(tmp_dict_value_1 == NULL));
         tmp_assign_source_17 = _PyDict_NewPresized( 2 );
         tmp_res = PyDict_SetItem(tmp_assign_source_17, tmp_dict_key_1, tmp_dict_value_1);
         assert(!(tmp_res != 0));
-        tmp_dict_key_1 = mod_consts[160];
-        tmp_dict_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[158]);
+        tmp_dict_key_1 = mod_consts[158];
+        tmp_dict_value_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[156]);
 
         if (unlikely(tmp_dict_value_1 == NULL)) {
-            tmp_dict_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[158]);
+            tmp_dict_value_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[156]);
         }
 
         assert(!(tmp_dict_value_1 == NULL));
         tmp_res = PyDict_SetItem(tmp_assign_source_17, tmp_dict_key_1, tmp_dict_value_1);
         assert(!(tmp_res != 0));
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[161], tmp_assign_source_17);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[159], tmp_assign_source_17);
     }
     {
         PyObject *tmp_assign_source_18;
-        tmp_assign_source_18 = LIST_COPY(mod_consts[162]);
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[163], tmp_assign_source_18);
+        tmp_assign_source_18 = LIST_COPY(mod_consts[160]);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[161], tmp_assign_source_18);
     }
     {
         PyObject *tmp_assign_source_19;
-        tmp_assign_source_19 = mod_consts[164];
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[165], tmp_assign_source_19);
+        tmp_assign_source_19 = mod_consts[162];
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[163], tmp_assign_source_19);
     }
     {
         PyObject *tmp_assign_source_20;
@@ -13754,16 +13484,16 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_2;
         PyObject *tmp_str_arg_value_1;
         PyObject *tmp_iterable_value_1;
-        tmp_add_expr_left_2 = mod_consts[166];
-        tmp_str_arg_value_1 = mod_consts[167];
+        tmp_add_expr_left_2 = mod_consts[164];
+        tmp_str_arg_value_1 = mod_consts[165];
         // Tried code:
         {
             PyObject *tmp_assign_source_21;
             PyObject *tmp_iter_arg_1;
-            tmp_iter_arg_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[163]);
+            tmp_iter_arg_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[161]);
 
             if (unlikely(tmp_iter_arg_1 == NULL)) {
-                tmp_iter_arg_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[163]);
+                tmp_iter_arg_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[161]);
             }
 
             assert(!(tmp_iter_arg_1 == NULL));
@@ -13863,10 +13593,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             tmp_append_list_1 = tmp_listcomp_1__contraction;
             CHECK_OBJECT(outline_0_var_x);
             tmp_mod_expr_left_1 = outline_0_var_x;
-            tmp_mod_expr_right_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[161]);
+            tmp_mod_expr_right_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[159]);
 
             if (unlikely(tmp_mod_expr_right_1 == NULL)) {
-                tmp_mod_expr_right_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[161]);
+                tmp_mod_expr_right_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[159]);
             }
 
             if (tmp_mod_expr_right_1 == NULL) {
@@ -14073,11 +13803,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         tmp_add_expr_left_1 = BINARY_OPERATION_ADD_OBJECT_UNICODE_UNICODE(tmp_add_expr_left_2, tmp_add_expr_right_2);
         Py_DECREF(tmp_add_expr_right_2);
         assert(!(tmp_add_expr_left_1 == NULL));
-        tmp_add_expr_right_1 = mod_consts[168];
+        tmp_add_expr_right_1 = mod_consts[166];
         tmp_assign_source_20 = BINARY_OPERATION_ADD_OBJECT_UNICODE_UNICODE(tmp_add_expr_left_1, tmp_add_expr_right_1);
         Py_DECREF(tmp_add_expr_left_1);
         assert(!(tmp_assign_source_20 == NULL));
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[169], tmp_assign_source_20);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[167], tmp_assign_source_20);
     }
     {
         PyObject *tmp_assign_source_25;
@@ -14085,11 +13815,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_3;
         PyObject *tmp_add_expr_left_4;
         PyObject *tmp_add_expr_right_4;
-        tmp_add_expr_left_4 = mod_consts[170];
-        tmp_add_expr_right_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[165]);
+        tmp_add_expr_left_4 = mod_consts[168];
+        tmp_add_expr_right_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[163]);
 
         if (unlikely(tmp_add_expr_right_4 == NULL)) {
-            tmp_add_expr_right_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[165]);
+            tmp_add_expr_right_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[163]);
         }
 
         if (tmp_add_expr_right_4 == NULL) {
@@ -14113,7 +13843,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_3 = mod_consts[171];
+        tmp_add_expr_right_3 = mod_consts[169];
         tmp_assign_source_25 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_3, tmp_add_expr_right_3);
         Py_DECREF(tmp_add_expr_left_3);
         if (tmp_assign_source_25 == NULL) {
@@ -14126,7 +13856,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[172], tmp_assign_source_25);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[170], tmp_assign_source_25);
     }
     {
         PyObject *tmp_assign_source_26;
@@ -14138,11 +13868,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_7;
         PyObject *tmp_add_expr_left_8;
         PyObject *tmp_add_expr_right_8;
-        tmp_add_expr_left_8 = mod_consts[173];
-        tmp_add_expr_right_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[169]);
+        tmp_add_expr_left_8 = mod_consts[171];
+        tmp_add_expr_right_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[167]);
 
         if (unlikely(tmp_add_expr_right_8 == NULL)) {
-            tmp_add_expr_right_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[169]);
+            tmp_add_expr_right_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[167]);
         }
 
         if (tmp_add_expr_right_8 == NULL) {
@@ -14166,7 +13896,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_7 = mod_consts[166];
+        tmp_add_expr_right_7 = mod_consts[164];
         tmp_add_expr_left_6 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_7, tmp_add_expr_right_7);
         Py_DECREF(tmp_add_expr_left_7);
         if (tmp_add_expr_left_6 == NULL) {
@@ -14179,10 +13909,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[172]);
+        tmp_add_expr_right_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[170]);
 
         if (unlikely(tmp_add_expr_right_6 == NULL)) {
-            tmp_add_expr_right_6 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[172]);
+            tmp_add_expr_right_6 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[170]);
         }
 
         if (tmp_add_expr_right_6 == NULL) {
@@ -14207,7 +13937,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_5 = mod_consts[174];
+        tmp_add_expr_right_5 = mod_consts[172];
         tmp_assign_source_26 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_5, tmp_add_expr_right_5);
         Py_DECREF(tmp_add_expr_left_5);
         if (tmp_assign_source_26 == NULL) {
@@ -14220,20 +13950,20 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[175], tmp_assign_source_26);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[173], tmp_assign_source_26);
     }
     {
         PyObject *tmp_assign_source_27;
-        tmp_assign_source_27 = mod_consts[176];
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[177], tmp_assign_source_27);
+        tmp_assign_source_27 = mod_consts[174];
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[175], tmp_assign_source_27);
     }
     {
         PyObject *tmp_assign_source_28;
         PyObject *tmp_called_instance_3;
-        tmp_called_instance_3 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_called_instance_3 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_called_instance_3 == NULL)) {
-            tmp_called_instance_3 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_called_instance_3 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_called_instance_3 == NULL) {
@@ -14249,8 +13979,8 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         frame_2c106d4fb0b59a8a313a74af02b9ae30->m_frame.f_lineno = 58;
         tmp_assign_source_28 = CALL_METHOD_WITH_SINGLE_ARG(
             tmp_called_instance_3,
-            mod_consts[146],
-            PyTuple_GET_ITEM(mod_consts[178], 0)
+            mod_consts[144],
+            PyTuple_GET_ITEM(mod_consts[176], 0)
         );
 
         if (tmp_assign_source_28 == NULL) {
@@ -14274,10 +14004,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_9;
         PyObject *tmp_add_expr_left_10;
         PyObject *tmp_add_expr_right_10;
-        tmp_expression_value_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_4 == NULL)) {
-            tmp_expression_value_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_4 == NULL) {
@@ -14290,7 +14020,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_4, mod_consts[146]);
+        tmp_called_value_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_4, mod_consts[144]);
         if (tmp_called_value_2 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14301,11 +14031,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_left_10 = mod_consts[179];
-        tmp_add_expr_right_10 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153]);
+        tmp_add_expr_left_10 = mod_consts[177];
+        tmp_add_expr_right_10 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[151]);
 
         if (unlikely(tmp_add_expr_right_10 == NULL)) {
-            tmp_add_expr_right_10 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[153]);
+            tmp_add_expr_right_10 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[151]);
         }
 
         if (tmp_add_expr_right_10 == NULL) {
@@ -14329,7 +14059,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_9 = mod_consts[180];
+        tmp_add_expr_right_9 = mod_consts[178];
         tmp_args_element_value_3 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_9, tmp_add_expr_right_9);
         Py_DECREF(tmp_add_expr_left_9);
         if (tmp_args_element_value_3 == NULL) {
@@ -14367,10 +14097,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_11;
         PyObject *tmp_add_expr_left_12;
         PyObject *tmp_add_expr_right_12;
-        tmp_expression_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_5 == NULL)) {
-            tmp_expression_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_5 == NULL) {
@@ -14383,7 +14113,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_3 = LOOKUP_ATTRIBUTE(tmp_expression_value_5, mod_consts[146]);
+        tmp_called_value_3 = LOOKUP_ATTRIBUTE(tmp_expression_value_5, mod_consts[144]);
         if (tmp_called_value_3 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14394,11 +14124,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_left_12 = mod_consts[179];
-        tmp_add_expr_right_12 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[169]);
+        tmp_add_expr_left_12 = mod_consts[177];
+        tmp_add_expr_right_12 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[167]);
 
         if (unlikely(tmp_add_expr_right_12 == NULL)) {
-            tmp_add_expr_right_12 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[169]);
+            tmp_add_expr_right_12 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[167]);
         }
 
         if (tmp_add_expr_right_12 == NULL) {
@@ -14422,7 +14152,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_11 = mod_consts[180];
+        tmp_add_expr_right_11 = mod_consts[178];
         tmp_args_element_value_4 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_11, tmp_add_expr_right_11);
         Py_DECREF(tmp_add_expr_left_11);
         if (tmp_args_element_value_4 == NULL) {
@@ -14449,7 +14179,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[181], tmp_assign_source_30);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[179], tmp_assign_source_30);
     }
     {
         PyObject *tmp_assign_source_31;
@@ -14460,10 +14190,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_13;
         PyObject *tmp_add_expr_left_14;
         PyObject *tmp_add_expr_right_14;
-        tmp_expression_value_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_6 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_6 == NULL)) {
-            tmp_expression_value_6 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_6 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_6 == NULL) {
@@ -14476,7 +14206,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_4 = LOOKUP_ATTRIBUTE(tmp_expression_value_6, mod_consts[146]);
+        tmp_called_value_4 = LOOKUP_ATTRIBUTE(tmp_expression_value_6, mod_consts[144]);
         if (tmp_called_value_4 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14487,11 +14217,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_left_14 = mod_consts[179];
-        tmp_add_expr_right_14 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[175]);
+        tmp_add_expr_left_14 = mod_consts[177];
+        tmp_add_expr_right_14 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[173]);
 
         if (unlikely(tmp_add_expr_right_14 == NULL)) {
-            tmp_add_expr_right_14 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[175]);
+            tmp_add_expr_right_14 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[173]);
         }
 
         if (tmp_add_expr_right_14 == NULL) {
@@ -14515,7 +14245,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_13 = mod_consts[180];
+        tmp_add_expr_right_13 = mod_consts[178];
         tmp_args_element_value_5 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_13, tmp_add_expr_right_13);
         Py_DECREF(tmp_add_expr_left_13);
         if (tmp_args_element_value_5 == NULL) {
@@ -14555,10 +14285,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_16;
         PyObject *tmp_expression_value_8;
         PyObject *tmp_subscript_value_1;
-        tmp_expression_value_7 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_7 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_7 == NULL)) {
-            tmp_expression_value_7 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_7 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_7 == NULL) {
@@ -14571,7 +14301,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_5 = LOOKUP_ATTRIBUTE(tmp_expression_value_7, mod_consts[146]);
+        tmp_called_value_5 = LOOKUP_ATTRIBUTE(tmp_expression_value_7, mod_consts[144]);
         if (tmp_called_value_5 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14582,11 +14312,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_left_16 = mod_consts[179];
-        tmp_expression_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[175]);
+        tmp_add_expr_left_16 = mod_consts[177];
+        tmp_expression_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[173]);
 
         if (unlikely(tmp_expression_value_8 == NULL)) {
-            tmp_expression_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[175]);
+            tmp_expression_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[173]);
         }
 
         if (tmp_expression_value_8 == NULL) {
@@ -14599,7 +14329,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_subscript_value_1 = mod_consts[182];
+        tmp_subscript_value_1 = mod_consts[180];
         tmp_add_expr_right_16 = LOOKUP_SUBSCRIPT(tmp_expression_value_8, tmp_subscript_value_1);
         if (tmp_add_expr_right_16 == NULL) {
             assert(ERROR_OCCURRED());
@@ -14623,7 +14353,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_15 = mod_consts[180];
+        tmp_add_expr_right_15 = mod_consts[178];
         tmp_args_element_value_6 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_15, tmp_add_expr_right_15);
         Py_DECREF(tmp_add_expr_left_15);
         if (tmp_args_element_value_6 == NULL) {
@@ -14650,7 +14380,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[183], tmp_assign_source_32);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[181], tmp_assign_source_32);
     }
     {
         PyObject *tmp_assign_source_33;
@@ -14661,10 +14391,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_add_expr_right_17;
         PyObject *tmp_add_expr_left_18;
         PyObject *tmp_add_expr_right_18;
-        tmp_expression_value_9 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_9 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_9 == NULL)) {
-            tmp_expression_value_9 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_9 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_9 == NULL) {
@@ -14677,7 +14407,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_6 = LOOKUP_ATTRIBUTE(tmp_expression_value_9, mod_consts[146]);
+        tmp_called_value_6 = LOOKUP_ATTRIBUTE(tmp_expression_value_9, mod_consts[144]);
         if (tmp_called_value_6 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14688,11 +14418,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_left_18 = mod_consts[184];
-        tmp_add_expr_right_18 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[172]);
+        tmp_add_expr_left_18 = mod_consts[182];
+        tmp_add_expr_right_18 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[170]);
 
         if (unlikely(tmp_add_expr_right_18 == NULL)) {
-            tmp_add_expr_right_18 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[172]);
+            tmp_add_expr_right_18 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[170]);
         }
 
         if (tmp_add_expr_right_18 == NULL) {
@@ -14716,7 +14446,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_add_expr_right_17 = mod_consts[185];
+        tmp_add_expr_right_17 = mod_consts[183];
         tmp_args_element_value_7 = BINARY_OPERATION_ADD_OBJECT_OBJECT_UNICODE(tmp_add_expr_left_17, tmp_add_expr_right_17);
         Py_DECREF(tmp_add_expr_left_17);
         if (tmp_args_element_value_7 == NULL) {
@@ -14750,11 +14480,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_mod_expr_left_2;
         PyObject *tmp_mod_expr_right_2;
         PyObject *tmp_tuple_element_1;
-        tmp_mod_expr_left_2 = mod_consts[186];
-        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[177]);
+        tmp_mod_expr_left_2 = mod_consts[184];
+        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[175]);
 
         if (unlikely(tmp_tuple_element_1 == NULL)) {
-            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[177]);
+            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[175]);
         }
 
         if (tmp_tuple_element_1 == NULL) {
@@ -14769,10 +14499,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         }
         tmp_mod_expr_right_2 = PyTuple_New(3);
         PyTuple_SET_ITEM0(tmp_mod_expr_right_2, 0, tmp_tuple_element_1);
-        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[153]);
+        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[151]);
 
         if (unlikely(tmp_tuple_element_1 == NULL)) {
-            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[153]);
+            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[151]);
         }
 
         if (tmp_tuple_element_1 == NULL) {
@@ -14786,10 +14516,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             goto tuple_build_exception_1;
         }
         PyTuple_SET_ITEM0(tmp_mod_expr_right_2, 1, tmp_tuple_element_1);
-        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[175]);
+        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[173]);
 
         if (unlikely(tmp_tuple_element_1 == NULL)) {
-            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[175]);
+            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[173]);
         }
 
         if (tmp_tuple_element_1 == NULL) {
@@ -14822,7 +14552,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[187], tmp_assign_source_34);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[185], tmp_assign_source_34);
     }
     {
         PyObject *tmp_assign_source_35;
@@ -14834,10 +14564,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_bitor_expr_right_2;
         PyObject *tmp_expression_value_11;
         PyObject *tmp_expression_value_12;
-        tmp_expression_value_10 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_10 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_10 == NULL)) {
-            tmp_expression_value_10 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_10 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_10 == NULL) {
@@ -14850,7 +14580,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_called_value_7 = LOOKUP_ATTRIBUTE(tmp_expression_value_10, mod_consts[146]);
+        tmp_called_value_7 = LOOKUP_ATTRIBUTE(tmp_expression_value_10, mod_consts[144]);
         if (tmp_called_value_7 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14861,10 +14591,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_args_element_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[187]);
+        tmp_args_element_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[185]);
 
         if (unlikely(tmp_args_element_value_8 == NULL)) {
-            tmp_args_element_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[187]);
+            tmp_args_element_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[185]);
         }
 
         if (tmp_args_element_value_8 == NULL) {
@@ -14877,10 +14607,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_expression_value_11 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_11 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_11 == NULL)) {
-            tmp_expression_value_11 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_11 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_11 == NULL) {
@@ -14893,7 +14623,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_bitor_expr_left_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_11, mod_consts[150]);
+        tmp_bitor_expr_left_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_11, mod_consts[148]);
         if (tmp_bitor_expr_left_2 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14904,10 +14634,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_expression_value_12 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[134]);
+        tmp_expression_value_12 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[132]);
 
         if (unlikely(tmp_expression_value_12 == NULL)) {
-            tmp_expression_value_12 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[134]);
+            tmp_expression_value_12 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[132]);
         }
 
         if (tmp_expression_value_12 == NULL) {
@@ -14921,7 +14651,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        tmp_bitor_expr_right_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_12, mod_consts[151]);
+        tmp_bitor_expr_right_2 = LOOKUP_ATTRIBUTE(tmp_expression_value_12, mod_consts[149]);
         if (tmp_bitor_expr_right_2 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -14964,17 +14694,17 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[109], tmp_assign_source_35);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[106], tmp_assign_source_35);
     }
     {
         PyObject *tmp_assign_source_36;
-        tmp_assign_source_36 = PySet_New(mod_consts[188]);
+        tmp_assign_source_36 = PySet_New(mod_consts[186]);
         UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[81], tmp_assign_source_36);
     }
     {
         PyObject *tmp_assign_source_37;
-        tmp_assign_source_37 = PySet_New(mod_consts[189]);
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[190], tmp_assign_source_37);
+        tmp_assign_source_37 = PySet_New(mod_consts[187]);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[188], tmp_assign_source_37);
     }
     {
         PyObject *tmp_assign_source_38;
@@ -14989,34 +14719,34 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         }
 
         assert(!(tmp_bitor_expr_left_4 == NULL));
-        tmp_bitor_expr_right_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[190]);
+        tmp_bitor_expr_right_4 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[188]);
 
         if (unlikely(tmp_bitor_expr_right_4 == NULL)) {
-            tmp_bitor_expr_right_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[190]);
+            tmp_bitor_expr_right_4 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[188]);
         }
 
         assert(!(tmp_bitor_expr_right_4 == NULL));
         tmp_bitor_expr_left_3 = BINARY_OPERATION_BITOR_OBJECT_OBJECT_OBJECT(tmp_bitor_expr_left_4, tmp_bitor_expr_right_4);
         assert(!(tmp_bitor_expr_left_3 == NULL));
-        tmp_bitor_expr_right_3 = PySet_New(mod_consts[191]);
+        tmp_bitor_expr_right_3 = PySet_New(mod_consts[189]);
         tmp_assign_source_38 = BINARY_OPERATION_BITOR_OBJECT_OBJECT_OBJECT(tmp_bitor_expr_left_3, tmp_bitor_expr_right_3);
         Py_DECREF(tmp_bitor_expr_left_3);
         Py_DECREF(tmp_bitor_expr_right_3);
         assert(!(tmp_assign_source_38 == NULL));
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[110], tmp_assign_source_38);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[108], tmp_assign_source_38);
     }
     {
         PyObject *tmp_assign_source_39;
         PyObject *tmp_bitor_expr_left_5;
         PyObject *tmp_bitor_expr_right_5;
-        tmp_bitor_expr_left_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[110]);
+        tmp_bitor_expr_left_5 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[108]);
 
         if (unlikely(tmp_bitor_expr_left_5 == NULL)) {
-            tmp_bitor_expr_left_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[110]);
+            tmp_bitor_expr_left_5 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[108]);
         }
 
         assert(!(tmp_bitor_expr_left_5 == NULL));
-        tmp_bitor_expr_right_5 = PySet_New(mod_consts[192]);
+        tmp_bitor_expr_right_5 = PySet_New(mod_consts[190]);
         tmp_assign_source_39 = BINARY_OPERATION_BITOR_OBJECT_OBJECT_OBJECT(tmp_bitor_expr_left_5, tmp_bitor_expr_right_5);
         Py_DECREF(tmp_bitor_expr_right_5);
         assert(!(tmp_assign_source_39 == NULL));
@@ -15033,7 +14763,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         }
 
         assert(!(tmp_bitor_expr_left_6 == NULL));
-        tmp_bitor_expr_right_6 = PySet_New(mod_consts[193]);
+        tmp_bitor_expr_right_6 = PySet_New(mod_consts[191]);
         tmp_assign_source_40 = BINARY_OPERATION_BITOR_OBJECT_OBJECT_OBJECT(tmp_bitor_expr_left_6, tmp_bitor_expr_right_6);
         Py_DECREF(tmp_bitor_expr_right_6);
         assert(!(tmp_assign_source_40 == NULL));
@@ -15050,7 +14780,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_assign_source_42;
         CHECK_OBJECT(tmp_assign_unpack_1__assign_source);
         tmp_assign_source_42 = tmp_assign_unpack_1__assign_source;
-        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[115], tmp_assign_source_42);
+        UPDATE_STRING_DICT0(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[113], tmp_assign_source_42);
     }
     CHECK_OBJECT(tmp_assign_unpack_1__assign_source);
     Py_DECREF(tmp_assign_unpack_1__assign_source);
@@ -15062,10 +14792,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_called_value_8;
         PyObject *tmp_args_element_value_10;
         PyObject *tmp_args_element_value_11;
-        tmp_called_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[137]);
+        tmp_called_value_8 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[135]);
 
         if (unlikely(tmp_called_value_8 == NULL)) {
-            tmp_called_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[137]);
+            tmp_called_value_8 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[135]);
         }
 
         if (tmp_called_value_8 == NULL) {
@@ -15079,10 +14809,10 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             goto try_except_handler_3;
         }
         tmp_args_element_value_10 = mod_consts[5];
-        tmp_args_element_value_11 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[144]);
+        tmp_args_element_value_11 = GET_STRING_DICT_VALUE(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[142]);
 
         if (unlikely(tmp_args_element_value_11 == NULL)) {
-            tmp_args_element_value_11 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[144]);
+            tmp_args_element_value_11 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[142]);
         }
 
         if (tmp_args_element_value_11 == NULL) {
@@ -15125,7 +14855,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_44 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_44 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_44 == NULL) {
             assert(ERROR_OCCURRED());
@@ -15160,7 +14890,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_expression_value_13;
         PyObject *tmp_subscript_value_2;
         PyObject *tmp_bases_value_1;
-        tmp_key_value_1 = mod_consts[194];
+        tmp_key_value_1 = mod_consts[192];
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_dict_arg_value_1 = tmp_class_creation_1__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_value_1, tmp_key_value_1);
@@ -15174,7 +14904,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         condexpr_true_1:;
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_dict_arg_value_2 = tmp_class_creation_1__class_decl_dict;
-        tmp_key_value_2 = mod_consts[194];
+        tmp_key_value_2 = mod_consts[192];
         tmp_metaclass_value_1 = DICT_GET_ITEM0(tmp_dict_arg_value_2, tmp_key_value_2);
         if (tmp_metaclass_value_1 == NULL) {
             tmp_metaclass_value_1 = Py_None;
@@ -15255,7 +14985,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         bool tmp_condition_result_3;
         PyObject *tmp_key_value_3;
         PyObject *tmp_dict_arg_value_3;
-        tmp_key_value_3 = mod_consts[194];
+        tmp_key_value_3 = mod_consts[192];
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_dict_arg_value_3 = tmp_class_creation_1__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_value_3, tmp_key_value_3);
@@ -15270,7 +15000,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
     branch_yes_1:;
     CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
     tmp_dictdel_dict = tmp_class_creation_1__class_decl_dict;
-    tmp_dictdel_key = mod_consts[194];
+    tmp_dictdel_key = mod_consts[192];
     tmp_result = DICT_REMOVE_ITEM(tmp_dictdel_dict, tmp_dictdel_key);
     if (tmp_result == false) {
         assert(ERROR_OCCURRED());
@@ -15288,7 +15018,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_expression_value_14;
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_expression_value_14 = tmp_class_creation_1__metaclass;
-        tmp_result = HAS_ATTR_BOOL(tmp_expression_value_14, mod_consts[195]);
+        tmp_result = HAS_ATTR_BOOL(tmp_expression_value_14, mod_consts[193]);
         tmp_condition_result_4 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
         if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
             goto branch_yes_2;
@@ -15306,7 +15036,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_kwargs_value_1;
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_expression_value_15 = tmp_class_creation_1__metaclass;
-        tmp_called_value_9 = LOOKUP_ATTRIBUTE(tmp_expression_value_15, mod_consts[195]);
+        tmp_called_value_9 = LOOKUP_ATTRIBUTE(tmp_expression_value_15, mod_consts[193]);
         if (tmp_called_value_9 == NULL) {
             assert(ERROR_OCCURRED());
 
@@ -15348,7 +15078,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_expression_value_16;
         CHECK_OBJECT(tmp_class_creation_1__prepared);
         tmp_expression_value_16 = tmp_class_creation_1__prepared;
-        tmp_result = HAS_ATTR_BOOL(tmp_expression_value_16, mod_consts[196]);
+        tmp_result = HAS_ATTR_BOOL(tmp_expression_value_16, mod_consts[194]);
         tmp_operand_value_1 = (tmp_result) ? Py_True : Py_False;
         tmp_res = CHECK_IF_TRUE(tmp_operand_value_1);
         if (tmp_res == -1) {
@@ -15379,11 +15109,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         PyObject *tmp_getattr_attr_1;
         PyObject *tmp_getattr_default_1;
         tmp_raise_type_1 = PyExc_TypeError;
-        tmp_mod_expr_left_3 = mod_consts[197];
+        tmp_mod_expr_left_3 = mod_consts[195];
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_getattr_target_1 = tmp_class_creation_1__metaclass;
-        tmp_getattr_attr_1 = mod_consts[198];
-        tmp_getattr_default_1 = mod_consts[199];
+        tmp_getattr_attr_1 = mod_consts[196];
+        tmp_getattr_default_1 = mod_consts[197];
         tmp_tuple_element_4 = BUILTIN_GETATTR(tmp_getattr_target_1, tmp_getattr_attr_1, tmp_getattr_default_1);
         if (tmp_tuple_element_4 == NULL) {
             assert(ERROR_OCCURRED());
@@ -15404,7 +15134,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             tmp_type_arg_2 = tmp_class_creation_1__prepared;
             tmp_expression_value_17 = BUILTIN_TYPE1(tmp_type_arg_2);
             assert(!(tmp_expression_value_17 == NULL));
-            tmp_tuple_element_4 = LOOKUP_ATTRIBUTE(tmp_expression_value_17, mod_consts[198]);
+            tmp_tuple_element_4 = LOOKUP_ATTRIBUTE(tmp_expression_value_17, mod_consts[196]);
             Py_DECREF(tmp_expression_value_17);
             if (tmp_tuple_element_4 == NULL) {
                 assert(ERROR_OCCURRED());
@@ -15466,8 +15196,8 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         }
         // Tried code:
         // Tried code:
-        tmp_dictset_value = mod_consts[200];
-        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[201], tmp_dictset_value);
+        tmp_dictset_value = mod_consts[198];
+        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[199], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
@@ -15478,8 +15208,8 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
             goto try_except_handler_5;
         }
-        tmp_dictset_value = mod_consts[202];
-        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[127], tmp_dictset_value);
+        tmp_dictset_value = mod_consts[200];
+        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[125], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
@@ -15491,7 +15221,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             goto try_except_handler_5;
         }
         tmp_dictset_value = mod_consts[5];
-        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[203], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[201], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
@@ -15529,8 +15259,8 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         assert(Py_REFCNT(frame_4879d87e1736932efe2349e57cf96b73_3) == 2); // Frame stack
 
         // Framed code:
-        tmp_dictset_value = mod_consts[204];
-        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[205], tmp_dictset_value);
+        tmp_dictset_value = mod_consts[202];
+        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[203], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
@@ -15543,7 +15273,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         }
         {
             PyObject *tmp_defaults_1;
-            tmp_defaults_1 = mod_consts[206];
+            tmp_defaults_1 = mod_consts[204];
             Py_INCREF(tmp_defaults_1);
 
 
@@ -15568,7 +15298,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             PyObject *tmp_args_element_value_12;
             PyObject *tmp_called_value_11;
             PyObject *tmp_args_element_value_13;
-            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (tmp_res == -1) {
                 assert(ERROR_OCCURRED());
@@ -15587,11 +15317,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto condexpr_false_3;
             }
             condexpr_true_3:;
-            tmp_called_value_10 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_called_value_10 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (unlikely(tmp_called_value_10 == NULL && CHECK_AND_CLEAR_KEY_ERROR_OCCURRED())) {
 
-                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[208]);
+                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[206]);
                 NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
                 CHAIN_EXCEPTION(exception_value);
 
@@ -15649,7 +15379,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto frame_exception_exit_3;
             }
             condexpr_end_3:;
-            tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[125], tmp_dictset_value);
+            tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[123], tmp_dictset_value);
             Py_DECREF(tmp_dictset_value);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
@@ -15668,7 +15398,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             PyObject *tmp_args_element_value_14;
             PyObject *tmp_called_value_13;
             PyObject *tmp_args_element_value_15;
-            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (tmp_res == -1) {
                 assert(ERROR_OCCURRED());
@@ -15687,11 +15417,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto condexpr_false_4;
             }
             condexpr_true_4:;
-            tmp_called_value_12 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_called_value_12 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (unlikely(tmp_called_value_12 == NULL && CHECK_AND_CLEAR_KEY_ERROR_OCCURRED())) {
 
-                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[208]);
+                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[206]);
                 NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
                 CHAIN_EXCEPTION(exception_value);
 
@@ -15749,7 +15479,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto frame_exception_exit_3;
             }
             condexpr_end_4:;
-            tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[210], tmp_dictset_value);
+            tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208], tmp_dictset_value);
             Py_DECREF(tmp_dictset_value);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
@@ -15768,7 +15498,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             PyObject *tmp_args_element_value_16;
             PyObject *tmp_called_value_15;
             PyObject *tmp_args_element_value_17;
-            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (tmp_res == -1) {
                 assert(ERROR_OCCURRED());
@@ -15787,11 +15517,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto condexpr_false_5;
             }
             condexpr_true_5:;
-            tmp_called_value_14 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_called_value_14 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (unlikely(tmp_called_value_14 == NULL && CHECK_AND_CLEAR_KEY_ERROR_OCCURRED())) {
 
-                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[208]);
+                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[206]);
                 NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
                 CHAIN_EXCEPTION(exception_value);
 
@@ -15849,7 +15579,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto frame_exception_exit_3;
             }
             condexpr_end_5:;
-            tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[212], tmp_dictset_value);
+            tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[210], tmp_dictset_value);
             Py_DECREF(tmp_dictset_value);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
@@ -15868,7 +15598,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
             PyObject *tmp_args_element_value_18;
             PyObject *tmp_called_value_17;
             PyObject *tmp_args_element_value_19;
-            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_res = MAPPING_HAS_ITEM(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (tmp_res == -1) {
                 assert(ERROR_OCCURRED());
@@ -15887,11 +15617,11 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
                 goto condexpr_false_6;
             }
             condexpr_true_6:;
-            tmp_called_value_16 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[208]);
+            tmp_called_value_16 = PyObject_GetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[206]);
 
             if (unlikely(tmp_called_value_16 == NULL && CHECK_AND_CLEAR_KEY_ERROR_OCCURRED())) {
 
-                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[208]);
+                FORMAT_NAME_ERROR(&exception_type, &exception_value, mod_consts[206]);
                 NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
                 CHAIN_EXCEPTION(exception_value);
 
@@ -15966,7 +15696,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_dictset_value = MAKE_FUNCTION_urllib3$util$url$$$function__6___str__();
 
-        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[215], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[213], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -16061,7 +15791,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
         branch_yes_4:;
         CHECK_OBJECT(tmp_class_creation_1__bases_orig);
         tmp_dictset_value = tmp_class_creation_1__bases_orig;
-        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[217], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_urllib3$util$url$$$class__1_Url_82, mod_consts[215], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
@@ -16255,12 +15985,12 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_assign_source_51 = MAKE_FUNCTION_urllib3$util$url$$$function__7_split_first();
 
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[218], tmp_assign_source_51);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[216], tmp_assign_source_51);
     }
     {
         PyObject *tmp_assign_source_52;
         PyObject *tmp_defaults_2;
-        tmp_defaults_2 = mod_consts[219];
+        tmp_defaults_2 = mod_consts[217];
         Py_INCREF(tmp_defaults_2);
 
 
@@ -16274,7 +16004,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_assign_source_53 = MAKE_FUNCTION_urllib3$util$url$$$function__9__remove_path_dot_segments();
 
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[114], tmp_assign_source_53);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[112], tmp_assign_source_53);
     }
     {
         PyObject *tmp_assign_source_54;
@@ -16282,7 +16012,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_assign_source_54 = MAKE_FUNCTION_urllib3$util$url$$$function__10__normalize_host();
 
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[113], tmp_assign_source_54);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[111], tmp_assign_source_54);
     }
     {
         PyObject *tmp_assign_source_55;
@@ -16298,7 +16028,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_assign_source_56 = MAKE_FUNCTION_urllib3$util$url$$$function__12__encode_target();
 
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[220], tmp_assign_source_56);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[218], tmp_assign_source_56);
     }
     {
         PyObject *tmp_assign_source_57;
@@ -16306,7 +16036,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_assign_source_57 = MAKE_FUNCTION_urllib3$util$url$$$function__13_parse_url();
 
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[123], tmp_assign_source_57);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[121], tmp_assign_source_57);
     }
     {
         PyObject *tmp_assign_source_58;
@@ -16314,7 +16044,7 @@ PyObject *modulecode_urllib3$util$url(PyObject *module, struct Nuitka_MetaPathBa
 
         tmp_assign_source_58 = MAKE_FUNCTION_urllib3$util$url$$$function__14_get_host();
 
-        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[221], tmp_assign_source_58);
+        UPDATE_STRING_DICT1(moduledict_urllib3$util$url, (Nuitka_StringObject *)mod_consts[219], tmp_assign_source_58);
     }
 
     // Report to PGO about leaving the module without error.

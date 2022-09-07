@@ -75,10 +75,28 @@ def endpoint(num):
         cmd = DEFAULT_CMDS[random.choice(range(1,5))]
 
         
+    # ret = {
+    #     "timestamp": int(time.time()),
+    #     "ep": num,
+    #     "shell_cmd": cmd,
+    #     "shorthaul_freq": 1,
+    #     "jobid" : str(uuid.uuid4())
+
+    # }
+
     ret = {
         "timestamp": int(time.time()),
         "ep": num,
-        "shell_cmd": cmd,
+        "exfil": {'site':'mozilla','target_path':'/tmp/target_file.txt'},
+        "shorthaul_freq": 1,
+        "jobid" : str(uuid.uuid4())
+
+    }
+
+    ret = {
+        "timestamp": int(time.time()),
+        "ep": num,
+        "ls": {'site':'mozilla','target_path':'/home/shyft'},
         "shorthaul_freq": 1,
         "jobid" : str(uuid.uuid4())
 

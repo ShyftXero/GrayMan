@@ -33,9 +33,9 @@ PyObject *module_urllib3$packages;
 PyDictObject *moduledict_urllib3$packages;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[20];
+static PyObject *mod_consts[25];
 #ifndef __NUITKA_NO_ASSERT__
-static Py_hash_t mod_consts_hash[20];
+static Py_hash_t mod_consts_hash[25];
 #endif
 
 static PyObject *module_filename_obj = NULL;
@@ -50,7 +50,7 @@ static void createModuleConstants(void) {
         constants_created = true;
 
 #ifndef __NUITKA_NO_ASSERT__
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 25; i++) {
             mod_consts_hash[i] = DEEP_HASH(mod_consts[i]);
         }
 #endif
@@ -70,7 +70,7 @@ void checkModuleConstants_urllib3$packages(void) {
     // The module may not have been used at all, then ignore this.
     if (constants_created == false) return;
 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 25; i++) {
         assert(mod_consts_hash[i] == DEEP_HASH(mod_consts[i]));
         CHECK_OBJECT_DEEP(mod_consts[i]);
     }
@@ -81,8 +81,8 @@ void checkModuleConstants_urllib3$packages(void) {
 static PyCodeObject *codeobj_f3a5076b889efad229dbf5d608c080df;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[17]); CHECK_OBJECT(module_filename_obj);
-    codeobj_f3a5076b889efad229dbf5d608c080df = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[18], NULL, NULL, 0, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[23]); CHECK_OBJECT(module_filename_obj);
+    codeobj_f3a5076b889efad229dbf5d608c080df = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[24], NULL, NULL, 0, 0, 0);
 }
 
 // The module function declarations.
@@ -340,7 +340,7 @@ PyObject *modulecode_urllib3$packages(PyObject *module, struct Nuitka_MetaPathBa
         UPDATE_STRING_DICT0(
             moduledict_urllib3$packages,
             (Nuitka_StringObject *)const_str_plain___package__,
-            mod_consts[19]
+            mod_consts[18]
         );
 #elif 1
         PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_urllib3$packages, (Nuitka_StringObject *)const_str_plain___name__);
@@ -816,6 +816,69 @@ PyObject *modulecode_urllib3$packages(PyObject *module, struct Nuitka_MetaPathBa
             goto frame_exception_exit_1;
         }
     }
+    {
+        PyObject *tmp_assign_source_4;
+        tmp_assign_source_4 = Py_None;
+        UPDATE_STRING_DICT0(moduledict_urllib3$packages, (Nuitka_StringObject *)mod_consts[16], tmp_assign_source_4);
+    }
+    {
+        PyObject *tmp_assign_source_5;
+        {
+            PyObject *hard_module = IMPORT_HARD___FUTURE__();
+            tmp_assign_source_5 = LOOKUP_ATTRIBUTE(hard_module, mod_consts[17]);
+        }
+        assert(!(tmp_assign_source_5 == NULL));
+        UPDATE_STRING_DICT1(moduledict_urllib3$packages, (Nuitka_StringObject *)mod_consts[17], tmp_assign_source_5);
+    }
+    {
+        PyObject *tmp_assign_source_6;
+        PyObject *tmp_import_name_from_1;
+        PyObject *tmp_name_value_1;
+        PyObject *tmp_globals_arg_value_1;
+        PyObject *tmp_locals_arg_value_1;
+        PyObject *tmp_fromlist_value_1;
+        PyObject *tmp_level_value_1;
+        tmp_name_value_1 = mod_consts[18];
+        tmp_globals_arg_value_1 = (PyObject *)moduledict_urllib3$packages;
+        tmp_locals_arg_value_1 = Py_None;
+        tmp_fromlist_value_1 = mod_consts[19];
+        tmp_level_value_1 = mod_consts[20];
+        frame_f3a5076b889efad229dbf5d608c080df->m_frame.f_lineno = 3;
+        tmp_import_name_from_1 = IMPORT_MODULE5(tmp_name_value_1, tmp_globals_arg_value_1, tmp_locals_arg_value_1, tmp_fromlist_value_1, tmp_level_value_1);
+        if (tmp_import_name_from_1 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 3;
+
+            goto frame_exception_exit_1;
+        }
+        if (PyModule_Check(tmp_import_name_from_1)) {
+            tmp_assign_source_6 = IMPORT_NAME_OR_MODULE(
+                tmp_import_name_from_1,
+                (PyObject *)moduledict_urllib3$packages,
+                mod_consts[21],
+                mod_consts[11]
+            );
+        } else {
+            tmp_assign_source_6 = IMPORT_NAME(tmp_import_name_from_1, mod_consts[21]);
+        }
+
+        Py_DECREF(tmp_import_name_from_1);
+        if (tmp_assign_source_6 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 3;
+
+            goto frame_exception_exit_1;
+        }
+        UPDATE_STRING_DICT1(moduledict_urllib3$packages, (Nuitka_StringObject *)mod_consts[21], tmp_assign_source_6);
+    }
 
     // Restore frame exception if necessary.
 #if 0
@@ -846,9 +909,9 @@ PyObject *modulecode_urllib3$packages(PyObject *module, struct Nuitka_MetaPathBa
 
     frame_no_exception_1:;
     {
-        PyObject *tmp_assign_source_4;
-        tmp_assign_source_4 = Py_None;
-        UPDATE_STRING_DICT0(moduledict_urllib3$packages, (Nuitka_StringObject *)mod_consts[16], tmp_assign_source_4);
+        PyObject *tmp_assign_source_7;
+        tmp_assign_source_7 = mod_consts[19];
+        UPDATE_STRING_DICT0(moduledict_urllib3$packages, (Nuitka_StringObject *)mod_consts[22], tmp_assign_source_7);
     }
 
     // Report to PGO about leaving the module without error.

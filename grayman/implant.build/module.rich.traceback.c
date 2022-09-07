@@ -149,7 +149,7 @@ static PyObject *MAKE_GENERATOR_rich$traceback$$$function__8__render_stack$$$gen
 static PyObject *MAKE_GENERATOR_rich$traceback$$$function__8__render_stack$$$genobj__1__render_stack$$$genexpr__1_genexpr(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__4_complex_call_helper_star_list_star_dict(PyObject **python_pars);
@@ -158,7 +158,7 @@ NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__4_complex_call_helper_st
 NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__15_complex_call_helper_keywords_star_list_star_dict(PyObject **python_pars);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__13__unpack_list(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__7__unpack_list(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$traceback$$$function__1_install(PyObject *kw_defaults, PyObject *annotations);
@@ -16090,7 +16090,7 @@ static PyObject *rich$traceback$$$function__8__render_stack$$$genobj__1__render_
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_tuple_element_10 = impl___main__$$$function__13__unpack_list(dir_call_args);
+            tmp_tuple_element_10 = impl___main__$$$function__7__unpack_list(dir_call_args);
         }
         if (tmp_tuple_element_10 == NULL) {
             assert(ERROR_OCCURRED());
@@ -24629,7 +24629,7 @@ PyObject *modulecode_rich$traceback(PyObject *module, struct Nuitka_MetaPathBase
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_84 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_84 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_84 == NULL) {
             assert(ERROR_OCCURRED());

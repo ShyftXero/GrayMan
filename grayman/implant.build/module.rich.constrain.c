@@ -97,7 +97,7 @@ static void createModuleCodeObjects(void) {
 static PyObject *MAKE_GENERATOR_rich$constrain$$$function__2___rich_console__$$$genobj__1___rich_console__(struct Nuitka_CellObject **closure);
 
 
-NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__3__mro_entries_conversion(PyObject **python_pars);
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
 
 
 static PyObject *MAKE_FUNCTION_rich$constrain$$$function__1___init__(PyObject *defaults, PyObject *annotations);
@@ -2116,7 +2116,7 @@ PyObject *modulecode_rich$constrain(PyObject *module, struct Nuitka_MetaPathBase
 
         {
             PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
-            tmp_assign_source_15 = impl___main__$$$function__3__mro_entries_conversion(dir_call_args);
+            tmp_assign_source_15 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
         }
         if (tmp_assign_source_15 == NULL) {
             assert(ERROR_OCCURRED());
